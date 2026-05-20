@@ -62,7 +62,7 @@ async function loadAlbums() {
     const sourceUrl = "https://daily.bandcamp.com/album-of-the-day";
     const proxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(sourceUrl);
 
-    const response = await fetch("https://script.google.com/macros/s/AKfycbyTvoiOJOmKlvNfYRFQD5nLJ-PbMYQ7yc6B-tExWCaUMenCK5AsWKpjYxvRuBuB4iLGcw/exec");
+    const response = await fetch("https://script.google.com/macros/s/AKfycbzsxrHIkmReOgI4bNsVMYRN64ugUxRCpyoq-syco5z2CDU0etB2pLkU1PLEL-Cr6MLMwg/exec");
     const albums = await response.json();
 
     const parser = new DOMParser();
