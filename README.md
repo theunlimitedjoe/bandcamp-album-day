@@ -1,2 +1,2 @@
-# joandtell
-joeandtell
+# bandcamp-album-day
+bandcamp-album-day
