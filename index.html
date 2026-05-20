@@ -60,63 +60,61 @@ async function loadAlbums() {
 
   try {
     const sourceUrl = "https://daily.bandcamp.com/album-of-the-day";
-
-    const proxy =
-      "https://api.allorigins.win/raw?url=" +
-      encodeURIComponent(sourceUrl);
+    const proxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(sourceUrl);
 
     const page = await fetch(proxy).then(r => r.text());
 
-    const regex =
-      /ALBUM OF THE DAY\s*·\s*([^<]+)[\s\S]*?<a[^>]+href="([^"]+)"[^>]*>\s*([^<]+),\s*“([^”]+)”/g;
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(page, "text/html");
 
-    const albums = [];
-    let match;
+    const cards = [...doc.querySelectorAll(".list-article.aotd")].slice(0, 7);
 
-    while ((match = regex.exec(page)) && albums.length < 7) {
-      albums.push({
-        date: match[1].trim(),
-        link: match[2].startsWith("http")
-          ? match[2]
-          : "https://daily.bandcamp.com" + match[2],
-        band: match[3].trim(),
-        album: match[4].trim()
-      });
-    }
+    const albums = cards.map(card => {
+      const img = card.querySelector(".thumb.aotd-image img");
+      const link = card.querySelector(".title-wrapper a.title");
+      const info = card.querySelector(".article-info-text");
 
-    const html = await Promise.all(albums.map(async item => {
-      let image = "";
+      const fullTitle = link ? link.textContent.trim() : "";
+      const titleMatch = fullTitle.match(/^(.+),\s*[“"](.+)[”"]$/);
 
-      try {
-        const articleProxy =
-          "https://api.allorigins.win/raw?url=" +
-          encodeURIComponent(item.link);
+      const band = titleMatch ? titleMatch[1] : fullTitle;
+      const album = titleMatch ? titleMatch[2] : "";
 
-        const articleHtml =
-          await fetch(articleProxy).then(r => r.text());
+      let date = "";
+      if (info) {
+        date = info.textContent
+          .replace("ALBUM OF THE DAY", "")
+          .replace("·", "")
+          .trim();
+      }
 
-        const imgMatch =
-          articleHtml.match(/property="og:image"\s+content="([^"]+)"/);
+      const href = link
+        ? new URL(link.getAttribute("href"), sourceUrl).href
+        : "#";
 
-        if (imgMatch) image = imgMatch[1];
-      } catch(e) {}
-
-      return `
-        <a class="card" href="${item.link}" target="_blank">
-          <img src="${image}" alt="${item.band} - ${item.album}">
-          <div class="title">
-            ${item.band} — <em>${item.album}</em>
-          </div>
-          <div class="date">${item.date}</div>
-        </a>
-      `;
-    }));
-
-    grid.innerHTML = html.join("");
+      return {
+        image: img ? img.src : "",
+        link: href,
+        band,
+        album,
+        date
+      };
+    });
 
     if (!albums.length) {
       grid.innerHTML = "No albums found. Bandcamp may have changed the page layout.";
+      return;
     }
+
+    grid.innerHTML = albums.map(item => `
+      <a class="card" href="${item.link}" target="_blank">
+        <img src="${item.image}" alt="${item.band} - ${item.album}">
+        <div class="title">
+          ${item.band} — <em>${item.album}</em>
+        </div>
+        <div class="date">${item.date}</div>
+      </a>
+    `).join("");
 
   } catch (error) {
     grid.innerHTML = "Could not load albums.";
