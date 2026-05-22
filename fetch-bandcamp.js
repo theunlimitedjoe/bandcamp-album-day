@@ -8,23 +8,33 @@ async function main() {
   });
 
   const html = await res.text();
-
   fs.writeFileSync("debug.html", html);
 
   const albums = [];
+  const articleRe = /<div class="list-article\s+aotd">([\s\S]*?)<div class="title-wrapper">([\s\S]*?)<\/div>\s*<\/div>/g;
 
-  const re = /ALBUM OF THE DAY[\s\S]*?·\s*([A-Za-z]+\s+\d{1,2},\s+\d{4})[\s\S]*?<a[^>]+href="([^"]+)"[^>]*>\s*([^<]+),\s*[“"](.*?)[”"]/g;
+  let articleMatch;
+  while ((articleMatch = articleRe.exec(html)) !== null) {
+    const articleHtml = articleMatch[0];
 
-  let m;
-  
+    const linkMatch = articleHtml.match(/<a[^>]+href="([^"]+)"[^>]*class="thumb aotd-image"/);
+    const imageMatch = articleHtml.match(/<img[^>]+src="([^"]+)"/);
+    const dateMatch = articleHtml.match(/<div class="article-info-text">[\s\S]*?·\s*([^<]+)</);
+    const titleMatch = articleHtml.match(/<div class="title-wrapper">[\s\S]*?<a[^>]+class="title"[^>]*>([\s\S]*?)<\/a>/);
 
-  while ((m = re.exec(html)) !== null) {
+    if (!linkMatch || !dateMatch || !titleMatch) continue;
+
+    const rawTitle = clean(titleMatch[1]);
+    const titleParts = rawTitle.match(/^(.*?),\s*[“\"](.+?)[”\"]$/);
+    const band = titleParts ? clean(titleParts[1]) : rawTitle;
+    const album = titleParts ? clean(titleParts[2]) : "";
+
     albums.push({
-      date: clean(m[1]),
-      band: clean(m[3]),
-      album: clean(m[4]),
-      image: "",
-      link: makeFullUrl(m[2])
+      date: clean(dateMatch[1]),
+      band,
+      album,
+      image: imageMatch ? makeFullUrl(imageMatch[1]) : "",
+      link: makeFullUrl(linkMatch[1])
     });
   }
 
@@ -36,14 +46,14 @@ function clean(text) {
   return text
     .replace(/<[^>]*>/g, "")
     .replace(/&amp;/g, "&")
-    .replace(/&#039;/g, "'")
-    .replace(/&#39;/g, "'")
+    .replace(/&#0?39;|&#039;/g, "'")
     .replace(/&quot;/g, '"')
     .replace(/\s+/g, " ")
     .trim();
 }
 
 function makeFullUrl(url) {
+  if (!url) return "";
   if (url.startsWith("http")) return url;
   return "https://daily.bandcamp.com" + url;
 }
