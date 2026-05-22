@@ -1,130 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bandcamp Album of the Day</title>
-
-<style>
-body {
-  margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background: white;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 16px;
-}
-
-.card {
-  text-decoration: none;
-  color: black;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 4px;
-}
-
-.title {
-  margin-top: 8px;
-  line-height: 1.3;
-}
-
-.date {
-  font-size: 12px;
-  opacity: 0.7;
-  margin-top: 5px;
-}
-
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-</style>
+  <meta charset="utf-8">
+  <title>Bandcamp Albums of the Day</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <h1>Bandcamp Albums of the Day</h1>
+  <div id="albums">Loading...</div>
 
-<div class="grid" id="albums"></div>
-
-<script>
-async function loadAlbums() {
-  const grid = document.getElementById("albums");
-  grid.innerHTML = "Loading albums...";
-
-  try {
-    const sourceUrl = "https://daily.bandcamp.com/album-of-the-day";
-    const proxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(sourceUrl);
-
-    const response = await fetch("https://script.google.com/macros/s/AKfycbzsxrHIkmReOgI4bNsVMYRN64ugUxRCpyoq-syco5z2CDU0etB2pLkU1PLEL-Cr6MLMwg/exec");
-    const albums = await response.json();
-
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(page, "text/html");
-
-    const cards = [...doc.querySelectorAll(".list-article.aotd")].slice(0, 7);
-
-    const albums = cards.map(card => {
-      const img = card.querySelector(".thumb.aotd-image img");
-      const link = card.querySelector(".title-wrapper a.title");
-      const info = card.querySelector(".article-info-text");
-
-      const fullTitle = link ? link.textContent.trim() : "";
-      const titleMatch = fullTitle.match(/^(.+),\s*[“"](.+)[”"]$/);
-
-      const band = titleMatch ? titleMatch[1] : fullTitle;
-      const album = titleMatch ? titleMatch[2] : "";
-
-      let date = "";
-      if (info) {
-        date = info.textContent
-          .replace("ALBUM OF THE DAY", "")
-          .replace("·", "")
-          .trim();
-      }
-
-      const href = link
-        ? new URL(link.getAttribute("href"), sourceUrl).href
-        : "#";
-
-      return {
-        image: img ? img.src : "",
-        link: href,
-        band,
-        album,
-        date
-      };
-    });
-
-    if (!albums.length) {
-      grid.innerHTML = "No albums found. Bandcamp may have changed the page layout.";
-      return;
-    }
-
-    grid.innerHTML = albums.map(item => `
-      <a class="card" href="${item.link}" target="_blank">
-        <img src="${item.image}" alt="${item.band} - ${item.album}">
-        <div class="title">
-          ${item.band} — <em>${item.album}</em>
-        </div>
-        <div class="date">${item.date}</div>
-      </a>
-    `).join("");
-
-  } catch (error) {
-    grid.innerHTML = "Could not load albums.";
-    console.error(error);
-  }
-}
-
-loadAlbums();
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
