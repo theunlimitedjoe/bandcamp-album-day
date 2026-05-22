@@ -8,6 +8,7 @@ async function main() {
   });
 
   const page = await res.text();
+  console.log(page.slice(0, 2000));
   const albums = [];
 
   const re = /<div class="list-article aotd">([\s\S]*?)<div class="title-wrapper">([\s\S]*?)<\/div>/g;
