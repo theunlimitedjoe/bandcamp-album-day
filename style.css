@@ -84,6 +84,24 @@ h1 {
   }
 }
 
+@media (max-width: 650px) {
+  #albums {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .album-details {
+    padding: 0.75rem;
+  }
+
+  .album-details h2 {
+    font-size: 0.9rem;
+  }
+
+  .album-details a {
+    font-size: 0.85rem;
+  }
+}
+
 .album {
   overflow: visible;
 }

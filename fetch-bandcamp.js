@@ -76,14 +76,14 @@ async function fetchDrunkardAlbums() {
   fs.writeFileSync("debug-drunkard.html", html);
 
   const albums = [];
-  const regex = /data-album-name="album__\d+"[\s\S]*?data-album-title="([^"]+)"[\s\S]*?data-album-artist="([^"]+)"[\s\S]*?(?:data-album-cover="([^"]+)"|<img[^>]+src="([^"]+)")[\s\S]*?(?:data-album-url="([^"]+)"|href="([^"]+)")/g;
+  const chunkRegex = /data-album-name=("|')album__\d+\1[\s\S]*?data-album-title=("|')([^"']+)\2[\s\S]*?data-album-artist=("|')([^"']+)\4[\s\S]*?(?:data-album-cover=("|')([^"']+)\6|<img[^>]+src=("|')([^"']+)\8)[\s\S]*?(?:data-album-url=("|')([^"']+)\10|href=("|')([^"']+)\12)/g;
   let match;
 
-  while ((match = regex.exec(html))) {
-    const title = clean(match[1]);
-    const artist = clean(match[2]);
-    const image = makeFullUrl(match[3] || match[4] || "", "https://aquariumdrunkard.com");
-    const link = makeFullUrl(match[5] || match[6] || "", "https://aquariumdrunkard.com");
+  while ((match = chunkRegex.exec(html))) {
+    const title = clean(match[3]);
+    const artist = clean(match[5]);
+    const image = makeFullUrl(match[7] || match[9] || "", "https://aquariumdrunkard.com");
+    const link = makeFullUrl(match[11] || match[13] || "", "https://aquariumdrunkard.com");
 
     if (!title || !artist || !link) {
       continue;
