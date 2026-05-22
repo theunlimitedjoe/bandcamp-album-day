@@ -11,15 +11,16 @@ async function main() {
   fs.writeFileSync("debug.html", html);
 
   const albums = [];
-  const articleRe = /<div class="list-article\s+aotd">([\s\S]*?)<div class="title-wrapper">([\s\S]*?)<\/div>\s*<\/div>/g;
+  const articleRe = /<div class="list-article\s+aotd">([\s\S]*?)<\/div>\s*<\/div>/g;
 
   let articleMatch;
   while ((articleMatch = articleRe.exec(html)) !== null) {
     const articleHtml = articleMatch[0];
 
-    const linkMatch = articleHtml.match(/<a[^>]+href="([^"]+)"[^>]*class="thumb aotd-image"/);
+    const linkMatch = articleHtml.match(/<a[^>]+class="thumb aotd-image"[^>]*href="([^"]+)"/) ||
+      articleHtml.match(/<a[^>]+href="([^"]+)"[^>]*class="thumb aotd-image"/);
     const imageMatch = articleHtml.match(/<img[^>]+src="([^"]+)"/);
-    const dateMatch = articleHtml.match(/<div class="article-info-text">[\s\S]*?·\s*([^<]+)</);
+    const dateMatch = articleHtml.match(/<div class="article-info-text">[\s\S]*?(?:&middot;|·)[\s\S]*?([^<]+)</);
     const titleMatch = articleHtml.match(/<div class="title-wrapper">[\s\S]*?<a[^>]+class="title"[^>]*>([\s\S]*?)<\/a>/);
 
     if (!linkMatch || !dateMatch || !titleMatch) continue;
