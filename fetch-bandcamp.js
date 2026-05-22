@@ -8,6 +8,8 @@ async function main() {
   });
 
   const html = await res.text();
+  console.log(html.includes("ALBUM OF THE DAY"));
+  console.log(html.indexOf("ALBUM OF THE DAY"));
 
   const albums = [];
 
