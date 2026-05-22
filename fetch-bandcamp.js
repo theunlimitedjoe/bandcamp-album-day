@@ -52,7 +52,7 @@ async function fetchBandcampAlbums() {
     }
 
     const rawTitle = clean(titleMatch[1]);
-    const titleParts = rawTitle.match(/^(.*),\s*[“\"](.+?)[”\"]$/);
+    const titleParts = rawTitle.match(/^(.*),\s*["\"](.+?)["\"]$/);
     const band = titleParts ? clean(titleParts[1]) : rawTitle;
     const album = titleParts ? clean(titleParts[2]) : "";
 
@@ -68,36 +68,51 @@ async function fetchBandcampAlbums() {
 }
 
 async function fetchDrunkardAlbums() {
-  const res = await fetch(DRUNKARD_URL, {
-    headers: { "User-Agent": "Mozilla/5.0" }
-  });
+  const maxRetries = 3;
+  const timeout = 30000; // 30 seconds instead of 10
+  
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const res = await fetch(DRUNKARD_URL, {
+        headers: { "User-Agent": "Mozilla/5.0" },
+        signal: AbortSignal.timeout(timeout)
+      });
 
-  const html = await res.text();
-  fs.writeFileSync("debug-drunkard.html", html);
+      const html = await res.text();
+      fs.writeFileSync("debug-drunkard.html", html);
 
-  const albums = [];
-  const chunkRegex = /data-album-name=("|')album__\d+\1[\s\S]*?data-album-title=("|')([^"']+)\2[\s\S]*?data-album-artist=("|')([^"']+)\4[\s\S]*?(?:data-album-cover=("|')([^"']+)\6|<img[^>]+src=("|')([^"']+)\8)[\s\S]*?(?:data-album-url=("|')([^"']+)\10|href=("|')([^"']+)\12)/g;
-  let match;
+      const albums = [];
+      const chunkRegex = /data-album-name=("|')album__\d+\1[\s\S]*?data-album-title=("|')([^"']+)\2[\s\S]*?data-album-artist=("|')([^"']+)\4[\s\S]*?(?:data-album-cover=("|')([^"']+)\6|<img[^>]+src=("|[...]
+      let match;
 
-  while ((match = chunkRegex.exec(html))) {
-    const title = clean(match[3]);
-    const artist = clean(match[5]);
-    const image = makeFullUrl(match[7] || match[9] || "", "https://aquariumdrunkard.com");
-    const link = makeFullUrl(match[11] || match[13] || "", "https://aquariumdrunkard.com");
+      while ((match = chunkRegex.exec(html))) {
+        const title = clean(match[3]);
+        const artist = clean(match[5]);
+        const image = makeFullUrl(match[7] || match[9] || "", "https://aquariumdrunkard.com");
+        const link = makeFullUrl(match[11] || match[13] || "", "https://aquariumdrunkard.com");
 
-    if (!title || !artist || !link) {
-      continue;
+        if (!title || !artist || !link) {
+          continue;
+        }
+
+        albums.push({
+          band: artist,
+          album: title,
+          image,
+          link
+        });
+      }
+
+      return albums;
+    } catch (error) {
+      console.error(`Attempt ${attempt}/${maxRetries} failed for Drunkard albums:`, error.message);
+      if (attempt === maxRetries) {
+        console.warn("Failed to fetch Drunkard albums after retries. Returning empty array.");
+        return []; // Return empty array instead of failing completely
+      }
+      await new Promise(resolve => setTimeout(resolve, 2000 * attempt)); // Wait before retry
     }
-
-    albums.push({
-      band: artist,
-      album: title,
-      image,
-      link
-    });
   }
-
-  return albums;
 }
 
 function loadExistingAlbums() {
