@@ -4,61 +4,47 @@ const SOURCE_URL = "https://daily.bandcamp.com/album-of-the-day";
 
 async function main() {
   const res = await fetch(SOURCE_URL, {
-    headers: {
-      "User-Agent": "Mozilla/5.0"
-    }
+    headers: { "User-Agent": "Mozilla/5.0" }
   });
 
   const html = await res.text();
 
+  const text = html
+    .replace(/<script[\s\S]*?<\/script>/g, "")
+    .replace(/<style[\s\S]*?<\/style>/g, "")
+    .replace(/<[^>]+>/g, "\n")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&#39;/g, "'")
+    .replace(/\n+/g, "\n")
+    .trim();
+
+  const lines = text.split("\n").map(x => x.trim()).filter(Boolean);
+
   const albums = [];
 
-  const matches = [
-    ...html.matchAll(/<article[\s\S]*?<\/article>/g)
-  ];
+  for (let i = 0; i < lines.length; i++) {
+    const dateMatch = lines[i].match(/^[A-Z]+\s+\d{1,2},\s+\d{4}$/i);
 
-  for (const match of matches) {
-    const block = match[0];
+    if (dateMatch && lines[i - 1] === "ALBUM OF THE DAY") {
+      const titleLine = lines[i + 1] || "";
+      const split = titleLine.match(/^(.+?),\s+[“"](.*)[”"]$/);
 
-    const album =
-      block.match(/<h2[^>]*>(.*?)<\/h2>/s)?.[1] ||
-      "";
-
-    const artist =
-      block.match(/<h3[^>]*>(.*?)<\/h3>/s)?.[1] ||
-      "";
-
-    const image =
-      block.match(/<img[^>]+src="([^"]+)"/)?.[1] ||
-      "";
-
-    const link =
-      block.match(/<a[^>]+href="([^"]+)"/)?.[1] ||
-      "";
-
-    if (album || artist) {
-      albums.push({
-        album: clean(album),
-        band: clean(artist),
-        image,
-        link,
-        date: new Date().toISOString().split("T")[0]
-      });
+      if (split) {
+        albums.push({
+          band: split[1],
+          album: split[2],
+          date: lines[i],
+          image: "",
+          link: SOURCE_URL
+        });
+      }
     }
   }
 
   fs.writeFileSync("albums.json", JSON.stringify(albums, null, 2));
-
   console.log(`Saved ${albums.length} albums`);
-}
-
-function clean(text) {
-  return text
-    .replace(/<[^>]+>/g, "")
-    .replace(/&amp;/g, "&")
-    .replace(/&#39;/g, "'")
-    .replace(/&quot;/g, '"')
-    .trim();
 }
 
 main();
