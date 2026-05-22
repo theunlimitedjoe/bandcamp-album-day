@@ -10,12 +10,13 @@ async function main() {
   const html = await res.text();
   fs.writeFileSync("debug.html", html);
 
+  const articles = html.split(/<div class="list-article\s+aotd">/).slice(1);
   const albums = [];
-  const articleRe = /<div class="list-article\s+aotd">([\s\S]*?)<\/div>\s*<\/div>/g;
 
-  let articleMatch;
-  while ((articleMatch = articleRe.exec(html)) !== null) {
-    const articleHtml = articleMatch[0];
+  console.log(`Found ${articles.length} article blocks`);
+
+  for (const articleBody of articles) {
+    const articleHtml = articleBody.split(/<\/div>\s*<\/div>/)[0];
 
     const linkMatch = articleHtml.match(/<a[^>]+class="thumb aotd-image"[^>]*href="([^"]+)"/) ||
       articleHtml.match(/<a[^>]+href="([^"]+)"[^>]*class="thumb aotd-image"/);
@@ -23,10 +24,18 @@ async function main() {
     const dateMatch = articleHtml.match(/<div class="article-info-text">[\s\S]*?(?:&middot;|·)[\s\S]*?([^<]+)</);
     const titleMatch = articleHtml.match(/<div class="title-wrapper">[\s\S]*?<a[^>]+class="title"[^>]*>([\s\S]*?)<\/a>/);
 
-    if (!linkMatch || !dateMatch || !titleMatch) continue;
+    if (!linkMatch || !dateMatch || !titleMatch) {
+      console.error("Skipping article because required fields were missing", {
+        link: !!linkMatch,
+        date: !!dateMatch,
+        title: !!titleMatch,
+        snippet: articleHtml.slice(0, 200)
+      });
+      continue;
+    }
 
     const rawTitle = clean(titleMatch[1]);
-    const titleParts = rawTitle.match(/^(.*?),\s*[“\"](.+?)[”\"]$/);
+    const titleParts = rawTitle.match(/^(.*),\s*[“\"](.+?)[”\"]$/);
     const band = titleParts ? clean(titleParts[1]) : rawTitle;
     const album = titleParts ? clean(titleParts[2]) : "";
 
