@@ -16,13 +16,15 @@ async function loadAlbums() {
     const visibleAlbums = albums.slice(0, 7);
 
     container.innerHTML = visibleAlbums.map(album => {
-      const title = album.album ? `${album.album} by ${album.band}` : album.band;
+      const albumName = album.album || album.band;
+      const artistName = album.album ? album.band : "";
+      const title = artistName ? `${albumName} by ${artistName}` : albumName;
       return `
       <div class="album">
         <img src="${album.image}" alt="${title} cover">
         <div class="album-details">
-          <h2><span class="album-name">${album.album}</span> by <span class="artist-name">${album.band}</span></h2>
-          <a href="${album.link}" target="_blank" rel="noopener noreferrer">Read on Bandcamp</a>
+          <h2><span class="album-name">${albumName}</span>${artistName ? ` by <span class="artist-name">${artistName}</span>` : ""}</h2>
+          <a href="${album.link}" target="_blank" rel="noopener noreferrer">Read more</a>
         </div>
       </div>
     `;

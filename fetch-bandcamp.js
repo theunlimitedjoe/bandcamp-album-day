@@ -1,6 +1,7 @@
 const fs = require("fs");
 
-const SOURCE_URL = "https://daily.bandcamp.com/album-of-the-day";
+const BANDCAMP_URL = "https://daily.bandcamp.com/album-of-the-day";
+const DRUNKARD_URL = "https://aquariumdrunkard.com/";
 const FORCE = process.argv.includes("--force") || process.argv.includes("-f");
 const DAILY = process.argv.includes("--daily");
 
@@ -12,17 +13,31 @@ async function main() {
     return;
   }
 
-  const res = await fetch(SOURCE_URL, {
+  const [bandcampAlbums, drunkardAlbums] = await Promise.all([
+    fetchBandcampAlbums(),
+    fetchDrunkardAlbums()
+  ]);
+
+  const albums = [...bandcampAlbums.slice(0, 7), ...drunkardAlbums.slice(0, 8)];
+
+  fs.writeFileSync("albums.json", JSON.stringify({
+    fetchedAt: new Date().toISOString(),
+    albums
+  }, null, 2));
+
+  console.log(`Saved ${albums.length} albums (${bandcampAlbums.length} bandcamp, ${drunkardAlbums.length} aquarium drunkard).`);
+}
+
+async function fetchBandcampAlbums() {
+  const res = await fetch(BANDCAMP_URL, {
     headers: { "User-Agent": "Mozilla/5.0" }
   });
 
   const html = await res.text();
-  fs.writeFileSync("debug.html", html);
+  fs.writeFileSync("debug-bandcamp.html", html);
 
   const articles = html.split(/<div class="list-article\s+aotd">/).slice(1);
   const albums = [];
-
-  console.log(`Found ${articles.length} article blocks`);
 
   for (const articleBody of articles) {
     const articleHtml = articleBody.split(/<\/div>\s*<\/div>/)[0];
@@ -33,11 +48,6 @@ async function main() {
     const titleMatch = articleHtml.match(/<div class="title-wrapper">[\s\S]*?<a[^>]+class="title"[^>]*>([\s\S]*?)<\/a>/);
 
     if (!linkMatch || !titleMatch) {
-      console.error("Skipping article because required fields were missing", {
-        link: !!linkMatch,
-        title: !!titleMatch,
-        snippet: articleHtml.slice(0, 200)
-      });
       continue;
     }
 
@@ -49,17 +59,45 @@ async function main() {
     albums.push({
       band,
       album,
-      image: imageMatch ? makeFullUrl(imageMatch[1]) : "",
-      link: makeFullUrl(linkMatch[1])
+      image: imageMatch ? makeFullUrl(imageMatch[1], "https://daily.bandcamp.com") : "",
+      link: makeFullUrl(linkMatch[1], "https://daily.bandcamp.com")
     });
   }
 
-  const visibleAlbums = albums.slice(0, 7);
-  fs.writeFileSync("albums.json", JSON.stringify({
-    fetchedAt: new Date().toISOString(),
-    albums: visibleAlbums
-  }, null, 2));
-  console.log(`Saved ${visibleAlbums.length} albums`);
+  return albums;
+}
+
+async function fetchDrunkardAlbums() {
+  const res = await fetch(DRUNKARD_URL, {
+    headers: { "User-Agent": "Mozilla/5.0" }
+  });
+
+  const html = await res.text();
+  fs.writeFileSync("debug-drunkard.html", html);
+
+  const albumChunks = html.split(/data-album-name="album__\d+"/).slice(1);
+  const albums = [];
+
+  for (const chunk of albumChunks) {
+    const block = chunk.split(/data-album-name="album__\d+"/)[0];
+    const titleMatch = block.match(/data-album-title="([^"]+)"/);
+    const artistMatch = block.match(/data-album-artist="([^"]+)"/);
+    const imageMatch = block.match(/data-album-cover="([^"]+)"/) || block.match(/<img[^>]+src="([^"]+)"/);
+    const linkMatch = block.match(/<a[^>]+href="([^"]+)"/);
+
+    if (!titleMatch || !artistMatch || !linkMatch) {
+      continue;
+    }
+
+    albums.push({
+      band: clean(artistMatch[1]),
+      album: clean(titleMatch[1]),
+      image: makeFullUrl(imageMatch ? imageMatch[1] : "", "https://aquariumdrunkard.com"),
+      link: makeFullUrl(linkMatch[1], "https://aquariumdrunkard.com")
+    });
+  }
+
+  return albums;
 }
 
 function loadExistingAlbums() {
@@ -91,10 +129,13 @@ function clean(text) {
     .trim();
 }
 
-function makeFullUrl(url) {
+function makeFullUrl(url, base) {
   if (!url) return "";
   if (url.startsWith("http")) return url;
-  return "https://daily.bandcamp.com" + url;
+  if (url.startsWith("//")) return `https:${url}`;
+  if (!base) return url;
+  if (url.startsWith("/")) return `${base.replace(/\/$/, "")}${url}`;
+  return `${base.replace(/\/$/, "")}/${url}`;
 }
 
 main();

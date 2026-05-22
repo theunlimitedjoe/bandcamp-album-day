@@ -1,6 +1,6 @@
 # bandcamp-album-day
 
-This project scrapes Bandcamp Daily Album of the Day listings and renders them locally.
+This project scrapes Bandcamp Daily Album of the Day listings and Aquarium Drunkard "On The Turntable" albums, then renders them locally in the same unified layout.
 
 ## Usage
 
