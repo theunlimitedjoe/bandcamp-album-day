@@ -8,14 +8,15 @@ async function main() {
   });
 
   const html = await res.text();
-  console.log(html.includes("ALBUM OF THE DAY"));
-  console.log(html.indexOf("ALBUM OF THE DAY"));
+
+  fs.writeFileSync("debug.html", html);
 
   const albums = [];
 
   const re = /ALBUM OF THE DAY[\s\S]*?·\s*([A-Za-z]+\s+\d{1,2},\s+\d{4})[\s\S]*?<a[^>]+href="([^"]+)"[^>]*>\s*([^<]+),\s*[“"](.*?)[”"]/g;
 
   let m;
+  
 
   while ((m = re.exec(html)) !== null) {
     albums.push({
