@@ -1,8 +1,17 @@
 const fs = require("fs");
 
 const SOURCE_URL = "https://daily.bandcamp.com/album-of-the-day";
+const FORCE = process.argv.includes("--force") || process.argv.includes("-f");
+const DAILY = process.argv.includes("--daily");
 
 async function main() {
+  const existing = loadExistingAlbums();
+
+  if (DAILY && !FORCE && existing.fetchedAt && isSameLocalDay(existing.fetchedAt, new Date())) {
+    console.log(`Already fetched today (${existing.fetchedAt}). Use --force to refresh manually.`);
+    return;
+  }
+
   const res = await fetch(SOURCE_URL, {
     headers: { "User-Agent": "Mozilla/5.0" }
   });
@@ -21,13 +30,11 @@ async function main() {
     const linkMatch = articleHtml.match(/<a[^>]+class="thumb aotd-image"[^>]*href="([^"]+)"/) ||
       articleHtml.match(/<a[^>]+href="([^"]+)"[^>]*class="thumb aotd-image"/);
     const imageMatch = articleHtml.match(/<img[^>]+src="([^"]+)"/);
-    const dateMatch = articleHtml.match(/<div class="article-info-text">[\s\S]*?(?:&middot;|·)[\s\S]*?([^<]+)</);
     const titleMatch = articleHtml.match(/<div class="title-wrapper">[\s\S]*?<a[^>]+class="title"[^>]*>([\s\S]*?)<\/a>/);
 
-    if (!linkMatch || !dateMatch || !titleMatch) {
+    if (!linkMatch || !titleMatch) {
       console.error("Skipping article because required fields were missing", {
         link: !!linkMatch,
-        date: !!dateMatch,
         title: !!titleMatch,
         snippet: articleHtml.slice(0, 200)
       });
@@ -40,7 +47,6 @@ async function main() {
     const album = titleParts ? clean(titleParts[2]) : "";
 
     albums.push({
-      date: clean(dateMatch[1]),
       band,
       album,
       image: imageMatch ? makeFullUrl(imageMatch[1]) : "",
@@ -48,8 +54,31 @@ async function main() {
     });
   }
 
-  fs.writeFileSync("albums.json", JSON.stringify(albums, null, 2));
-  console.log(`Saved ${albums.length} albums`);
+  const visibleAlbums = albums.slice(0, 7);
+  fs.writeFileSync("albums.json", JSON.stringify({
+    fetchedAt: new Date().toISOString(),
+    albums: visibleAlbums
+  }, null, 2));
+  console.log(`Saved ${visibleAlbums.length} albums`);
+}
+
+function loadExistingAlbums() {
+  try {
+    const raw = fs.readFileSync("albums.json", "utf8");
+    const parsed = JSON.parse(raw);
+    return parsed && parsed.fetchedAt ? parsed : {};
+  } catch (err) {
+    return {};
+  }
+}
+
+function isSameLocalDay(isoString, date) {
+  const other = new Date(isoString);
+  return (
+    other.getFullYear() === date.getFullYear() &&
+    other.getMonth() === date.getMonth() &&
+    other.getDate() === date.getDate()
+  );
 }
 
 function clean(text) {

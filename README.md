@@ -10,6 +10,18 @@ This project scrapes Bandcamp Daily Album of the Day listings and renders them l
 node fetch-bandcamp.js
 ```
 
+For a once-per-day automatic refresh at 5 AM, schedule the script with your system task scheduler. For example, using cron:
+
+```bash
+0 5 * * * cd /workspaces/bandcamp-album-day && node fetch-bandcamp.js --daily
+```
+
+If you want to refresh immediately, run:
+
+```bash
+node fetch-bandcamp.js
+```
+
 2. Serve the folder from a local static server.
    Opening `index.html` directly in the browser will usually fail to fetch `albums.json`.
 
