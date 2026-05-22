@@ -13,7 +13,7 @@ async function loadAlbums() {
       return;
     }
 
-    const visibleAlbums = albums.slice(0, 7);
+    const visibleAlbums = albums;
 
     container.innerHTML = visibleAlbums.map(album => {
       const albumName = album.album || album.band;

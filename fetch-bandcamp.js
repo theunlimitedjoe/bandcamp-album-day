@@ -75,25 +75,25 @@ async function fetchDrunkardAlbums() {
   const html = await res.text();
   fs.writeFileSync("debug-drunkard.html", html);
 
-  const albumChunks = html.split(/data-album-name="album__\d+"/).slice(1);
   const albums = [];
+  const regex = /data-album-name="album__\d+"[\s\S]*?data-album-title="([^"]+)"[\s\S]*?data-album-artist="([^"]+)"[\s\S]*?(?:data-album-cover="([^"]+)"|<img[^>]+src="([^"]+)")[\s\S]*?(?:data-album-url="([^"]+)"|href="([^"]+)")/g;
+  let match;
 
-  for (const chunk of albumChunks) {
-    const block = chunk.split(/data-album-name="album__\d+"/)[0];
-    const titleMatch = block.match(/data-album-title="([^"]+)"/);
-    const artistMatch = block.match(/data-album-artist="([^"]+)"/);
-    const imageMatch = block.match(/data-album-cover="([^"]+)"/) || block.match(/<img[^>]+src="([^"]+)"/);
-    const linkMatch = block.match(/<a[^>]+href="([^"]+)"/);
+  while ((match = regex.exec(html))) {
+    const title = clean(match[1]);
+    const artist = clean(match[2]);
+    const image = makeFullUrl(match[3] || match[4] || "", "https://aquariumdrunkard.com");
+    const link = makeFullUrl(match[5] || match[6] || "", "https://aquariumdrunkard.com");
 
-    if (!titleMatch || !artistMatch || !linkMatch) {
+    if (!title || !artist || !link) {
       continue;
     }
 
     albums.push({
-      band: clean(artistMatch[1]),
-      album: clean(titleMatch[1]),
-      image: makeFullUrl(imageMatch ? imageMatch[1] : "", "https://aquariumdrunkard.com"),
-      link: makeFullUrl(linkMatch[1], "https://aquariumdrunkard.com")
+      band: artist,
+      album: title,
+      image,
+      link
     });
   }
 
