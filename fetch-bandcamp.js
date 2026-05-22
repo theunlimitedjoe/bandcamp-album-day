@@ -7,26 +7,21 @@ async function main() {
     headers: { "User-Agent": "Mozilla/5.0" }
   });
 
-  const page = await res.text();
-  console.log(page.slice(0, 2000));
+  const html = await res.text();
+
   const albums = [];
 
-  const re = /<div class="list-article aotd">([\s\S]*?)<div class="title-wrapper">([\s\S]*?)<\/div>/g;
+  const re = /ALBUM OF THE DAY[\s\S]*?·\s*([A-Za-z]+\s+\d{1,2},\s+\d{4})[\s\S]*?<a[^>]+href="([^"]+)"[^>]*>\s*([^<]+),\s*[“"](.*?)[”"]/g;
+
   let m;
 
-  while ((m = re.exec(page)) !== null) {
-    const block = m[1] + m[2];
-
-    const linkMatch = block.match(/href="([^"]+)"/);
-    const imgMatch = block.match(/<img[^>]+src="([^"]+)"/);
-    const titleText = clean(m[2]);
-
+  while ((m = re.exec(html)) !== null) {
     albums.push({
-      band: titleText.split(",")[0] || "",
-      album: titleText.split(",").slice(1).join(",").replace(/[“”"]/g, "").trim(),
-      date: "",
-      image: imgMatch ? imgMatch[1] : "",
-      link: linkMatch ? makeFullUrl(linkMatch[1]) : SOURCE_URL
+      date: clean(m[1]),
+      band: clean(m[3]),
+      album: clean(m[4]),
+      image: "",
+      link: makeFullUrl(m[2])
     });
   }
 
@@ -36,7 +31,7 @@ async function main() {
 
 function clean(text) {
   return text
-    .replace(/<[^>]*>/g, " ")
+    .replace(/<[^>]*>/g, "")
     .replace(/&amp;/g, "&")
     .replace(/&#039;/g, "'")
     .replace(/&#39;/g, "'")
