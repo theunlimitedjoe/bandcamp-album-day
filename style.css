@@ -80,25 +80,25 @@ body {
 
 @media (max-width: 650px) {
   body {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 
   #albums {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.6rem;
+    gap: 0.4rem;
   }
 
   .album-details {
-    padding: 0.6rem;
+    padding: 0.35rem;
   }
 
   .album-details h2 {
-    font-size: 0.8rem;
-    line-height: 1.2;
+    font-size: 0.68rem;
+    line-height: 1.05;
   }
 
   .album-details a {
-    font-size: 0.75rem;
+    display: none;
   }
 }
 
