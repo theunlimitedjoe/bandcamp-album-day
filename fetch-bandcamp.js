@@ -18,7 +18,26 @@ async function main() {
     fetchDrunkardAlbums()
   ]);
 
-  const albums = [...bandcampAlbums.slice(0, 7), ...drunkardAlbums.slice(0, 8)];
+  // Download Aquarium Drunkard images locally and rewrite their paths
+  const localDrunkardAlbums = await Promise.all(drunkardAlbums.map(async (album, i) => {
+    if (!album.image || !album.image.startsWith('http')) return album;
+    const ext = album.image.split('.').pop().split('?')[0].replace(/[^a-zA-Z0-9]/g, '');
+    const filename = `drunkard_${i + 1}.${ext}`;
+    const localPath = `images/${filename}`;
+    try {
+      const res = await fetch(album.image);
+      if (!res.ok) throw new Error(`Failed to fetch image: ${album.image}`);
+      const arrayBuffer = await res.arrayBuffer();
+      fs.mkdirSync('images', { recursive: true });
+      fs.writeFileSync(localPath, Buffer.from(arrayBuffer));
+      return { ...album, image: localPath };
+    } catch (e) {
+      console.error('Image download failed', album.image, e.message);
+      return album;
+    }
+  }));
+
+  const albums = [...bandcampAlbums.slice(0, 7), ...localDrunkardAlbums.slice(0, 8)];
 
   fs.writeFileSync("albums.json", JSON.stringify({
     fetchedAt: new Date().toISOString(),

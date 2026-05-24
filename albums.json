@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-24T03:54:43.444Z",
+  "fetchedAt": "2026-05-24T03:56:42.013Z",
   "albums": [
     {
       "band": "Ital Tek, “Mind Abandon”",
@@ -46,49 +46,49 @@
     {
       "band": "Fela Kuti",
       "album": "Live in Detroit 1986",
-      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/04/fela-kive-detroit-1986-200x200.jpg",
+      "image": "images/drunkard_1.jpg",
       "link": ""
     },
     {
       "band": "Masayoshi Takanaka",
       "album": "All of Me",
-      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/05/all-of-me-Masayoshi-Takanaka-200x200.jpg",
+      "image": "images/drunkard_2.jpg",
       "link": ""
     },
     {
       "band": "Linton Kwesi Johnson",
       "album": "Bass Culture",
-      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/03/Linton-Bass-Culture-200x200.jpg",
+      "image": "images/drunkard_3.jpg",
       "link": ""
     },
     {
       "band": "Cedric IM Brooks & The Light of Saba",
       "album": "",
-      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/05/light-of-saba-cedric-200x200.jpg",
+      "image": "images/drunkard_4.jpg",
       "link": ""
     },
     {
       "band": "This Heat",
       "album": "Made Available: John Peel Sessions",
-      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/04/Made-Available-John-Peel-Sessions--200x200.jpg",
+      "image": "images/drunkard_5.jpg",
       "link": ""
     },
     {
       "band": "White Fence",
       "album": "Orange",
-      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/04/white-fence-orange-200x200.jpg",
+      "image": "images/drunkard_6.jpg",
       "link": ""
     },
     {
       "band": "Jeff Parker ETA IVtet",
       "album": "Happy Today",
-      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/05/jeff-parker-happy-today1-200x200.jpg",
+      "image": "images/drunkard_7.jpg",
       "link": ""
     },
     {
       "band": "Setting",
       "album": "S/T",
-      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/05/Setting-s_t-200x200.jpg",
+      "image": "images/drunkard_8.jpg",
       "link": ""
     }
   ]
