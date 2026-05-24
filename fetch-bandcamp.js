@@ -75,29 +75,84 @@ async function fetchDrunkardAlbums() {
   const html = await res.text();
   fs.writeFileSync("debug-drunkard.html", html);
 
+  return parseDrunkardAlbums(html);
+}
+
+function parseDrunkardAlbums(html) {
   const albums = [];
-  const chunkRegex = /data-album-name=("|')album__\d+\1[\s\S]*?data-album-title=("|')([^"']+)\2[\s\S]*?data-album-artist=("|')([^"']+)\4[\s\S]*?(?:data-album-cover=("|')([^"']+)\6|<img[^>]+src=("|')([^"']+)\8)[\s\S]*?(?:data-album-url=("|')([^"']+)\10|href=("|')([^"']+)\12)/g;
-  let match;
 
-  while ((match = chunkRegex.exec(html))) {
-    const title = clean(match[3]);
-    const artist = clean(match[5]);
-    const image = makeFullUrl(match[7] || match[9] || "", "https://aquariumdrunkard.com");
-    const link = makeFullUrl(match[11] || match[13] || "", "https://aquariumdrunkard.com");
+  for (const match of html.matchAll(/<li class="album album__\d+">([\s\S]*?)<\/li>/g)) {
+    const chunk = match[1];
+    const titleText = clean(extractFirst(chunk, /title="([^"]+)"/) || extractFirst(chunk, /<h3>([\s\S]*?)<\/h3>/));
+    const readMoreLink = extractFirst(chunk, /<a href="([^"]+)"[^>]*>\s*Read More\s*<\/a>/);
+    const image = makeFullUrl(
+      extractFirst(chunk, /data-lazy-src="([^"]+)"/) || extractFirst(chunk, /<img[^>]+src="([^"]+)"/),
+      "https://aquariumdrunkard.com"
+    );
+    const link = makeFullUrl(readMoreLink, "https://aquariumdrunkard.com");
 
-    if (!title || !artist || !link) {
+    if (!titleText || !link) {
+      continue;
+    }
+
+    const { band, album } = splitDrunkardTitle(titleText);
+    const inferredAlbum = album || inferAlbumNameFromLinks(chunk);
+    const bandValue = band || titleText;
+    const albumValue = inferredAlbum || album || "";
+
+    if (!bandValue) {
       continue;
     }
 
     albums.push({
-      band: artist,
-      album: title,
+      band: bandValue,
+      album: albumValue,
       image,
       link
     });
   }
 
   return albums;
+}
+
+function splitDrunkardTitle(title) {
+  if (!title) {
+    return { band: "", album: "" };
+  }
+
+  const separator = title.match(/^(.*?)(?:\s*::\s*|\s*–\s*|\s*\/\s*)(.*)$/);
+
+  if (!separator) {
+    return { band: title, album: "" };
+  }
+
+  return {
+    band: clean(separator[1]),
+    album: clean(separator[2])
+  };
+}
+
+function inferAlbumNameFromLinks(chunk) {
+  const appleMatch = chunk.match(/https:\/\/music\.apple\.com\/[^"]*\/album\/([^/?"]+)/i);
+
+  if (!appleMatch) {
+    return "";
+  }
+
+  return slugToTitle(appleMatch[1]);
+}
+
+function slugToTitle(slug) {
+  return slug
+    .replace(/[-_]+/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\b[a-z]/g, (match) => match.toUpperCase())
+    .trim();
+}
+
+function extractFirst(text, pattern) {
+  const match = text.match(pattern);
+  return match ? match[1] : "";
 }
 
 function loadExistingAlbums() {
@@ -138,4 +193,17 @@ function makeFullUrl(url, base) {
   return `${base.replace(/\/$/, "")}/${url}`;
 }
 
-main();
+module.exports = {
+  fetchBandcampAlbums,
+  fetchDrunkardAlbums,
+  parseDrunkardAlbums,
+  clean,
+  makeFullUrl,
+  splitDrunkardTitle,
+  inferAlbumNameFromLinks,
+  slugToTitle
+};
+
+if (require.main === module) {
+  main();
+}
