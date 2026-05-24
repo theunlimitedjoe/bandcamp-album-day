@@ -52,7 +52,7 @@ async function fetchBandcampAlbums() {
     }
 
     const rawTitle = clean(titleMatch[1]);
-    const titleParts = rawTitle.match(/^(.*),\s*[“\"](.+?)[”\"]$/);
+    const titleParts = rawTitle.match(/^(.*),\s*[""](.+?)[""]$/);
     const band = titleParts ? clean(titleParts[1]) : rawTitle;
     const album = titleParts ? clean(titleParts[2]) : "";
 
@@ -68,14 +68,30 @@ async function fetchBandcampAlbums() {
 }
 
 async function fetchDrunkardAlbums() {
-  const res = await fetch(DRUNKARD_URL, {
-    headers: { "User-Agent": "Mozilla/5.0" }
-  });
+  const maxRetries = 3;
+  const timeout = 30000;
 
-  const html = await res.text();
-  fs.writeFileSync("debug-drunkard.html", html);
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const res = await fetch(DRUNKARD_URL, {
+        headers: { "User-Agent": "Mozilla/5.0" },
+        signal: AbortSignal.timeout(timeout)
+      });
 
-  return parseDrunkardAlbums(html);
+      const html = await res.text();
+      fs.writeFileSync("debug-drunkard.html", html);
+      return parseDrunkardAlbums(html);
+    } catch (error) {
+      console.error(`Attempt ${attempt}/${maxRetries} failed for Drunkard albums:`, error.message);
+      if (attempt === maxRetries) {
+        console.warn("Failed to fetch Drunkard albums after retries. Returning empty array.");
+        return [];
+      }
+      await new Promise(resolve => setTimeout(resolve, 2000 * attempt));
+    }
+  }
+
+  return [];
 }
 
 function parseDrunkardAlbums(html) {
@@ -146,7 +162,7 @@ function slugToTitle(slug) {
   return slug
     .replace(/[-_]+/g, " ")
     .replace(/\s+/g, " ")
-    .replace(/\b[a-z]/g, (match) => match.toUpperCase())
+    .replace(/[a-z]/g, (match) => match.toUpperCase())
     .trim();
 }
 
