@@ -1,47 +1,83 @@
 {
-  "fetchedAt": "2026-05-24T00:38:56.217Z",
+  "fetchedAt": "2026-05-24T03:30:27.002Z",
   "albums": [
     {
-      "band": "Ital Tek",
-      "album": "Mind Abandon",
+      "band": "Ital Tek, “Mind Abandon”",
+      "album": "",
       "image": "https://f4.bcbits.com/img/0045005596_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/ital-tek-mind-abandon-review"
     },
     {
-      "band": "Takkak Takkak",
-      "album": "Abu",
+      "band": "Takkak Takkak, “Abu”",
+      "album": "",
       "image": "https://f4.bcbits.com/img/0045029600_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/takkak-takkak-abu-review"
     },
     {
-      "band": "SUSS",
-      "album": "Counting Sunsets",
+      "band": "SUSS, “Counting Sunsets”",
+      "album": "",
       "image": "https://f4.bcbits.com/img/0045005595_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/suss-counting-sunsets-review"
     },
     {
-      "band": "Marisa Anderson",
-      "album": "The Anthology of UnAmerican Folk Music",
+      "band": "Marisa Anderson, “The Anthology of UnAmerican Folk Music”",
+      "album": "",
       "image": "https://f4.bcbits.com/img/0044952357_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/marisa-anderson-anthology-of-unamerican-folk-music-review"
     },
     {
-      "band": "Death Kneel",
-      "album": "Remembering Well",
+      "band": "Death Kneel, “Remembering Well”",
+      "album": "",
       "image": "https://f4.bcbits.com/img/0044934931_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/death-kneel-remembering-well-review"
     },
     {
-      "band": "π. Διονύσιος Ταμπάκης",
-      "album": "Paradise Metal",
+      "band": "π. Διονύσιος Ταμπάκης, “Paradise Metal”",
+      "album": "",
       "image": "https://f4.bcbits.com/img/0044875509_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/dionysios-tabakis-paradise-metal-review"
     },
     {
-      "band": "Soltera & Sonido Sex",
-      "album": "Soltera y Su Sonido Sexual",
+      "band": "Soltera & Sonido Sex, “Soltera y Su Sonido Sexual”",
+      "album": "",
       "image": "https://f4.bcbits.com/img/0044821378_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/soltera-sonido-sex-soltera-y-su-sonido-sexual-review"
+    },
+    {
+      "band": "Masayoshi Takanaka",
+      "album": "All of Me",
+      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/05/all-of-me-Masayoshi-Takanaka-420x420.jpg",
+      "link": "https://aquariumdrunkard.com/2026/05/13/masayoshi-takanaka-all-of-me/"
+    },
+    {
+      "band": "Linton Kwesi Johnson",
+      "album": "Bass Culture",
+      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/03/Linton-Bass-Culture-420x420.jpg",
+      "link": "https://aquariumdrunkard.com/2026/03/23/linton-kwesi-johnson-bass-culture/"
+    },
+    {
+      "band": "Cedric IM Brooks & The Light of Saba",
+      "album": "the magical light of saba",
+      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/05/light-of-saba-cedric-420x420.jpg",
+      "link": "https://aquariumdrunkard.com/2026/05/12/cedric-im-brooks-the-light-of-saba/"
+    },
+    {
+      "band": "This Heat",
+      "album": "Made Available: John Peel Sessions",
+      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/04/Made-Available-John-Peel-Sessions--420x420.jpg",
+      "link": "https://aquariumdrunkard.com/2026/05/12/this-heat-made-available-john-peel-sessions/"
+    },
+    {
+      "band": "White Fence",
+      "album": "Orange",
+      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/04/white-fence-orange-420x420.jpg",
+      "link": "https://aquariumdrunkard.com/2026/04/16/white-fence-orange/"
+    },
+    {
+      "band": "Setting",
+      "album": "S/T",
+      "image": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/05/Setting-s_t-420x420.jpg",
+      "link": "https://aquariumdrunkard.com/2026/05/11/setting-s-t/"
     }
   ]
 }

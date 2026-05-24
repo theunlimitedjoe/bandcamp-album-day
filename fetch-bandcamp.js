@@ -95,36 +95,33 @@ async function fetchDrunkardAlbums() {
 }
 
 function parseDrunkardAlbums(html) {
+  const navSection = html.match(/<div class="on_the_turntable_nav">[\s\S]*?<nav>([\s\S]*?)<\/nav>[\s\S]*?<\/div>/i);
+
+  if (!navSection) {
+    return [];
+  }
+
   const albums = [];
 
-  for (const match of html.matchAll(/<li class="album album__\d+">([\s\S]*?)<\/li>/g)) {
-    const chunk = match[1];
-    const titleText = clean(extractFirst(chunk, /title="([^"]+)"/) || extractFirst(chunk, /<h3>([\s\S]*?)<\/h3>/));
-    const readMoreLink = extractFirst(chunk, /<a href="([^"]+)"[^>]*>\s*Read More\s*<\/a>/);
+  for (const match of navSection[1].matchAll(/<a[^>]+data-album-name="(album__\d+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
+    const anchorHtml = match[2];
+    const title = extractFirst(anchorHtml, /title="([^"]+)"/) || extractFirst(anchorHtml, /alt="([^"]+)"/);
     const image = makeFullUrl(
-      extractFirst(chunk, /data-lazy-src="([^"]+)"/) || extractFirst(chunk, /<img[^>]+src="([^"]+)"/),
+      extractFirst(anchorHtml, /data-lazy-src="([^"]+)"/) || extractFirst(anchorHtml, /<img[^>]+src="([^"]+)"/),
       "https://aquariumdrunkard.com"
     );
-    const link = makeFullUrl(readMoreLink, "https://aquariumdrunkard.com");
 
-    if (!titleText || !link) {
+    if (!title) {
       continue;
     }
 
-    const { band, album } = splitDrunkardTitle(titleText);
-    const inferredAlbum = album || inferAlbumNameFromLinks(chunk);
-    const bandValue = band || titleText;
-    const albumValue = inferredAlbum || album || "";
-
-    if (!bandValue) {
-      continue;
-    }
+    const { band, album } = splitDrunkardTitle(title);
 
     albums.push({
-      band: bandValue,
-      album: albumValue,
+      band: band || clean(title),
+      album: album || "",
       image,
-      link
+      link: ""
     });
   }
 

@@ -19,12 +19,16 @@ async function loadAlbums() {
       const albumName = album.album || album.band;
       const artistName = album.album ? album.band : "";
       const title = artistName ? `${albumName} by ${artistName}` : albumName;
+      const readMoreLink = album.link
+        ? `<a href="${album.link}" target="_blank" rel="noopener noreferrer">Read more</a>`
+        : "";
+
       return `
       <div class="album">
         <img src="${album.image}" alt="${title} cover">
         <div class="album-details">
           <h2><span class="album-name">${albumName}</span>${artistName ? ` by <span class="artist-name">${artistName}</span>` : ""}</h2>
-          <a href="${album.link}" target="_blank" rel="noopener noreferrer">Read more</a>
+          ${readMoreLink}
         </div>
       </div>
     `;
