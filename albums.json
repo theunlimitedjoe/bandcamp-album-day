@@ -1,6 +1,12 @@
 {
-  "fetchedAt": "2026-05-25T14:38:45.288Z",
+  "fetchedAt": "2026-05-26T14:49:43.988Z",
   "albums": [
+    {
+      "band": "aja monet, “the color of rain”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045049153_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/aja-monet-the-color-of-rain-review"
+    },
     {
       "band": "Ital Tek, “Mind Abandon”",
       "album": "",
@@ -38,12 +44,6 @@
       "link": "https://daily.bandcamp.com/album-of-the-day/dionysios-tabakis-paradise-metal-review"
     },
     {
-      "band": "Soltera & Sonido Sex, “Soltera y Su Sonido Sexual”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0044821378_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/soltera-sonido-sex-soltera-y-su-sonido-sexual-review"
-    },
-    {
       "band": "Fela Kuti",
       "album": "Live in Detroit 1986",
       "image": "images/drunkard_1.jpg",
@@ -56,8 +56,8 @@
       "link": ""
     },
     {
-      "band": "Linton Kwesi Johnson",
-      "album": "Bass Culture",
+      "band": "Lifetones",
+      "album": "For A Reason",
       "image": "images/drunkard_3.jpg",
       "link": ""
     },
