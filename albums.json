@@ -1,6 +1,12 @@
 {
-  "fetchedAt": "2026-05-26T14:49:43.988Z",
+  "fetchedAt": "2026-05-27T14:59:06.945Z",
   "albums": [
+    {
+      "band": "feeble little horse, “bitknot”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045157030_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/feeble-little-horse-bitknot-review"
+    },
     {
       "band": "aja monet, “the color of rain”",
       "album": "",
@@ -36,12 +42,6 @@
       "album": "",
       "image": "https://f4.bcbits.com/img/0044934931_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/death-kneel-remembering-well-review"
-    },
-    {
-      "band": "π. Διονύσιος Ταμπάκης, “Paradise Metal”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0044875509_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/dionysios-tabakis-paradise-metal-review"
     },
     {
       "band": "Fela Kuti",
