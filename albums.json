@@ -1,6 +1,12 @@
 {
-  "fetchedAt": "2026-05-27T14:59:06.945Z",
+  "fetchedAt": "2026-05-28T15:32:58.790Z",
   "albums": [
+    {
+      "band": "Monolord, “Neverending”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045158076_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/monolord-neverending-review"
+    },
     {
       "band": "feeble little horse, “bitknot”",
       "album": "",
@@ -36,12 +42,6 @@
       "album": "",
       "image": "https://f4.bcbits.com/img/0044952357_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/marisa-anderson-anthology-of-unamerican-folk-music-review"
-    },
-    {
-      "band": "Death Kneel, “Remembering Well”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0044934931_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/death-kneel-remembering-well-review"
     },
     {
       "band": "Fela Kuti",
