@@ -1,6 +1,12 @@
 {
-  "fetchedAt": "2026-05-28T15:32:58.790Z",
+  "fetchedAt": "2026-05-29T14:44:57.580Z",
   "albums": [
+    {
+      "band": "White Heaven, “Next to Nothing”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045158268_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/white-heaven-next-to-nothing-review"
+    },
     {
       "band": "Monolord, “Neverending”",
       "album": "",
@@ -36,12 +42,6 @@
       "album": "",
       "image": "https://f4.bcbits.com/img/0045005595_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/suss-counting-sunsets-review"
-    },
-    {
-      "band": "Marisa Anderson, “The Anthology of UnAmerican Folk Music”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0044952357_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/marisa-anderson-anthology-of-unamerican-folk-music-review"
     },
     {
       "band": "Fela Kuti",
