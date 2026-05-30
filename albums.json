@@ -1,95 +1,180 @@
 {
-  "fetchedAt": "2026-05-24T03:56:42.013Z",
+  "fetchedAt": "2026-05-30T21:55:26.321Z",
   "albums": [
+    {
+      "band": "White Heaven, “Next to Nothing”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045158268_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/white-heaven-next-to-nothing-review",
+      "source": "Bandcamp"
+    },
+    {
+      "band": "Monolord, “Neverending”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045158076_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/monolord-neverending-review",
+      "source": "Bandcamp"
+    },
+    {
+      "band": "feeble little horse, “bitknot”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045157030_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/feeble-little-horse-bitknot-review",
+      "source": "Bandcamp"
+    },
+    {
+      "band": "aja monet, “the color of rain”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045049153_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/aja-monet-the-color-of-rain-review",
+      "source": "Bandcamp"
+    },
     {
       "band": "Ital Tek, “Mind Abandon”",
       "album": "",
       "image": "https://f4.bcbits.com/img/0045005596_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/ital-tek-mind-abandon-review"
+      "link": "https://daily.bandcamp.com/album-of-the-day/ital-tek-mind-abandon-review",
+      "source": "Bandcamp"
     },
     {
       "band": "Takkak Takkak, “Abu”",
       "album": "",
       "image": "https://f4.bcbits.com/img/0045029600_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/takkak-takkak-abu-review"
+      "link": "https://daily.bandcamp.com/album-of-the-day/takkak-takkak-abu-review",
+      "source": "Bandcamp"
     },
     {
       "band": "SUSS, “Counting Sunsets”",
       "album": "",
       "image": "https://f4.bcbits.com/img/0045005595_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/suss-counting-sunsets-review"
+      "link": "https://daily.bandcamp.com/album-of-the-day/suss-counting-sunsets-review",
+      "source": "Bandcamp"
     },
     {
-      "band": "Marisa Anderson, “The Anthology of UnAmerican Folk Music”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0044952357_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/marisa-anderson-anthology-of-unamerican-folk-music-review"
+      "band": "Kim Petras",
+      "album": "Detour",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1415073-detour_161933.jpg",
+      "link": "http://www.albumoftheyear.org/album/1415073-kim-petras-detour.php",
+      "source": "AOTY"
     },
     {
-      "band": "Death Kneel, “Remembering Well”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0044934931_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/death-kneel-remembering-well-review"
+      "band": "Boards of Canada",
+      "album": "Inferno",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1786950-inferno_135147.jpg",
+      "link": "http://www.albumoftheyear.org/album/1786950-boards-of-canada-inferno.php",
+      "source": "AOTY"
     },
     {
-      "band": "π. Διονύσιος Ταμπάκης, “Paradise Metal”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0044875509_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/dionysios-tabakis-paradise-metal-review"
+      "band": "Freddie Gibbs",
+      "album": "RBT",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1842119-rbt_115253.jpg",
+      "link": "http://www.albumoftheyear.org/album/1842119-freddie-gibbs-rbt.php",
+      "source": "AOTY"
     },
     {
-      "band": "Soltera & Sonido Sex, “Soltera y Su Sonido Sexual”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0044821378_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/soltera-sonido-sex-soltera-y-su-sonido-sexual-review"
+      "band": "aespa",
+      "album": "LEMONADE",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1782883-lemonade_195556.jpg",
+      "link": "http://www.albumoftheyear.org/album/1782883-aespa-lemonade.php",
+      "source": "AOTY"
     },
     {
-      "band": "Fela Kuti",
-      "album": "Live in Detroit 1986",
+      "band": "Paul McCartney",
+      "album": "The Boys of Dungeon Lane",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1742568-the-boys-of-dungeon-lane_150207.jpg",
+      "link": "http://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "Iceage",
+      "album": "For Love of Grace & The Hereafter",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1763278-for-love-of-grace-the-hereafter_160827.jpg",
+      "link": "http://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "Static Dress",
+      "album": "Injury Episode",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1752074-injury-episode_122224.jpg",
+      "link": "http://www.albumoftheyear.org/album/1752074-static-dress-injury-episode.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "Violet Grohl",
+      "album": "Be Sweet To Me",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1721667-be-sweet-to-me_134844.jpg",
+      "link": "http://www.albumoftheyear.org/album/1721667-violet-grohl-be-sweet-to-me.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "Latto",
+      "album": "Big Mama",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1734243-big-mama_040607.jpg",
+      "link": "http://www.albumoftheyear.org/album/1734243-latto-big-mama.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "ear",
+      "album": "Rumspringa",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1827944-rumspringa_135013.jpg",
+      "link": "http://www.albumoftheyear.org/album/1827944-ear-rumspringa.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "Wax Machine",
+      "album": "The Sky Unfurls, The Dance Goes On",
       "image": "images/drunkard_1.jpg",
-      "link": ""
+      "link": "",
+      "source": "Drunkard"
     },
     {
       "band": "Masayoshi Takanaka",
       "album": "All of Me",
       "image": "images/drunkard_2.jpg",
-      "link": ""
+      "link": "",
+      "source": "Drunkard"
     },
     {
-      "band": "Linton Kwesi Johnson",
-      "album": "Bass Culture",
+      "band": "Lifetones",
+      "album": "For A Reason",
       "image": "images/drunkard_3.jpg",
-      "link": ""
+      "link": "",
+      "source": "Drunkard"
     },
     {
       "band": "Cedric IM Brooks & The Light of Saba",
       "album": "",
       "image": "images/drunkard_4.jpg",
-      "link": ""
+      "link": "",
+      "source": "Drunkard"
     },
     {
       "band": "This Heat",
       "album": "Made Available: John Peel Sessions",
       "image": "images/drunkard_5.jpg",
-      "link": ""
+      "link": "",
+      "source": "Drunkard"
     },
     {
       "band": "White Fence",
       "album": "Orange",
       "image": "images/drunkard_6.jpg",
-      "link": ""
+      "link": "",
+      "source": "Drunkard"
     },
     {
       "band": "Jeff Parker ETA IVtet",
       "album": "Happy Today",
       "image": "images/drunkard_7.jpg",
-      "link": ""
+      "link": "",
+      "source": "Drunkard"
     },
     {
       "band": "Setting",
       "album": "S/T",
       "image": "images/drunkard_8.jpg",
-      "link": ""
+      "link": "",
+      "source": "Drunkard"
     }
   ]
 }

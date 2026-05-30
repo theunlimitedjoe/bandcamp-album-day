@@ -62,6 +62,11 @@ body {
   font-weight: 400;
 }
 
+.album-source {
+  color: #666;
+  font-size: 0.8rem;
+}
+
 .album-details a {
   color: #444;
   text-decoration: none;

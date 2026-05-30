@@ -1,6 +1,8 @@
 const fs = require("fs");
 
 const BANDCAMP_URL = "https://daily.bandcamp.com/album-of-the-day";
+const AOTY_URL = "https://www.albumoftheyear.org/releases/";
+const AOTY_PROXY_URL = "https://r.jina.ai/http://www.albumoftheyear.org/releases/";
 const DRUNKARD_URL = "https://aquariumdrunkard.com/";
 const FORCE = process.argv.includes("--force") || process.argv.includes("-f");
 const DAILY = process.argv.includes("--daily");
@@ -13,8 +15,9 @@ async function main() {
     return;
   }
 
-  const [bandcampAlbums, drunkardAlbums] = await Promise.all([
+  const [bandcampAlbums, aotyAlbums, drunkardAlbums] = await Promise.all([
     fetchBandcampAlbums(),
+    fetchAotyAlbums(),
     fetchDrunkardAlbums()
   ]);
 
@@ -37,14 +40,100 @@ async function main() {
     }
   }));
 
-  const albums = [...bandcampAlbums.slice(0, 7), ...localDrunkardAlbums.slice(0, 8)];
+  const albums = [...bandcampAlbums.slice(0, 7), ...aotyAlbums.slice(0, 10), ...localDrunkardAlbums.slice(0, 8)];
 
   fs.writeFileSync("albums.json", JSON.stringify({
     fetchedAt: new Date().toISOString(),
     albums
   }, null, 2));
 
-  console.log(`Saved ${albums.length} albums (${bandcampAlbums.length} bandcamp, ${drunkardAlbums.length} aquarium drunkard).`);
+  console.log(`Saved ${albums.length} albums (${bandcampAlbums.length} bandcamp, ${aotyAlbums.length} AOTY, ${drunkardAlbums.length} aquarium drunkard).`);
+}
+
+async function fetchAotyAlbums() {
+  const res = await fetch(AOTY_URL, {
+    headers: {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Referer": "https://www.google.com/",
+      "Connection": "keep-alive"
+    }
+  });
+
+  const html = await res.text();
+  fs.writeFileSync("debug-aoty.html", html);
+  const albums = parseAotyAlbums(html);
+  if (albums.length > 0) {
+    return albums;
+  }
+
+  console.warn("AOTY direct parse failed, falling back to proxy markdown fetch.");
+  return fetchAotyAlbumsFromProxy();
+}
+
+async function fetchAotyAlbumsFromProxy() {
+  const res = await fetch(AOTY_PROXY_URL, {
+    headers: {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "Accept": "text/plain, text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Referer": "https://www.google.com/",
+      "Connection": "keep-alive"
+    }
+  });
+
+  const text = await res.text();
+  fs.writeFileSync("debug-aoty-proxy.txt", text);
+  return parseAotyProxyMarkdown(text);
+}
+
+function parseAotyProxyMarkdown(markdown) {
+  const albums = [];
+  const entryRegex = /\[!\[Image \d+: ([^\]]+)\]\(([^)]+)\)\]\(([^)]+)\)[\s\S]*?\[([^\]]+)\]\(([^)]+)\)\[([^\]]+)\]\(([^)]+)\)/g;
+
+  for (const match of markdown.matchAll(entryRegex)) {
+    const raw = match[1].replace(/^Image \d+: /, "");
+    const separatorIndex = raw.lastIndexOf(' - ');
+    const band = separatorIndex >= 0 ? clean(raw.slice(0, separatorIndex)) : clean(raw);
+    const album = separatorIndex >= 0 ? clean(raw.slice(separatorIndex + 3)) : "";
+    albums.push({
+      band,
+      album,
+      image: match[2],
+      link: makeFullUrl(match[3], "https://www.albumoftheyear.org"),
+      source: "AOTY"
+    });
+    if (albums.length >= 10) break;
+  }
+
+  return albums;
+}
+
+function parseAotyAlbums(html) {
+  const blocks = html.split('<div class="albumBlock five"').slice(1, 11);
+  const albums = [];
+
+  for (const block of blocks) {
+    const imageMatch = block.match(/<img[^>]+src="([^"]+)"/);
+    const artistMatch = block.match(/<div class="artistTitle">([\s\S]*?)<\/div>/);
+    const albumMatch = block.match(/<div class="albumTitle">([\s\S]*?)<\/div>/);
+    const linkMatch = block.match(/<a href="([^"]+)"[^>]*><div class="albumTitle"/);
+
+    if (!artistMatch || !albumMatch) {
+      continue;
+    }
+
+    albums.push({
+      band: clean(artistMatch[1]),
+      album: clean(albumMatch[1]),
+      image: imageMatch ? imageMatch[1] : "",
+      link: linkMatch ? makeFullUrl(linkMatch[1], "https://www.albumoftheyear.org") : "",
+      source: "AOTY"
+    });
+  }
+
+  return albums;
 }
 
 async function fetchBandcampAlbums() {
@@ -79,7 +168,8 @@ async function fetchBandcampAlbums() {
       band,
       album,
       image: imageMatch ? makeFullUrl(imageMatch[1], "https://daily.bandcamp.com") : "",
-      link: makeFullUrl(linkMatch[1], "https://daily.bandcamp.com")
+      link: makeFullUrl(linkMatch[1], "https://daily.bandcamp.com"),
+      source: "Bandcamp"
     });
   }
 
@@ -140,7 +230,8 @@ function parseDrunkardAlbums(html) {
       band: band || clean(title),
       album: album || "",
       image,
-      link: ""
+      link: "",
+      source: "Drunkard"
     });
   }
 

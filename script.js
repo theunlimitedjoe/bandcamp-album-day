@@ -19,16 +19,21 @@ async function loadAlbums() {
       const albumName = album.album || album.band;
       const artistName = album.album ? album.band : "";
       const title = artistName ? `${albumName} by ${artistName}` : albumName;
-      const readMoreLink = album.link
-        ? `<a href="${album.link}" target="_blank" rel="noopener noreferrer">Read more</a>`
-        : "";
+      const queryText = `${albumName} ${artistName}`.replace(/['"“”‘’]/g, "").trim();
+      const tidalSearchUrl = `https://tidal.com/search?q=${encodeURIComponent(queryText)}`;
+      const sourceLabel = album.source || (
+        album.link?.includes('bandcamp.com') ? 'Bandcamp' :
+        album.image?.includes('drunkard_') || album.image?.includes('aquariumdrunkard.com') ? 'Drunkard' :
+        ''
+      );
+      const sourceText = sourceLabel ? `<div class="album-source">${sourceLabel}</div>` : "";
 
       return `
       <div class="album">
         <img src="${album.image}" alt="${title} cover">
         <div class="album-details">
-          <h2><span class="album-name">${albumName}</span>${artistName ? ` by <span class="artist-name">${artistName}</span>` : ""}</h2>
-          ${readMoreLink}
+          <h2><a href="${tidalSearchUrl}" target="_blank" rel="noopener noreferrer"><span class="album-name">${albumName}</span>${artistName ? ` by <span class="artist-name">${artistName}</span>` : ""}</a></h2>
+          ${sourceText}
         </div>
       </div>
     `;
