@@ -1,6 +1,13 @@
 {
-  "fetchedAt": "2026-05-31T13:20:00.874Z",
+  "fetchedAt": "2026-06-01T17:21:28.588Z",
   "albums": [
+    {
+      "band": "Nathan Evans Fox, “Heirloom”",
+      "album": "",
+      "image": "https://f4.bcbits.com/img/0045158163_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/nathan-evans-fox-heirloom-review",
+      "source": "Bandcamp"
+    },
     {
       "band": "White Heaven, “Next to Nothing”",
       "album": "",
@@ -44,80 +51,73 @@
       "source": "Bandcamp"
     },
     {
-      "band": "SUSS, “Counting Sunsets”",
-      "album": "",
-      "image": "https://f4.bcbits.com/img/0045005595_2.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/suss-counting-sunsets-review",
-      "source": "Bandcamp"
-    },
-    {
-      "band": "Kim Petras",
-      "album": "Detour",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1415073-detour_161933.jpg",
-      "link": "http://www.albumoftheyear.org/album/1415073-kim-petras-detour.php",
+      "band": "MEOVV",
+      "album": "BITE NOW",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1814344-bite-now_142039.jpg",
+      "link": "http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php",
       "source": "AOTY"
     },
     {
-      "band": "Boards of Canada",
-      "album": "Inferno",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1786950-inferno_135147.jpg",
-      "link": "http://www.albumoftheyear.org/album/1786950-boards-of-canada-inferno.php",
+      "band": "tripleS",
+      "album": "pt. 1",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1681626-assemble26-lovepop-pt1_212525.jpg",
+      "link": "http://www.albumoftheyear.org/album/1681626-triples-lovepop-pt-1.php",
       "source": "AOTY"
     },
     {
-      "band": "Freddie Gibbs",
-      "album": "RBT",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1842119-rbt_045258.jpg",
-      "link": "http://www.albumoftheyear.org/album/1842119-freddie-gibbs-rbt.php",
+      "band": "SHINee",
+      "album": "Atmos",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1814352-atmos_095238.jpg",
+      "link": "http://www.albumoftheyear.org/album/1814352-shinee-atmos.php",
       "source": "AOTY"
     },
     {
-      "band": "aespa",
-      "album": "LEMONADE",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1782883-lemonade_195556.jpg",
-      "link": "http://www.albumoftheyear.org/album/1782883-aespa-lemonade.php",
+      "band": "Ada Rook",
+      "album": "c𝖀m songs",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1510147-cum-songs_203743.jpg",
+      "link": "http://www.albumoftheyear.org/album/1510147-ada-rook-cum-songs.php",
       "source": "AOTY"
     },
     {
-      "band": "Paul McCartney",
-      "album": "The Boys of Dungeon Lane",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1742568-the-boys-of-dungeon-lane_150207.jpg",
-      "link": "http://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php",
+      "band": "FIFTY FIFTY",
+      "album": "Imperfect-I'mperfect",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1814369-imperfect-imperfect_133003.jpg",
+      "link": "http://www.albumoftheyear.org/album/1814369-fifty-fifty-imperfect-imperfect.php",
       "source": "AOTY"
     },
     {
-      "band": "Iceage",
-      "album": "For Love of Grace & The Hereafter",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1763278-for-love-of-grace-the-hereafter_160827.jpg",
-      "link": "http://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php",
+      "band": "B0AH",
+      "album": "In Between the Sky and the Stars.",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1795458-in-between-the-sky-and-the-stars_140822.jpg",
+      "link": "http://www.albumoftheyear.org/album/1795458-b0ah-in-between-the-sky-and-the-stars.php",
       "source": "AOTY"
     },
     {
-      "band": "Static Dress",
-      "album": "Injury Episode",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1752074-injury-episode_003309.jpg",
-      "link": "http://www.albumoftheyear.org/album/1752074-static-dress-injury-episode.php",
+      "band": "miseryswin",
+      "album": "O MAGO",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1835528-o-mago_163414.jpg",
+      "link": "http://www.albumoftheyear.org/album/1835528-miseryswin-o-mago.php",
       "source": "AOTY"
     },
     {
-      "band": "Violet Grohl",
-      "album": "Be Sweet To Me",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1721667-be-sweet-to-me_134844.jpg",
-      "link": "http://www.albumoftheyear.org/album/1721667-violet-grohl-be-sweet-to-me.php",
+      "band": "TREASURE",
+      "album": "NEW WAV",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1807986-new-wav_144456.jpg",
+      "link": "http://www.albumoftheyear.org/album/1807986-treasure-new-wav.php",
       "source": "AOTY"
     },
     {
-      "band": "Latto",
-      "album": "Big Mama",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1734243-big-mama_040607.jpg",
-      "link": "http://www.albumoftheyear.org/album/1734243-latto-big-mama.php",
+      "band": "Leah Callahan",
+      "album": "Our Lady of the Sad Adventure",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1842158-our-lady-of-the-sad-adventure_122034.jpg",
+      "link": "http://www.albumoftheyear.org/album/1842158-leah-callahan-our-lady-of-the-sad-adventure.php",
       "source": "AOTY"
     },
     {
-      "band": "ear",
-      "album": "Rumspringa",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1827944-rumspringa_135013.jpg",
-      "link": "http://www.albumoftheyear.org/album/1827944-ear-rumspringa.php",
+      "band": "Mach-Hommy",
+      "album": "5786 AM: Easy Listen",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1688306-5786-am-easy-listen_051736.jpg",
+      "link": "http://www.albumoftheyear.org/album/1688306-mach-hommy-5786-am-easy-listen.php",
       "source": "AOTY"
     },
     {
