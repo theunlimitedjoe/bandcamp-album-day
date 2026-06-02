@@ -20,7 +20,7 @@ async function loadAlbums() {
       const artistName = album.album ? album.band : "";
       const title = artistName ? `${albumName} by ${artistName}` : albumName;
       const queryText = `${albumName} ${artistName}`.replace(/['"“”‘’]/g, "").trim();
-      const tidalSearchUrl = `https://tidal.com/search?q=${encodeURIComponent(queryText)}`;
+      const tidalSearchUrl = `https://tidal.com/search/albums?q=${encodeURIComponent(queryText)}`;
       const sourceLabel = album.source || (
         album.link?.includes('bandcamp.com') ? 'Bandcamp' :
         album.image?.includes('drunkard_') || album.image?.includes('aquariumdrunkard.com') ? 'Drunkard' :

@@ -21,26 +21,8 @@ async function main() {
     fetchDrunkardAlbums()
   ]);
 
-  // Download Aquarium Drunkard images locally and rewrite their paths
-  const localDrunkardAlbums = await Promise.all(drunkardAlbums.map(async (album, i) => {
-    if (!album.image || !album.image.startsWith('http')) return album;
-    const ext = album.image.split('.').pop().split('?')[0].replace(/[^a-zA-Z0-9]/g, '');
-    const filename = `drunkard_${i + 1}.${ext}`;
-    const localPath = `images/${filename}`;
-    try {
-      const res = await fetch(album.image);
-      if (!res.ok) throw new Error(`Failed to fetch image: ${album.image}`);
-      const arrayBuffer = await res.arrayBuffer();
-      fs.mkdirSync('images', { recursive: true });
-      fs.writeFileSync(localPath, Buffer.from(arrayBuffer));
-      return { ...album, image: localPath };
-    } catch (e) {
-      console.error('Image download failed', album.image, e.message);
-      return album;
-    }
-  }));
-
-  const albums = [...bandcampAlbums.slice(0, 7), ...aotyAlbums.slice(0, 10), ...localDrunkardAlbums.slice(0, 8)];
+  const albumsToSave = [...bandcampAlbums.slice(0, 7), ...aotyAlbums.slice(0, 10), ...drunkardAlbums.slice(0, 8)];
+  const albums = await saveRemoteImages(albumsToSave);
 
   fs.writeFileSync("albums.json", JSON.stringify({
     fetchedAt: new Date().toISOString(),
@@ -134,6 +116,84 @@ function parseAotyAlbums(html) {
   }
 
   return albums;
+}
+
+async function fetchImageWithFallback(url, source) {
+  const headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+  };
+
+  if (source === 'AOTY') {
+    headers.Referer = 'https://www.albumoftheyear.org/';
+  } else if (source === 'Bandcamp') {
+    headers.Referer = 'https://daily.bandcamp.com/';
+  } else if (source === 'Drunkard') {
+    headers.Referer = 'https://aquariumdrunkard.com/';
+  }
+
+  const tryFetch = async (fetchUrl) => {
+    const res = await fetch(fetchUrl, {
+      headers,
+      signal: AbortSignal.timeout(30000)
+    });
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status} ${res.statusText}`);
+    }
+    const contentType = res.headers.get('content-type') || '';
+    if (!contentType.startsWith('image/')) {
+      throw new Error(`Unexpected content type: ${contentType}`);
+    }
+    return Buffer.from(await res.arrayBuffer());
+  };
+
+  try {
+    return await tryFetch(url);
+  } catch (err) {
+    console.warn('Direct image fetch failed, trying proxy fallback for', url, err.message);
+  }
+
+  const proxies = [
+    url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+    url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+    url => `https://corsproxy.io/?${encodeURIComponent(url)}`
+  ];
+
+  for (const makeProxyUrl of proxies) {
+    const proxyUrl = makeProxyUrl(url);
+    try {
+      return await tryFetch(proxyUrl);
+    } catch (err) {
+      console.warn('Proxy image fetch failed for', proxyUrl, err.message);
+    }
+  }
+
+  throw new Error(`Failed to download image after fallback attempts: ${url}`);
+}
+
+async function saveRemoteImages(albums) {
+  const counts = { Bandcamp: 0, AOTY: 0, Drunkard: 0, other: 0 };
+  fs.mkdirSync('images', { recursive: true });
+
+  return await Promise.all(albums.map(async album => {
+    if (!album.image || !album.image.startsWith('http')) return album;
+
+    const source = album.source || 'other';
+    const key = ['Bandcamp', 'AOTY', 'Drunkard'].includes(source) ? source : 'other';
+    counts[key] += 1;
+    const ext = album.image.split('.').pop().split('?')[0].replace(/[^a-zA-Z0-9]/g, '') || 'jpg';
+    const filename = `${key.toLowerCase()}_${counts[key]}.${ext}`;
+    const localPath = `images/${filename}`;
+
+    try {
+      const buffer = await fetchImageWithFallback(album.image, source);
+      fs.writeFileSync(localPath, buffer);
+      return { ...album, image: localPath };
+    } catch (e) {
+      console.error('Image download failed', album.image, e.message);
+      return album;
+    }
+  }));
 }
 
 async function fetchBandcampAlbums() {
