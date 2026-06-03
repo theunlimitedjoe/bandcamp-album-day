@@ -10,19 +10,42 @@ This project scrapes Bandcamp Daily Album of the Day listings and Aquarium Drunk
 node fetch-bandcamp.js
 ```
 
-For a once-per-day automatic refresh at 5 AM, schedule the script with your system task scheduler. For example, using cron:
+2. **Setup automatic daily updates** (optional but recommended):
+
+Use the provided setup script to automatically configure cron for daily updates at 5 AM:
 
 ```bash
-0 5 * * * cd /workspaces/bandcamp-album-day && node fetch-bandcamp.js --daily
+bash setup-cron.sh
 ```
 
-If you want to refresh immediately, run:
+Or manually add this to your crontab:
 
 ```bash
-node fetch-bandcamp.js
+crontab -e
+# Add this line:
+0 5 * * * cd /workspaces/bandcamp-album-day && /usr/bin/node fetch-bandcamp.js --daily >> fetch-bandcamp.log 2>&1
 ```
 
-2. Serve the folder from a local static server.
+**To check if your cron job is running:**
+
+```bash
+# View installed cron jobs
+crontab -l
+
+# Check recent execution logs
+tail -20 fetch-bandcamp.log
+
+# Check for any image download errors
+tail fetch-errors.log
+```
+
+**To test the script immediately:**
+
+```bash
+node fetch-bandcamp.js --force
+```
+
+3. Serve the folder from a local static server.
    Opening `index.html` directly in the browser will usually fail to fetch `albums.json`.
 
 Example with Python 3:
@@ -38,8 +61,24 @@ Then open:
 http://localhost:8000
 ```
 
+## Logs
+
+The script creates two log files to help with debugging:
+
+- **`fetch-bandcamp.log`**: Main execution log with timestamps and status for each run
+- **`fetch-errors.log`**: Detailed error log for failed image downloads
+
+Check these files if updates aren't working as expected:
+
+```bash
+tail -f fetch-bandcamp.log  # Monitor in real-time
+cat fetch-errors.log         # View all failed image downloads
+```
+
 ## Troubleshooting
 
-- If the page shows `Loading...`, check the browser console for the error from `script.js`.
-- If `albums.json` is empty, rerun `node fetch-bandcamp.js` and verify the file contains data.
-- If `fetch-bandcamp.js` still returns `0 albums`, confirm the page HTML in `debug.html` matches the remote structure.
+- **Page shows "Loading..."**: Check the browser console for errors from `script.js`
+- **`albums.json` is empty**: Run `node fetch-bandcamp.js --force` and check `fetch-bandcamp.log` for errors
+- **AOTY images not showing**: Check `fetch-errors.log` for failed AOTY image downloads. This can happen if proxy services are down. Wait a moment and try running the script again.
+- **Cron job not updating**: Verify the job is installed with `crontab -l`, then check `fetch-bandcamp.log` for execution errors
+- **Old albums still showing**: The script caches daily fetches. Use `--force` flag to refresh immediately: `node fetch-bandcamp.js --force`

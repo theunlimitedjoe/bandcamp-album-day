@@ -8,66 +8,105 @@ const FORCE = process.argv.includes("--force") || process.argv.includes("-f");
 const DAILY = process.argv.includes("--daily");
 
 async function main() {
-  const existing = loadExistingAlbums();
+  const logFile = 'fetch-bandcamp.log';
+  const startTime = new Date().toISOString();
+  console.log(`\n========== Fetch started: ${startTime} ==========`);
+  
+  const logMessage = (msg) => {
+    console.log(msg);
+    fs.appendFileSync(logFile, msg + '\n');
+  };
 
-  if (DAILY && !FORCE && existing.fetchedAt && isSameLocalDay(existing.fetchedAt, new Date())) {
-    console.log(`Already fetched today (${existing.fetchedAt}). Use --force to refresh manually.`);
-    return;
+  try {
+    const existing = loadExistingAlbums();
+
+    if (DAILY && !FORCE && existing.fetchedAt && isSameLocalDay(existing.fetchedAt, new Date())) {
+      const msg = `Already fetched today (${existing.fetchedAt}). Use --force to refresh manually.`;
+      logMessage(msg);
+      return;
+    }
+
+    logMessage("Fetching albums from Bandcamp, AOTY, and Drunkard...");
+    const [bandcampAlbums, aotyAlbums, drunkardAlbums] = await Promise.all([
+      fetchBandcampAlbums(),
+      fetchAotyAlbums(),
+      fetchDrunkardAlbums()
+    ]);
+
+    logMessage(`Fetched: ${bandcampAlbums.length} Bandcamp, ${aotyAlbums.length} AOTY, ${drunkardAlbums.length} Drunkard`);
+
+    const albumsToSave = [...bandcampAlbums.slice(0, 7), ...aotyAlbums.slice(0, 10), ...drunkardAlbums.slice(0, 8)];
+    logMessage(`Downloading images for ${albumsToSave.length} albums...`);
+    const albums = await saveRemoteImages(albumsToSave);
+
+    fs.writeFileSync("albums.json", JSON.stringify({
+      fetchedAt: new Date().toISOString(),
+      albums
+    }, null, 2));
+
+    const successCount = albums.filter(a => a.image && a.image !== '').length;
+    const finalMsg = `✓ Saved ${albums.length} albums (${successCount} with images). Bandcamp: ${bandcampAlbums.length}, AOTY: ${aotyAlbums.length}, Drunkard: ${drunkardAlbums.length}`;
+    logMessage(finalMsg);
+    logMessage(`========== Fetch completed: ${new Date().toISOString()} ==========\n`);
+  } catch (error) {
+    const errMsg = `✗ Fatal error: ${error.message}\n${error.stack}`;
+    console.error(errMsg);
+    fs.appendFileSync(logFile, errMsg + '\n');
+    process.exit(1);
   }
-
-  const [bandcampAlbums, aotyAlbums, drunkardAlbums] = await Promise.all([
-    fetchBandcampAlbums(),
-    fetchAotyAlbums(),
-    fetchDrunkardAlbums()
-  ]);
-
-  const albumsToSave = [...bandcampAlbums.slice(0, 7), ...aotyAlbums.slice(0, 10), ...drunkardAlbums.slice(0, 8)];
-  const albums = await saveRemoteImages(albumsToSave);
-
-  fs.writeFileSync("albums.json", JSON.stringify({
-    fetchedAt: new Date().toISOString(),
-    albums
-  }, null, 2));
-
-  console.log(`Saved ${albums.length} albums (${bandcampAlbums.length} bandcamp, ${aotyAlbums.length} AOTY, ${drunkardAlbums.length} aquarium drunkard).`);
 }
 
 async function fetchAotyAlbums() {
-  const res = await fetch(AOTY_URL, {
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-      "Accept-Language": "en-US,en;q=0.9",
-      "Referer": "https://www.google.com/",
-      "Connection": "keep-alive"
+  try {
+    const res = await fetch(AOTY_URL, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.google.com/",
+        "Connection": "keep-alive"
+      },
+      signal: AbortSignal.timeout(15000)
+    });
+
+    const html = await res.text();
+    fs.writeFileSync("debug-aoty.html", html);
+    const albums = parseAotyAlbums(html);
+    if (albums.length > 0) {
+      console.log(`[AOTY] Direct fetch successful: ${albums.length} albums`);
+      return albums;
     }
-  });
 
-  const html = await res.text();
-  fs.writeFileSync("debug-aoty.html", html);
-  const albums = parseAotyAlbums(html);
-  if (albums.length > 0) {
-    return albums;
+    console.warn("[AOTY] Direct parse returned 0 albums, falling back to proxy markdown fetch.");
+    return fetchAotyAlbumsFromProxy();
+  } catch (error) {
+    console.error(`[AOTY] Direct fetch failed: ${error.message}, trying proxy...`);
+    return fetchAotyAlbumsFromProxy();
   }
-
-  console.warn("AOTY direct parse failed, falling back to proxy markdown fetch.");
-  return fetchAotyAlbumsFromProxy();
 }
 
 async function fetchAotyAlbumsFromProxy() {
-  const res = await fetch(AOTY_PROXY_URL, {
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-      "Accept": "text/plain, text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8",
-      "Accept-Language": "en-US,en;q=0.9",
-      "Referer": "https://www.google.com/",
-      "Connection": "keep-alive"
-    }
-  });
+  try {
+    const res = await fetch(AOTY_PROXY_URL, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "text/plain, text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.google.com/",
+        "Connection": "keep-alive"
+      },
+      signal: AbortSignal.timeout(20000)
+    });
 
-  const text = await res.text();
-  fs.writeFileSync("debug-aoty-proxy.txt", text);
-  return parseAotyProxyMarkdown(text);
+    const text = await res.text();
+    fs.writeFileSync("debug-aoty-proxy.txt", text);
+    const albums = parseAotyProxyMarkdown(text);
+    console.log(`[AOTY] Proxy fetch successful: ${albums.length} albums`);
+    return albums;
+  } catch (error) {
+    console.error(`[AOTY] Proxy fetch failed: ${error.message}`);
+    return [];
+  }
 }
 
 function parseAotyProxyMarkdown(markdown) {
@@ -121,7 +160,8 @@ function parseAotyAlbums(html) {
 async function fetchImageWithFallback(url, source) {
   const headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "Cache-Control": "no-cache"
   };
 
   if (source === 'AOTY') {
@@ -132,10 +172,10 @@ async function fetchImageWithFallback(url, source) {
     headers.Referer = 'https://aquariumdrunkard.com/';
   }
 
-  const tryFetch = async (fetchUrl) => {
+  const tryFetch = async (fetchUrl, timeout = 20000) => {
     const res = await fetch(fetchUrl, {
       headers,
-      signal: AbortSignal.timeout(30000)
+      signal: AbortSignal.timeout(timeout)
     });
     if (!res.ok) {
       throw new Error(`HTTP ${res.status} ${res.statusText}`);
@@ -148,34 +188,44 @@ async function fetchImageWithFallback(url, source) {
   };
 
   try {
-    return await tryFetch(url);
+    return await tryFetch(url, 15000);
   } catch (err) {
-    console.warn('Direct image fetch failed, trying proxy fallback for', url, err.message);
+    console.warn(`[${source}] Direct image fetch failed: ${err.message}`);
   }
 
+  // More robust proxy list with better alternatives
   const proxies = [
+    // Jina AI proxy (works well for AOTY)
+    url => `https://r.jina.ai/${url}`,
+    // AllOrigins
     url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+    // CodeTabs
     url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-    url => `https://corsproxy.io/?${encodeURIComponent(url)}`
+    // CORS Proxy
+    url => `https://cors-anywhere.herokuapp.com/${url}`
   ];
 
-  for (const makeProxyUrl of proxies) {
+  for (let i = 0; i < proxies.length; i++) {
+    const makeProxyUrl = proxies[i];
     const proxyUrl = makeProxyUrl(url);
     try {
-      return await tryFetch(proxyUrl);
+      const result = await tryFetch(proxyUrl, 20000);
+      console.log(`[${source}] Image downloaded via proxy ${i + 1}: ${url}`);
+      return result;
     } catch (err) {
-      console.warn('Proxy image fetch failed for', proxyUrl, err.message);
+      console.warn(`[${source}] Proxy ${i + 1} failed: ${err.message}`);
     }
   }
 
-  throw new Error(`Failed to download image after fallback attempts: ${url}`);
+  throw new Error(`Failed to download image after all attempts: ${url}`);
 }
 
 async function saveRemoteImages(albums) {
   const counts = { Bandcamp: 0, AOTY: 0, Drunkard: 0, other: 0 };
+  const errorLog = [];
   fs.mkdirSync('images', { recursive: true });
 
-  return await Promise.all(albums.map(async album => {
+  const results = await Promise.all(albums.map(async album => {
     if (!album.image || !album.image.startsWith('http')) return album;
 
     const source = album.source || 'other';
@@ -188,12 +238,25 @@ async function saveRemoteImages(albums) {
     try {
       const buffer = await fetchImageWithFallback(album.image, source);
       fs.writeFileSync(localPath, buffer);
+      console.log(`✓ [${source}] Downloaded: ${album.band} - image saved to ${localPath}`);
       return { ...album, image: localPath };
     } catch (e) {
-      console.error('Image download failed', album.image, e.message);
-      return album;
+      const errMsg = `✗ [${source}] Failed to download image for ${album.band}: ${e.message}`;
+      console.error(errMsg);
+      errorLog.push({ album: album.band, source, error: e.message });
+      // Return album without image to skip broken images
+      return { ...album, image: '' };
     }
   }));
+
+  // Log any errors to a file
+  if (errorLog.length > 0) {
+    const timestamp = new Date().toISOString();
+    const logEntry = `[${timestamp}] Failed images:\n${errorLog.map(e => `  - ${e.source} ${e.album}: ${e.error}`).join('\n')}\n\n`;
+    fs.appendFileSync('fetch-errors.log', logEntry);
+  }
+
+  return results;
 }
 
 async function fetchBandcampAlbums() {
