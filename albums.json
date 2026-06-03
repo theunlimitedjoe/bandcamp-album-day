@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-03T21:44:29.329Z",
+  "fetchedAt": "2026-06-03T21:52:19.991Z",
   "albums": [
     {
       "band": "Swallow, “Blown”",
@@ -53,7 +53,7 @@
     {
       "band": "Hamza",
       "album": "PUBLIC ENEMY",
-      "image": "images/aoty_1.jpg",
+      "image": "",
       "link": "http://www.albumoftheyear.org/album/1851345-hamza-public-enemy.php",
       "source": "AOTY"
     },
@@ -88,14 +88,14 @@
     {
       "band": "Olga Myko",
       "album": "How dare you tryna love me?",
-      "image": "",
+      "image": "images/aoty_6.jpg",
       "link": "http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php",
       "source": "AOTY"
     },
     {
       "band": "RealYungPhil",
       "album": "until something changes",
-      "image": "",
+      "image": "images/aoty_7.jpg",
       "link": "http://www.albumoftheyear.org/album/1827131-realyungphil-until-something-changes.php",
       "source": "AOTY"
     },
@@ -116,7 +116,7 @@
     {
       "band": "MEOVV",
       "album": "BITE NOW",
-      "image": "images/aoty_10.jpg",
+      "image": "",
       "link": "http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php",
       "source": "AOTY"
     },
