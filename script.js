@@ -19,7 +19,8 @@ async function loadAlbums() {
       const albumName = album.album || album.band;
       const artistName = album.album ? album.band : "";
       const title = artistName ? `${albumName} by ${artistName}` : albumName;
-      const queryText = `${albumName} ${artistName}`.replace(/['"“”‘’]/g, "").trim();
+      // Remove quotes and commas so they don't appear in external search queries
+      const queryText = `${albumName} ${artistName}`.replace(/['"“”‘’,]/g, "").trim();
       const tidalSearchUrl = `https://tidal.com/search/albums?q=${encodeURIComponent(queryText)}`;
       const sourceLabel = album.source || (
         album.link?.includes('bandcamp.com') ? 'Bandcamp' :

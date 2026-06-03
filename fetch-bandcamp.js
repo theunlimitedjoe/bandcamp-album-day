@@ -180,11 +180,31 @@ async function fetchImageWithFallback(url, source) {
     if (!res.ok) {
       throw new Error(`HTTP ${res.status} ${res.statusText}`);
     }
-    const contentType = res.headers.get('content-type') || '';
-    if (!contentType.startsWith('image/')) {
-      throw new Error(`Unexpected content type: ${contentType}`);
+    const contentType = (res.headers.get('content-type') || '').toLowerCase();
+    const buf = Buffer.from(await res.arrayBuffer());
+
+    // Accept when content-type is an image
+    if (contentType.startsWith('image/')) {
+      return buf;
     }
-    return Buffer.from(await res.arrayBuffer());
+
+    // Some proxies return incorrect content-type (text/plain) but still stream raw image bytes.
+    // Detect common image magic numbers (jpeg, png, gif, webp) and accept those buffers.
+    if (buf.length >= 4) {
+      // JPEG: FF D8 FF
+      if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return buf;
+      // PNG: 89 50 4E 47
+      if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4e && buf[3] === 0x47) return buf;
+      // GIF: 47 49 46 38
+      if (buf[0] === 0x47 && buf[1] === 0x49 && buf[2] === 0x46 && buf[3] === 0x38) return buf;
+      // WEBP: RIFF....WEBP (52 49 46 46 .... 57 45 42 50)
+      if (buf[0] === 0x52 && buf[1] === 0x49 && buf[2] === 0x46 && buf[3] === 0x46) {
+        const tail = buf.slice(8, 12).toString('ascii');
+        if (tail === 'WEBP') return buf;
+      }
+    }
+
+    throw new Error(`Unexpected content type: ${contentType}`);
   };
 
   try {
@@ -195,6 +215,8 @@ async function fetchImageWithFallback(url, source) {
 
   // More robust proxy list with better alternatives
   const proxies = [
+    // Use weserv image proxy for AOTY/CDN images — returns proper image content-type.
+    url => `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ''))}&w=400`,
     // Jina AI proxy (works well for AOTY)
     url => `https://r.jina.ai/${url}`,
     // AllOrigins

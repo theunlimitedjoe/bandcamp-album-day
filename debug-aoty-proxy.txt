@@ -7,7 +7,7 @@ Markdown Content:
 
 [](http://www.albumoftheyear.org/)
 
-[![Image 3](https://cdn.albumoftheyear.org/user/thumbs/default.jpg)](http://www.albumoftheyear.org/account/)
+[![Image 2](https://cdn.albumoftheyear.org/user/thumbs/default.jpg)](http://www.albumoftheyear.org/account/)
 
 [Best Albums](http://www.albumoftheyear.org/ratings/6-highest-rated/2026/1)
 
@@ -41,43 +41,139 @@ Type
     *   Albums
     *   [Singles](http://www.albumoftheyear.org/releases/singles/)
 
-[![Image 4: MEOVV - BITE NOW](https://cdn2.albumoftheyear.org/200x0/album/1814344-bite-now_142039.jpg)](http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php)
+[![Image 3: Hamza - PUBLIC ENEMY](https://cdn2.albumoftheyear.org/200x0/album/1851345-public-enemy_203829.jpg)](http://www.albumoftheyear.org/album/1851345-hamza-public-enemy.php)
 
-[MEOVV](http://www.albumoftheyear.org/artist/386931-meovv/)[BITE NOW](http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php)
+[Hamza](http://www.albumoftheyear.org/artist/37588-hamza/)[PUBLIC ENEMY](http://www.albumoftheyear.org/album/1851345-hamza-public-enemy.php)
 
-Jun 1 • EP
+Jun 3 • EP
+
+71
+
+user score
+
+(39)
+
+[![Image 4: kura - RIOTRIOTRIOT](https://cdn2.albumoftheyear.org/200x0/album/1851728-riotriotriot_011515.jpg)](http://www.albumoftheyear.org/album/1851728-kura-riotriotriot.php)
+
+[kura](http://www.albumoftheyear.org/artist/147087-kura/)[RIOTRIOTRIOT](http://www.albumoftheyear.org/album/1851728-kura-riotriotriot.php)
+
+Jun 3 • LP
+
+70
+
+user score
+
+(11)
+
+[![Image 5: Urzah - A Tranquil Void](https://cdn2.albumoftheyear.org/200x0/album/1807354-a-tranquil-void_083652.jpg)](http://www.albumoftheyear.org/album/1807354-urzah-a-tranquil-void.php)
+
+[Urzah](http://www.albumoftheyear.org/artist/128867-urzah/)[A Tranquil Void](http://www.albumoftheyear.org/album/1807354-urzah-a-tranquil-void.php)
+
+Jun 3 • LP
+
+80
+
+critic score
+
+(1)
+
+[![Image 6: Imani Imani - Papercut](https://cdn2.albumoftheyear.org/200x0/album/1850858-papercut_194839.jpg)](http://www.albumoftheyear.org/album/1850858-imani-imani-papercut.php)
+
+[Imani Imani](http://www.albumoftheyear.org/artist/697398-imani-imani/)[Papercut](http://www.albumoftheyear.org/album/1850858-imani-imani-papercut.php)
+
+Jun 2 • LP
+
+72
+
+user score
+
+(181)
+
+[![Image 7: boolymon - glove world](https://cdn2.albumoftheyear.org/200x0/album/1850507-glove-world_131839.jpg)](http://www.albumoftheyear.org/album/1850507-boolymon-glove-world.php)
+
+[boolymon](http://www.albumoftheyear.org/artist/236678-boolymon/)[glove world](http://www.albumoftheyear.org/album/1850507-boolymon-glove-world.php)
+
+Jun 2 • Mixtape
+
+55
+
+user score
+
+(35)
+
+[![Image 8: Olga Myko - How dare you tryna love me?](https://cdn2.albumoftheyear.org/200x0/album/1803014-how-dare-you-tryna-love-me_094630.jpg)](http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php)
+
+[Olga Myko](http://www.albumoftheyear.org/artist/588652-olga-myko/)[How dare you tryna love me?](http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php)
+
+Jun 2 • EP
 
 59
 
 user score
 
-(115)
+(22)
 
-[![Image 5: tripleS - <LOVE&POP> pt. 1](https://cdn2.albumoftheyear.org/200x0/album/1681626-assemble26-lovepop-pt1_212525.jpg)](http://www.albumoftheyear.org/album/1681626-triples-lovepop-pt-1.php)
+[![Image 9: RealYungPhil - until something changes](https://cdn2.albumoftheyear.org/200x0/album/1827131-until-something-changes_231416.jpg)](http://www.albumoftheyear.org/album/1827131-realyungphil-until-something-changes.php)
+
+[RealYungPhil](http://www.albumoftheyear.org/artist/154721-realyungphil/)[until something changes](http://www.albumoftheyear.org/album/1827131-realyungphil-until-something-changes.php)
+
+Jun 2 • EP
+
+74
+
+user score
+
+(18)
+
+[![Image 10: elaiyah - POR OTRA PUNTA](https://cdn2.albumoftheyear.org/200x0/album/1852089-por-otra-punta_042638.jpg)](http://www.albumoftheyear.org/album/1852089-elaiyah-por-otra-punta.php)
+
+[elaiyah](http://www.albumoftheyear.org/artist/583008-elaiyah/)[POR OTRA PUNTA](http://www.albumoftheyear.org/album/1852089-elaiyah-por-otra-punta.php)
+
+Jun 2 • EP
+
+83
+
+user score
+
+(10)
+
+[![Image 11: tripleS - <LOVE&POP> pt. 1](https://cdn2.albumoftheyear.org/200x0/album/1681626-assemble26-lovepop-pt1_212525.jpg)](http://www.albumoftheyear.org/album/1681626-triples-lovepop-pt-1.php)
 
 [tripleS](http://www.albumoftheyear.org/artist/197157-triples/)[<LOVE&POP> pt. 1](http://www.albumoftheyear.org/album/1681626-triples-lovepop-pt-1.php)
 
 Jun 1 • EP
 
-73
+74
 
 user score
 
-(105)
+(171)
 
-[![Image 6: SHINee - Atmos](https://cdn2.albumoftheyear.org/200x0/album/1814352-atmos_095238.jpg)](http://www.albumoftheyear.org/album/1814352-shinee-atmos.php)
+[![Image 12: MEOVV - BITE NOW](https://cdn2.albumoftheyear.org/200x0/album/1814344-bite-now_142039.jpg)](http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php)
+
+[MEOVV](http://www.albumoftheyear.org/artist/386931-meovv/)[BITE NOW](http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php)
+
+Jun 1 • EP
+
+57
+
+user score
+
+(166)
+
+[![Image 13: SHINee - Atmos](https://cdn2.albumoftheyear.org/200x0/album/1814352-atmos_095238.jpg)](http://www.albumoftheyear.org/album/1814352-shinee-atmos.php)
 
 [SHINee](http://www.albumoftheyear.org/artist/8277-shinee/)[Atmos](http://www.albumoftheyear.org/album/1814352-shinee-atmos.php)
 
 Jun 1 • EP
 
-81
+79
 
 user score
 
-(91)
+(152)
 
-[![Image 7: Ada Rook - c𝖀m songs](https://cdn2.albumoftheyear.org/200x0/album/1510147-cum-songs_203743.jpg)](http://www.albumoftheyear.org/album/1510147-ada-rook-cum-songs.php)
+[![Image 14: Ada Rook - c𝖀m songs](https://cdn2.albumoftheyear.org/200x0/album/1510147-cum-songs_203743.jpg)](http://www.albumoftheyear.org/album/1510147-ada-rook-cum-songs.php)
 
 [Ada Rook](http://www.albumoftheyear.org/artist/43373-ada-rook/)[c𝖀m songs](http://www.albumoftheyear.org/album/1510147-ada-rook-cum-songs.php)
 
@@ -87,57 +183,69 @@ Jun 1 • LP
 
 user score
 
-(37)
+(56)
 
-[![Image 8: miseryswin - O MAGO](https://cdn2.albumoftheyear.org/200x0/album/1835528-o-mago_163414.jpg)](http://www.albumoftheyear.org/album/1835528-miseryswin-o-mago.php)
+[![Image 15: miseryswin - O MAGO](https://cdn2.albumoftheyear.org/200x0/album/1835528-o-mago_163414.jpg)](http://www.albumoftheyear.org/album/1835528-miseryswin-o-mago.php)
 
 [miseryswin](http://www.albumoftheyear.org/artist/215280-miseryswin/)[O MAGO](http://www.albumoftheyear.org/album/1835528-miseryswin-o-mago.php)
 
 Jun 1 • LP
 
-88
+84
 
 user score
 
-(31)
+(46)
 
-[![Image 9: FIFTY FIFTY - Imperfect-I'mperfect](https://cdn2.albumoftheyear.org/200x0/album/1814369-imperfect-imperfect_133003.jpg)](http://www.albumoftheyear.org/album/1814369-fifty-fifty-imperfect-imperfect.php)
+[![Image 16: FIFTY FIFTY - Imperfect-I'mperfect](https://cdn2.albumoftheyear.org/200x0/album/1814369-imperfect-imperfect_133003.jpg)](http://www.albumoftheyear.org/album/1814369-fifty-fifty-imperfect-imperfect.php)
 
 [FIFTY FIFTY](http://www.albumoftheyear.org/artist/200070-fifty-fifty/)[Imperfect-I'mperfect](http://www.albumoftheyear.org/album/1814369-fifty-fifty-imperfect-imperfect.php)
 
 Jun 1 • EP
 
-67
+61
 
 user score
 
-(23)
+(39)
 
-[![Image 10: B0AH - In Between the Sky and the Stars.](https://cdn2.albumoftheyear.org/200x0/album/1795458-in-between-the-sky-and-the-stars_140822.jpg)](http://www.albumoftheyear.org/album/1795458-b0ah-in-between-the-sky-and-the-stars.php)
+[![Image 17: B0AH - In Between the Sky and the Stars.](https://cdn2.albumoftheyear.org/200x0/album/1795458-in-between-the-sky-and-the-stars_140822.jpg)](http://www.albumoftheyear.org/album/1795458-b0ah-in-between-the-sky-and-the-stars.php)
 
 [B0AH](http://www.albumoftheyear.org/artist/580720-b0ah/)[In Between the Sky and the Stars.](http://www.albumoftheyear.org/album/1795458-b0ah-in-between-the-sky-and-the-stars.php)
 
 Jun 1 • LP
 
-83
+80
 
 user score
 
-(20)
+(34)
 
-[![Image 11: TREASURE - NEW WAV](https://cdn2.albumoftheyear.org/200x0/album/1807986-new-wav_144456.jpg)](http://www.albumoftheyear.org/album/1807986-treasure-new-wav.php)
+[![Image 18: TREASURE - NEW WAV](https://cdn2.albumoftheyear.org/200x0/album/1807986-new-wav_144456.jpg)](http://www.albumoftheyear.org/album/1807986-treasure-new-wav.php)
 
 [TREASURE](http://www.albumoftheyear.org/artist/95135-treasure/)[NEW WAV](http://www.albumoftheyear.org/album/1807986-treasure-new-wav.php)
 
 Jun 1 • EP
 
-57
+56
 
 user score
 
-(17)
+(26)
 
-[![Image 12: Leah Callahan - Our Lady of the Sad Adventure](https://cdn2.albumoftheyear.org/200x0/album/1842158-our-lady-of-the-sad-adventure_122034.jpg)](http://www.albumoftheyear.org/album/1842158-leah-callahan-our-lady-of-the-sad-adventure.php)
+[![Image 19: Live Longer Burn Everything - Something You Weren't Meant To See](https://cdn2.albumoftheyear.org/200x0/album/1827232-something-you-werent-meant-to-see_005158.jpg)](http://www.albumoftheyear.org/album/1827232-live-longer-burn-everything-something-you-werent-meant-to-see.php)
+
+[Live Longer Burn Everything](http://www.albumoftheyear.org/artist/294113-live-longer-burn-everything/)[Something You Weren't Meant To See](http://www.albumoftheyear.org/album/1827232-live-longer-burn-everything-something-you-werent-meant-to-see.php)
+
+Jun 1 • LP
+
+76
+
+user score
+
+(10)
+
+[![Image 20: Leah Callahan - Our Lady of the Sad Adventure](https://cdn2.albumoftheyear.org/200x0/album/1842158-our-lady-of-the-sad-adventure_122034.jpg)](http://www.albumoftheyear.org/album/1842158-leah-callahan-our-lady-of-the-sad-adventure.php)
 
 [Leah Callahan](http://www.albumoftheyear.org/artist/344982-leah-callahan/)[Our Lady of the Sad Adventure](http://www.albumoftheyear.org/album/1842158-leah-callahan-our-lady-of-the-sad-adventure.php)
 
@@ -149,25 +257,25 @@ critic score
 
 (1)
 
-93
+76
 
 user score
 
-(4)
+(8)
 
-[![Image 13: Mach-Hommy - 5786 AM: Easy Listen](https://cdn2.albumoftheyear.org/200x0/album/1688306-5786-am-easy-listen_234935.jpg)](http://www.albumoftheyear.org/album/1688306-mach-hommy-5786-am-easy-listen.php)
+[![Image 21: Mach-Hommy - 5786 AM: Easy Listen](https://cdn2.albumoftheyear.org/200x0/album/1688306-5786-am-easy-listen_234935.jpg)](http://www.albumoftheyear.org/album/1688306-mach-hommy-5786-am-easy-listen.php)
 
 [Mach-Hommy](http://www.albumoftheyear.org/artist/36663-mach-hommy/)[5786 AM: Easy Listen](http://www.albumoftheyear.org/album/1688306-mach-hommy-5786-am-easy-listen.php)
 
 May 31 • LP
 
-83
+78
 
 user score
 
-(51)
+(92)
 
-[![Image 14: CaptanB - Formal Language](https://cdn2.albumoftheyear.org/200x0/album/1831163-formal-language_135902.jpg)](http://www.albumoftheyear.org/album/1831163-captanb-formal-language.php)
+[![Image 22: CaptanB - Formal Language](https://cdn2.albumoftheyear.org/200x0/album/1831163-formal-language_135902.jpg)](http://www.albumoftheyear.org/album/1831163-captanb-formal-language.php)
 
 [CaptanB](http://www.albumoftheyear.org/artist/687873-captanb/)[Formal Language](http://www.albumoftheyear.org/album/1831163-captanb-formal-language.php)
 
@@ -179,61 +287,79 @@ user score
 
 (12)
 
-[![Image 15: SPG - Breves Preces de um Trilhão de Anjos Caídos](https://cdn2.albumoftheyear.org/200x0/album/1836602-breves-preces-de-um-trilhao-de-anjos-caidos_213945.jpg)](http://www.albumoftheyear.org/album/1836602-spg-breves-preces-de-um-trilhao-de-anjos-caidos.php)
+[![Image 23: SPG - Breves Preces de um Trilhão de Anjos Caídos](https://cdn2.albumoftheyear.org/200x0/album/1836602-breves-preces-de-um-trilhao-de-anjos-caidos_213945.jpg)](http://www.albumoftheyear.org/album/1836602-spg-breves-preces-de-um-trilhao-de-anjos-caidos.php)
 
 [SPG](http://www.albumoftheyear.org/artist/290724-spg/)[Breves Preces de um Trilhão de Anjos Caídos](http://www.albumoftheyear.org/album/1836602-spg-breves-preces-de-um-trilhao-de-anjos-caidos.php)
 
 May 30 • LP
 
-90
+88
 
 user score
 
-(10)
+(12)
 
-[![Image 16: Kim Petras - Detour](https://cdn2.albumoftheyear.org/200x0/album/1415073-detour_161933.jpg)](http://www.albumoftheyear.org/album/1415073-kim-petras-detour.php)
+[![Image 24: 原口沙輔 [Sasuke Haraguchi] - イ三 [Isan]](https://cdn2.albumoftheyear.org/200x0/album/1349792-_104910.jpg)](http://www.albumoftheyear.org/album/1349792--sasuke-haraguchi--isan.php)
+
+[原口沙輔 [Sasuke Haraguchi]](http://www.albumoftheyear.org/artist/233310--sasuke-haraguchi/)[イ三 [Isan]](http://www.albumoftheyear.org/album/1349792--sasuke-haraguchi--isan.php)
+
+May 30 • LP
+
+85
+
+user score
+
+(12)
+
+[![Image 25: Kim Petras - Detour](https://cdn2.albumoftheyear.org/200x0/album/1415073-detour_161933.jpg)](http://www.albumoftheyear.org/album/1415073-kim-petras-detour.php)
 
 [Kim Petras](http://www.albumoftheyear.org/artist/38583-kim-petras/)[Detour](http://www.albumoftheyear.org/album/1415073-kim-petras-detour.php)
 
 May 29 • LP
 
+73
+
+critic score
+
+(2)
+
 81
 
 user score
 
-(3,742)
+(4,263)
 
-[![Image 17: Boards of Canada - Inferno](https://cdn2.albumoftheyear.org/200x0/album/1786950-inferno_135147.jpg)](http://www.albumoftheyear.org/album/1786950-boards-of-canada-inferno.php)
+[![Image 26: Boards of Canada - Inferno](https://cdn2.albumoftheyear.org/200x0/album/1786950-inferno_135147.jpg)](http://www.albumoftheyear.org/album/1786950-boards-of-canada-inferno.php)
 
 [Boards of Canada](http://www.albumoftheyear.org/artist/747-boards-of-canada/)[Inferno](http://www.albumoftheyear.org/album/1786950-boards-of-canada-inferno.php)
 
 May 29 • LP
 
-80
+81
 
 critic score
 
-(17)
+(21)
 
 84
 
 user score
 
-(3,099)
+(3,644)
 
-[![Image 18: Freddie Gibbs - RBT](https://cdn2.albumoftheyear.org/200x0/album/1842119-rbt_045258.jpg)](http://www.albumoftheyear.org/album/1842119-freddie-gibbs-rbt.php)
+[![Image 27: Freddie Gibbs - RBT](https://cdn2.albumoftheyear.org/200x0/album/1842119-rbt_045258.jpg)](http://www.albumoftheyear.org/album/1842119-freddie-gibbs-rbt.php)
 
 [Freddie Gibbs](http://www.albumoftheyear.org/artist/936-freddie-gibbs/)[RBT](http://www.albumoftheyear.org/album/1842119-freddie-gibbs-rbt.php)
 
 May 29 • EP
 
-75
+74
 
 user score
 
-(1,452)
+(1,636)
 
-[![Image 19: aespa - LEMONADE](https://cdn2.albumoftheyear.org/200x0/album/1782883-lemonade_195556.jpg)](http://www.albumoftheyear.org/album/1782883-aespa-lemonade.php)
+[![Image 28: aespa - LEMONADE](https://cdn2.albumoftheyear.org/200x0/album/1782883-lemonade_195556.jpg)](http://www.albumoftheyear.org/album/1782883-aespa-lemonade.php)
 
 [aespa](http://www.albumoftheyear.org/artist/106216-aespa/)[LEMONADE](http://www.albumoftheyear.org/album/1782883-aespa-lemonade.php)
 
@@ -249,27 +375,27 @@ critic score
 
 user score
 
-(1,176)
+(1,326)
 
-[![Image 20: Paul McCartney - The Boys of Dungeon Lane](https://cdn2.albumoftheyear.org/200x0/album/1742568-the-boys-of-dungeon-lane_150207.jpg)](http://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php)
+[![Image 29: Paul McCartney - The Boys of Dungeon Lane](https://cdn2.albumoftheyear.org/200x0/album/1742568-the-boys-of-dungeon-lane_150207.jpg)](http://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php)
 
 [Paul McCartney](http://www.albumoftheyear.org/artist/901-paul-mccartney/)[The Boys of Dungeon Lane](http://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php)
 
 May 29 • LP
 
-82
+81
 
 critic score
 
-(20)
+(21)
 
-74
+73
 
 user score
 
-(876)
+(1,049)
 
-[![Image 21: Iceage - For Love of Grace & The Hereafter](https://cdn2.albumoftheyear.org/200x0/album/1763278-for-love-of-grace-the-hereafter_160827.jpg)](http://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php)
+[![Image 30: Iceage - For Love of Grace & The Hereafter](https://cdn2.albumoftheyear.org/200x0/album/1763278-for-love-of-grace-the-hereafter_160827.jpg)](http://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php)
 
 [Iceage](http://www.albumoftheyear.org/artist/1814-iceage/)[For Love of Grace & The Hereafter](http://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php)
 
@@ -279,15 +405,15 @@ May 29 • LP
 
 critic score
 
-(16)
+(18)
 
 77
 
 user score
 
-(493)
+(708)
 
-[![Image 22: Static Dress - Injury Episode](https://cdn2.albumoftheyear.org/200x0/album/1752074-injury-episode_003309.jpg)](http://www.albumoftheyear.org/album/1752074-static-dress-injury-episode.php)
+[![Image 31: Static Dress - Injury Episode](https://cdn2.albumoftheyear.org/200x0/album/1752074-injury-episode_003309.jpg)](http://www.albumoftheyear.org/album/1752074-static-dress-injury-episode.php)
 
 [Static Dress](http://www.albumoftheyear.org/artist/129115-static-dress/)[Injury Episode](http://www.albumoftheyear.org/album/1752074-static-dress-injury-episode.php)
 
@@ -303,9 +429,9 @@ critic score
 
 user score
 
-(410)
+(501)
 
-[![Image 23: Violet Grohl - Be Sweet To Me](https://cdn2.albumoftheyear.org/200x0/album/1721667-be-sweet-to-me_134844.jpg)](http://www.albumoftheyear.org/album/1721667-violet-grohl-be-sweet-to-me.php)
+[![Image 32: Violet Grohl - Be Sweet To Me](https://cdn2.albumoftheyear.org/200x0/album/1721667-be-sweet-to-me_134844.jpg)](http://www.albumoftheyear.org/album/1721667-violet-grohl-be-sweet-to-me.php)
 
 [Violet Grohl](http://www.albumoftheyear.org/artist/431612-violet-grohl/)[Be Sweet To Me](http://www.albumoftheyear.org/album/1721667-violet-grohl-be-sweet-to-me.php)
 
@@ -321,113 +447,47 @@ critic score
 
 user score
 
-(364)
+(471)
 
-[![Image 24: Latto - Big Mama](https://cdn2.albumoftheyear.org/200x0/album/1734243-big-mama_040607.jpg)](http://www.albumoftheyear.org/album/1734243-latto-big-mama.php)
+[![Image 33: Latto - Big Mama](https://cdn2.albumoftheyear.org/200x0/album/1734243-big-mama_040607.jpg)](http://www.albumoftheyear.org/album/1734243-latto-big-mama.php)
 
 [Latto](http://www.albumoftheyear.org/artist/71443-latto/)[Big Mama](http://www.albumoftheyear.org/album/1734243-latto-big-mama.php)
 
 May 29 • LP
 
-75
+73
 
 critic score
 
-(2)
+(3)
 
-57
+58
 
 user score
 
-(272)
+(315)
 
-[![Image 25: ear - Rumspringa](https://cdn2.albumoftheyear.org/200x0/album/1827944-rumspringa_135013.jpg)](http://www.albumoftheyear.org/album/1827944-ear-rumspringa.php)
+[![Image 34: ear - Rumspringa](https://cdn2.albumoftheyear.org/200x0/album/1827944-rumspringa_135013.jpg)](http://www.albumoftheyear.org/album/1827944-ear-rumspringa.php)
 
 [ear](http://www.albumoftheyear.org/artist/516537-ear/)[Rumspringa](http://www.albumoftheyear.org/album/1827944-ear-rumspringa.php)
 
 May 29 • LP
 
-73
-
-user score
-
-(220)
-
-[![Image 26: Kurt Vile - Philadelphia's been good to me](https://cdn2.albumoftheyear.org/200x0/album/1763157-philadelphias-been-good-to-me_141144.jpg)](http://www.albumoftheyear.org/album/1763157-kurt-vile-philadelphias-been-good-to-me.php)
-
-[Kurt Vile](http://www.albumoftheyear.org/artist/1061-kurt-vile/)[Philadelphia's been good to me](http://www.albumoftheyear.org/album/1763157-kurt-vile-philadelphias-been-good-to-me.php)
-
-May 29 • LP
-
-81
-
-critic score
-
-(13)
-
-76
-
-user score
-
-(170)
-
-[![Image 27: Chxrry - U, Me & My Ego](https://cdn2.albumoftheyear.org/200x0/album/1757143-u-me-my-ego_184924.jpg)](http://www.albumoftheyear.org/album/1757143-chxrry-u-me-my-ego.php)
-
-[Chxrry](http://www.albumoftheyear.org/artist/193031-chxrry/)[U, Me & My Ego](http://www.albumoftheyear.org/album/1757143-chxrry-u-me-my-ego.php)
-
-May 29 • LP
-
 72
 
-user score
+critic score
 
-(151)
-
-[![Image 28: Shinedown - EI8HT](https://cdn2.albumoftheyear.org/200x0/album/1686926-ei8ht_132209.jpg)](http://www.albumoftheyear.org/album/1686926-shinedown-ei8ht.php)
-
-[Shinedown](http://www.albumoftheyear.org/artist/5925-shinedown/)[EI8HT](http://www.albumoftheyear.org/album/1686926-shinedown-ei8ht.php)
-
-May 29 • LP
+(2)
 
 73
 
-critic score
-
-(7)
-
-61
-
 user score
 
-(101)
+(277)
 
-[![Image 29: Booba - Blanco Nemesis](https://cdn2.albumoftheyear.org/200x0/album/1731859-blanco-nemesis_171021.jpg)](http://www.albumoftheyear.org/album/1731859-booba-blanco-nemesis.php)
+[![Image 35: Kurt Vile - Philadelphia's been good to me](https://cdn2.albumoftheyear.org/200x0/album/1763157-philadelphias-been-good-to-me_141144.jpg)](http://www.albumoftheyear.org/album/1763157-kurt-vile-philadelphias-been-good-to-me.php)
 
-[Booba](http://www.albumoftheyear.org/artist/3430-booba/)[Blanco Nemesis](http://www.albumoftheyear.org/album/1731859-booba-blanco-nemesis.php)
-
-May 29 • LP
-
-15
-
-user score
-
-(93)
-
-[![Image 30: 18K - IO](https://cdn2.albumoftheyear.org/200x0/album/1797114-io_112015.jpg)](http://www.albumoftheyear.org/album/1797114-18k-io.php)
-
-[18K](http://www.albumoftheyear.org/artist/197864-18k/)[IO](http://www.albumoftheyear.org/album/1797114-18k-io.php)
-
-May 29 • LP
-
-79
-
-user score
-
-(90)
-
-[![Image 31: Greg Mendez - Beauty Land](https://cdn2.albumoftheyear.org/200x0/album/1709852-beauty-land_151824.jpg)](http://www.albumoftheyear.org/album/1709852-greg-mendez-beauty-land.php)
-
-[Greg Mendez](http://www.albumoftheyear.org/artist/113057-greg-mendez/)[Beauty Land](http://www.albumoftheyear.org/album/1709852-greg-mendez-beauty-land.php)
+[Kurt Vile](http://www.albumoftheyear.org/artist/1061-kurt-vile/)[Philadelphia's been good to me](http://www.albumoftheyear.org/album/1763157-kurt-vile-philadelphias-been-good-to-me.php)
 
 May 29 • LP
 
@@ -435,45 +495,27 @@ May 29 • LP
 
 critic score
 
-(9)
+(14)
 
-72
-
-user score
-
-(88)
-
-[![Image 32: Anderson .Paak - K-POPS! (Music from and inspired by K-POPS! Motion Picture)](https://cdn2.albumoftheyear.org/200x0/album/1821397-k-pops-official-soundtrack_165354.jpg)](http://www.albumoftheyear.org/album/1821397-anderson-paak-k-pops-music-from-and-inspired-by-k-pops-motion-picture.php)
-
-[Anderson .Paak](http://www.albumoftheyear.org/artist/18160-anderson-paak/)[K-POPS! (Music from and inspired by K-POPS! Motion Picture)](http://www.albumoftheyear.org/album/1821397-anderson-paak-k-pops-music-from-and-inspired-by-k-pops-motion-picture.php)
-
-May 29 • Soundtrack
-
-60
+75
 
 user score
 
-(86)
+(229)
 
-[![Image 33: Turnover - Down on Earth](https://cdn2.albumoftheyear.org/200x0/album/1807843-down-on-earth_173520.jpg)](http://www.albumoftheyear.org/album/1807843-turnover-down-on-earth.php)
+[![Image 36: Chxrry - U, Me & My Ego](https://cdn2.albumoftheyear.org/200x0/album/1757143-u-me-my-ego_184924.jpg)](http://www.albumoftheyear.org/album/1757143-chxrry-u-me-my-ego.php)
 
-[Turnover](http://www.albumoftheyear.org/artist/12362-turnover/)[Down on Earth](http://www.albumoftheyear.org/album/1807843-turnover-down-on-earth.php)
+[Chxrry](http://www.albumoftheyear.org/artist/193031-chxrry/)[U, Me & My Ego](http://www.albumoftheyear.org/album/1757143-chxrry-u-me-my-ego.php)
 
 May 29 • LP
 
-40
-
-critic score
-
-(1)
-
-63
+70
 
 user score
 
-(85)
+(187)
 
-[![Image 34: Elder - Through Zero](https://cdn2.albumoftheyear.org/200x0/album/1703520-through-zero_142233.jpg)](http://www.albumoftheyear.org/album/1703520-elder-through-zero.php)
+[![Image 37: Elder - Through Zero](https://cdn2.albumoftheyear.org/200x0/album/1703520-through-zero_142233.jpg)](http://www.albumoftheyear.org/album/1703520-elder-through-zero.php)
 
 [Elder](http://www.albumoftheyear.org/artist/3021-elder/)[Through Zero](http://www.albumoftheyear.org/album/1703520-elder-through-zero.php)
 
@@ -489,9 +531,123 @@ critic score
 
 user score
 
-(85)
+(129)
 
-[![Image 35: Balmora - These Graven Halls](https://cdn2.albumoftheyear.org/200x0/album/1749943-these-graven-halls_122330.jpg)](http://www.albumoftheyear.org/album/1749943-balmora-these-graven-halls.php)
+[![Image 38: Greg Mendez - Beauty Land](https://cdn2.albumoftheyear.org/200x0/album/1709852-beauty-land_151824.jpg)](http://www.albumoftheyear.org/album/1709852-greg-mendez-beauty-land.php)
+
+[Greg Mendez](http://www.albumoftheyear.org/artist/113057-greg-mendez/)[Beauty Land](http://www.albumoftheyear.org/album/1709852-greg-mendez-beauty-land.php)
+
+May 29 • LP
+
+80
+
+critic score
+
+(9)
+
+72
+
+user score
+
+(126)
+
+[![Image 39: Shinedown - EI8HT](https://cdn2.albumoftheyear.org/200x0/album/1686926-ei8ht_132209.jpg)](http://www.albumoftheyear.org/album/1686926-shinedown-ei8ht.php)
+
+[Shinedown](http://www.albumoftheyear.org/artist/5925-shinedown/)[EI8HT](http://www.albumoftheyear.org/album/1686926-shinedown-ei8ht.php)
+
+May 29 • LP
+
+73
+
+critic score
+
+(7)
+
+60
+
+user score
+
+(116)
+
+[![Image 40: Anderson .Paak - K-POPS! (Music from and inspired by K-POPS! Motion Picture)](https://cdn2.albumoftheyear.org/200x0/album/1821397-k-pops-official-soundtrack_165354.jpg)](http://www.albumoftheyear.org/album/1821397-anderson-paak-k-pops-music-from-and-inspired-by-k-pops-motion-picture.php)
+
+[Anderson .Paak](http://www.albumoftheyear.org/artist/18160-anderson-paak/)[K-POPS! (Music from and inspired by K-POPS! Motion Picture)](http://www.albumoftheyear.org/album/1821397-anderson-paak-k-pops-music-from-and-inspired-by-k-pops-motion-picture.php)
+
+May 29 • Soundtrack
+
+60
+
+user score
+
+(107)
+
+[![Image 41: 18K - IO](https://cdn2.albumoftheyear.org/200x0/album/1797114-io_112015.jpg)](http://www.albumoftheyear.org/album/1797114-18k-io.php)
+
+[18K](http://www.albumoftheyear.org/artist/197864-18k/)[IO](http://www.albumoftheyear.org/album/1797114-18k-io.php)
+
+May 29 • LP
+
+79
+
+user score
+
+(102)
+
+[![Image 42: Booba - Blanco Nemesis](https://cdn2.albumoftheyear.org/200x0/album/1731859-blanco-nemesis_171021.jpg)](http://www.albumoftheyear.org/album/1731859-booba-blanco-nemesis.php)
+
+[Booba](http://www.albumoftheyear.org/artist/3430-booba/)[Blanco Nemesis](http://www.albumoftheyear.org/album/1731859-booba-blanco-nemesis.php)
+
+May 29 • LP
+
+15
+
+user score
+
+(102)
+
+[![Image 43: Turnover - Down on Earth](https://cdn2.albumoftheyear.org/200x0/album/1807843-down-on-earth_173520.jpg)](http://www.albumoftheyear.org/album/1807843-turnover-down-on-earth.php)
+
+[Turnover](http://www.albumoftheyear.org/artist/12362-turnover/)[Down on Earth](http://www.albumoftheyear.org/album/1807843-turnover-down-on-earth.php)
+
+May 29 • LP
+
+40
+
+critic score
+
+(1)
+
+63
+
+user score
+
+(94)
+
+[![Image 44: Oakwood - Blurred Away](https://cdn2.albumoftheyear.org/200x0/album/1751177-blurred-away_091222.jpg)](http://www.albumoftheyear.org/album/1751177-oakwood-blurred-away.php)
+
+[Oakwood](http://www.albumoftheyear.org/artist/272240-oakwood/)[Blurred Away](http://www.albumoftheyear.org/album/1751177-oakwood-blurred-away.php)
+
+May 29 • LP
+
+78
+
+user score
+
+(92)
+
+[![Image 45: LinLin - DISCO INFERNO](https://cdn2.albumoftheyear.org/200x0/album/1808658-disco-inferno_030600.jpg)](http://www.albumoftheyear.org/album/1808658-linlin-disco-inferno.php)
+
+[LinLin](http://www.albumoftheyear.org/artist/675586-linlin/)[DISCO INFERNO](http://www.albumoftheyear.org/album/1808658-linlin-disco-inferno.php)
+
+May 29 • LP
+
+77
+
+user score
+
+(89)
+
+[![Image 46: Balmora - These Graven Halls](https://cdn2.albumoftheyear.org/200x0/album/1749943-these-graven-halls_122330.jpg)](http://www.albumoftheyear.org/album/1749943-balmora-these-graven-halls.php)
 
 [Balmora](http://www.albumoftheyear.org/artist/239020-balmora/)[These Graven Halls](http://www.albumoftheyear.org/album/1749943-balmora-these-graven-halls.php)
 
@@ -503,37 +659,13 @@ critic score
 
 (1)
 
-69
+66
 
 user score
 
-(77)
+(84)
 
-[![Image 36: Oakwood - Blurred Away](https://cdn2.albumoftheyear.org/200x0/album/1751177-blurred-away_091222.jpg)](http://www.albumoftheyear.org/album/1751177-oakwood-blurred-away.php)
-
-[Oakwood](http://www.albumoftheyear.org/artist/272240-oakwood/)[Blurred Away](http://www.albumoftheyear.org/album/1751177-oakwood-blurred-away.php)
-
-May 29 • LP
-
-77
-
-user score
-
-(75)
-
-[![Image 37: LinLin - DISCO INFERNO](https://cdn2.albumoftheyear.org/200x0/album/1808658-disco-inferno_030600.jpg)](http://www.albumoftheyear.org/album/1808658-linlin-disco-inferno.php)
-
-[LinLin](http://www.albumoftheyear.org/artist/675586-linlin/)[DISCO INFERNO](http://www.albumoftheyear.org/album/1808658-linlin-disco-inferno.php)
-
-May 29 • LP
-
-76
-
-user score
-
-(66)
-
-[![Image 38: Labrinth - COSMIC OPERA ACT II](https://cdn2.albumoftheyear.org/200x0/album/1785023-cosmic-opera-act-ii_225110.jpg)](http://www.albumoftheyear.org/album/1785023-labrinth-cosmic-opera-act-ii.php)
+[![Image 47: Labrinth - COSMIC OPERA ACT II](https://cdn2.albumoftheyear.org/200x0/album/1785023-cosmic-opera-act-ii_225110.jpg)](http://www.albumoftheyear.org/album/1785023-labrinth-cosmic-opera-act-ii.php)
 
 [Labrinth](http://www.albumoftheyear.org/artist/2332-labrinth/)[COSMIC OPERA ACT II](http://www.albumoftheyear.org/album/1785023-labrinth-cosmic-opera-act-ii.php)
 
@@ -543,9 +675,9 @@ May 29 • LP
 
 user score
 
-(66)
+(82)
 
-[![Image 39: Kane Parsons - Backrooms (Original Soundtrack)](https://cdn2.albumoftheyear.org/200x0/album/1839906-backrooms-original-soundtrack_073951.jpg)](http://www.albumoftheyear.org/album/1839906-kane-parsons-backrooms-original-soundtrack.php)
+[![Image 48: Kane Parsons - Backrooms (Original Soundtrack)](https://cdn2.albumoftheyear.org/200x0/album/1839906-backrooms-original-soundtrack_073951.jpg)](http://www.albumoftheyear.org/album/1839906-kane-parsons-backrooms-original-soundtrack.php)
 
 Kane Parsons & Edo Van Breemen
 
@@ -557,9 +689,21 @@ May 29 • Soundtrack
 
 user score
 
-(54)
+(81)
 
-[![Image 40: Devin Townsend - The Moth](https://cdn2.albumoftheyear.org/200x0/album/1721777-the-moth_155856.jpg)](http://www.albumoftheyear.org/album/1721777-devin-townsend-the-moth.php)
+[![Image 49: Scrim - runaway](https://cdn2.albumoftheyear.org/200x0/album/1777218-runaway_184053.jpg)](http://www.albumoftheyear.org/album/1777218-scrim-runaway.php)
+
+[Scrim](http://www.albumoftheyear.org/artist/83211-scrim/)[runaway](http://www.albumoftheyear.org/album/1777218-scrim-runaway.php)
+
+May 29 • LP
+
+57
+
+user score
+
+(57)
+
+[![Image 50: Devin Townsend - The Moth](https://cdn2.albumoftheyear.org/200x0/album/1721777-the-moth_155856.jpg)](http://www.albumoftheyear.org/album/1721777-devin-townsend-the-moth.php)
 
 [Devin Townsend](http://www.albumoftheyear.org/artist/5065-devin-townsend/)[The Moth](http://www.albumoftheyear.org/album/1721777-devin-townsend-the-moth.php)
 
@@ -575,21 +719,21 @@ critic score
 
 user score
 
-(53)
+(57)
 
-[![Image 41: Scrim - runaway](https://cdn2.albumoftheyear.org/200x0/album/1777218-runaway_184053.jpg)](http://www.albumoftheyear.org/album/1777218-scrim-runaway.php)
+[![Image 51: Skyte - lovekills](https://cdn2.albumoftheyear.org/200x0/album/1832066-lovekills_212849.jpg)](http://www.albumoftheyear.org/album/1832066-skyte-lovekills.php)
 
-[Scrim](http://www.albumoftheyear.org/artist/83211-scrim/)[runaway](http://www.albumoftheyear.org/album/1777218-scrim-runaway.php)
+[Skyte](http://www.albumoftheyear.org/artist/224716-skyte/)[lovekills](http://www.albumoftheyear.org/album/1832066-skyte-lovekills.php)
 
 May 29 • LP
 
-56
+78
 
 user score
 
-(51)
+(55)
 
-[![Image 42: 38 Spesh - 8 Shots](https://cdn2.albumoftheyear.org/200x0/album/1819299-8-shots_213354.jpg)](http://www.albumoftheyear.org/album/1819299-38-spesh-8-shots.php)
+[![Image 52: 38 Spesh - 8 Shots](https://cdn2.albumoftheyear.org/200x0/album/1819299-8-shots_213354.jpg)](http://www.albumoftheyear.org/album/1819299-38-spesh-8-shots.php)
 
 [38 Spesh](http://www.albumoftheyear.org/artist/48523-38-spesh/)[8 Shots](http://www.albumoftheyear.org/album/1819299-38-spesh-8-shots.php)
 
@@ -599,69 +743,21 @@ May 29 • LP
 
 user score
 
-(45)
+(54)
 
-[![Image 43: CLAWI. - GO FOR IT, CLAWI](https://cdn2.albumoftheyear.org/200x0/album/1823235-go-for-it-clawi_112854.jpg)](http://www.albumoftheyear.org/album/1823235-clawi-go-for-it-clawi.php)
+[![Image 53: CLAWI. - GO FOR IT, CLAWI](https://cdn2.albumoftheyear.org/200x0/album/1823235-go-for-it-clawi_112854.jpg)](http://www.albumoftheyear.org/album/1823235-clawi-go-for-it-clawi.php)
 
 [CLAWI.](http://www.albumoftheyear.org/artist/587994-clawi/)[GO FOR IT, CLAWI](http://www.albumoftheyear.org/album/1823235-clawi-go-for-it-clawi.php)
 
 May 29 • Mixtape
 
-84
+82
 
 user score
 
-(43)
+(47)
 
-[![Image 44: Skyte - lovekills](https://cdn2.albumoftheyear.org/200x0/album/1832066-lovekills_212849.jpg)](http://www.albumoftheyear.org/album/1832066-skyte-lovekills.php)
-
-[Skyte](http://www.albumoftheyear.org/artist/224716-skyte/)[lovekills](http://www.albumoftheyear.org/album/1832066-skyte-lovekills.php)
-
-May 29 • LP
-
-79
-
-user score
-
-(41)
-
-[![Image 45: Digitalism - Optimism](https://cdn2.albumoftheyear.org/200x0/album/1744258-optimism_155929.jpg)](http://www.albumoftheyear.org/album/1744258-digitalism-optimism.php)
-
-[Digitalism](http://www.albumoftheyear.org/artist/1843-digitalism/)[Optimism](http://www.albumoftheyear.org/album/1744258-digitalism-optimism.php)
-
-May 29 • LP
-
-70
-
-critic score
-
-(1)
-
-72
-
-user score
-
-(35)
-
-[![Image 46: Willie Nelson - Dream Chaser](https://cdn2.albumoftheyear.org/200x0/album/1731388-dream-chaser_113915.jpg)](http://www.albumoftheyear.org/album/1731388-willie-nelson-dream-chaser.php)
-
-[Willie Nelson](http://www.albumoftheyear.org/artist/2384-willie-nelson/)[Dream Chaser](http://www.albumoftheyear.org/album/1731388-willie-nelson-dream-chaser.php)
-
-May 29 • LP
-
-78
-
-critic score
-
-(6)
-
-72
-
-user score
-
-(35)
-
-[![Image 47: All Them Witches - House Of Mirrors](https://cdn2.albumoftheyear.org/200x0/album/1722633-house-of-mirrors_124340.jpg)](http://www.albumoftheyear.org/album/1722633-all-them-witches-house-of-mirrors.php)
+[![Image 54: All Them Witches - House Of Mirrors](https://cdn2.albumoftheyear.org/200x0/album/1722633-house-of-mirrors_124340.jpg)](http://www.albumoftheyear.org/album/1722633-all-them-witches-house-of-mirrors.php)
 
 [All Them Witches](http://www.albumoftheyear.org/artist/16732-all-them-witches/)[House Of Mirrors](http://www.albumoftheyear.org/album/1722633-all-them-witches-house-of-mirrors.php)
 
@@ -673,45 +769,33 @@ critic score
 
 (4)
 
-71
-
-user score
-
-(35)
-
-[![Image 48: L’haine - El Odio Siempre Gana](https://cdn2.albumoftheyear.org/200x0/album/1815715-el-odio-siempre-gana_114019.jpg)](http://www.albumoftheyear.org/album/1815715-lhaine-el-odio-siempre-gana.php)
-
-[L’haine](http://www.albumoftheyear.org/artist/155829-lhaine/)[El Odio Siempre Gana](http://www.albumoftheyear.org/album/1815715-lhaine-el-odio-siempre-gana.php)
-
-May 29 • LP
-
-66
-
-user score
-
-(34)
-
-[![Image 49: Monolord - Neverending](https://cdn2.albumoftheyear.org/200x0/album/1751689-neverending_170015.jpg)](http://www.albumoftheyear.org/album/1751689-monolord-neverending.php)
-
-[Monolord](http://www.albumoftheyear.org/artist/13155-monolord/)[Neverending](http://www.albumoftheyear.org/album/1751689-monolord-neverending.php)
-
-May 29 • LP
-
-77
-
-critic score
-
-(3)
-
 72
 
 user score
 
-(30)
+(46)
 
-[![Image 50: villagerrr - Carousel](https://cdn2.albumoftheyear.org/200x0/album/1710687-carousel_051345.jpg)](http://www.albumoftheyear.org/album/1710687-villagerrr-carousel.php)
+[![Image 55: villagerrr - Carousel](https://cdn2.albumoftheyear.org/200x0/album/1710687-carousel_051345.jpg)](http://www.albumoftheyear.org/album/1710687-villagerrr-carousel.php)
 
 [villagerrr](http://www.albumoftheyear.org/artist/210692-villagerrr/)[Carousel](http://www.albumoftheyear.org/album/1710687-villagerrr-carousel.php)
+
+May 29 • LP
+
+73
+
+critic score
+
+(2)
+
+76
+
+user score
+
+(45)
+
+[![Image 56: Digitalism - Optimism](https://cdn2.albumoftheyear.org/200x0/album/1744258-optimism_155929.jpg)](http://www.albumoftheyear.org/album/1744258-digitalism-optimism.php)
+
+[Digitalism](http://www.albumoftheyear.org/artist/1843-digitalism/)[Optimism](http://www.albumoftheyear.org/album/1744258-digitalism-optimism.php)
 
 May 29 • LP
 
@@ -721,25 +805,43 @@ critic score
 
 (1)
 
-76
+71
 
 user score
 
-(30)
+(44)
 
-[![Image 51: MadMan - MM Vol. 5](https://cdn2.albumoftheyear.org/200x0/album/1819294-mm-vol-5_213154.jpg)](http://www.albumoftheyear.org/album/1819294-madman-mm-vol-5.php)
+[![Image 57: Willie Nelson - Dream Chaser](https://cdn2.albumoftheyear.org/200x0/album/1731388-dream-chaser_113915.jpg)](http://www.albumoftheyear.org/album/1731388-willie-nelson-dream-chaser.php)
 
-[MadMan](http://www.albumoftheyear.org/artist/38624-madman/)[MM Vol. 5](http://www.albumoftheyear.org/album/1819294-madman-mm-vol-5.php)
+[Willie Nelson](http://www.albumoftheyear.org/artist/2384-willie-nelson/)[Dream Chaser](http://www.albumoftheyear.org/album/1731388-willie-nelson-dream-chaser.php)
 
-May 29 • Mixtape
+May 29 • LP
 
-69
+78
+
+critic score
+
+(6)
+
+71
 
 user score
 
-(29)
+(40)
 
-[![Image 52: Francis of Delirium - Run, Run Pure Beauty](https://cdn2.albumoftheyear.org/200x0/album/1718510-run-run-pure-beauty_083236.jpg)](http://www.albumoftheyear.org/album/1718510-francis-of-delirium-run-run-pure-beauty.php)
+[![Image 58: L’haine - El Odio Siempre Gana](https://cdn2.albumoftheyear.org/200x0/album/1815715-el-odio-siempre-gana_114019.jpg)](http://www.albumoftheyear.org/album/1815715-lhaine-el-odio-siempre-gana.php)
+
+[L’haine](http://www.albumoftheyear.org/artist/155829-lhaine/)[El Odio Siempre Gana](http://www.albumoftheyear.org/album/1815715-lhaine-el-odio-siempre-gana.php)
+
+May 29 • LP
+
+65
+
+user score
+
+(38)
+
+[![Image 59: Francis of Delirium - Run, Run Pure Beauty](https://cdn2.albumoftheyear.org/200x0/album/1718510-run-run-pure-beauty_083236.jpg)](http://www.albumoftheyear.org/album/1718510-francis-of-delirium-run-run-pure-beauty.php)
 
 [Francis of Delirium](http://www.albumoftheyear.org/artist/91907-francis-of-delirium/)[Run, Run Pure Beauty](http://www.albumoftheyear.org/album/1718510-francis-of-delirium-run-run-pure-beauty.php)
 
@@ -755,165 +857,49 @@ critic score
 
 user score
 
-(28)
+(38)
 
-[![Image 53: ID​K - IDCA$H](https://cdn2.albumoftheyear.org/200x0/album/1840392-idcah_212433.jpg)](http://www.albumoftheyear.org/album/1840392-idk-idcah.php)
+[![Image 60: Monolord - Neverending](https://cdn2.albumoftheyear.org/200x0/album/1751689-neverending_170015.jpg)](http://www.albumoftheyear.org/album/1751689-monolord-neverending.php)
 
-[ID​K](http://www.albumoftheyear.org/artist/179672-idk/)[IDCA$H](http://www.albumoftheyear.org/album/1840392-idk-idcah.php)
-
-May 29 • LP
-
-66
-
-user score
-
-(26)
-
-[![Image 54: Guided by Voices - Crawlspace Of The Pantheon](https://cdn2.albumoftheyear.org/200x0/album/1699556-crawlspace-of-the-pantheon_055317.jpg)](http://www.albumoftheyear.org/album/1699556-guided-by-voices-crawlspace-of-the-pantheon.php)
-
-[Guided by Voices](http://www.albumoftheyear.org/artist/1644-guided-by-voices/)[Crawlspace Of The Pantheon](http://www.albumoftheyear.org/album/1699556-guided-by-voices-crawlspace-of-the-pantheon.php)
-
-May 29 • LP
-
-72
-
-critic score
-
-(5)
-
-65
-
-user score
-
-(26)
-
-[![Image 55: Dark Divine - Undead Melody](https://cdn2.albumoftheyear.org/200x0/album/1699249-undead-melody_005117.jpg)](http://www.albumoftheyear.org/album/1699249-dark-divine-undead-melody.php)
-
-[Dark Divine](http://www.albumoftheyear.org/artist/252916-dark-divine/)[Undead Melody](http://www.albumoftheyear.org/album/1699249-dark-divine-undead-melody.php)
-
-May 29 • LP
-
-60
-
-critic score
-
-(2)
-
-73
-
-user score
-
-(24)
-
-[![Image 56: Saint Agnes - Your God Fearing Days Are About To Begin](https://cdn2.albumoftheyear.org/200x0/album/1449795-your-god-fearing-days-are-about-to-begin_060819.jpg)](http://www.albumoftheyear.org/album/1449795-saint-agnes-your-god-fearing-days-are-about-to-begin.php)
-
-[Saint Agnes](http://www.albumoftheyear.org/artist/65747-saint-agnes/)[Your God Fearing Days Are About To Begin](http://www.albumoftheyear.org/album/1449795-saint-agnes-your-god-fearing-days-are-about-to-begin.php)
-
-May 29 • LP
-
-80
-
-critic score
-
-(5)
-
-70
-
-user score
-
-(23)
-
-[![Image 57: Monday Night - Football](https://cdn2.albumoftheyear.org/200x0/album/1842521-football_220916.jpg)](http://www.albumoftheyear.org/album/1842521-monday-night-football.php)
-
-Monday Night & Evidence
-
-[Football](http://www.albumoftheyear.org/album/1842521-monday-night-football.php)
-
-May 29 • LP
-
-73
-
-user score
-
-(22)
-
-[![Image 58: Pharmacist - Vertebrae After Vertebrae](https://cdn2.albumoftheyear.org/200x0/album/1801543-vertebrae-after-vertebrae_082813.jpg)](http://www.albumoftheyear.org/album/1801543-pharmacist-vertebrae-after-vertebrae.php)
-
-[Pharmacist](http://www.albumoftheyear.org/artist/107336-pharmacist/)[Vertebrae After Vertebrae](http://www.albumoftheyear.org/album/1801543-pharmacist-vertebrae-after-vertebrae.php)
-
-May 29 • LP
-
-70
-
-critic score
-
-(1)
-
-73
-
-user score
-
-(22)
-
-[![Image 59: KÁRYYN - PHYSICS UNIVERSAL LOVE LANGUAGE (PULL)](https://cdn2.albumoftheyear.org/200x0/album/1640120-physics-universal-love-language-pull_100325.jpg)](http://www.albumoftheyear.org/album/1640120-karyyn-physics-universal-love-language-pull.php)
-
-[KÁRYYN](http://www.albumoftheyear.org/artist/34958-karyyn/)[PHYSICS UNIVERSAL LOVE LANGUAGE (PULL)](http://www.albumoftheyear.org/album/1640120-karyyn-physics-universal-love-language-pull.php)
-
-May 29 • LP
-
-72
-
-user score
-
-(22)
-
-[![Image 60: BewhY - POP IS CRYIN’](https://cdn2.albumoftheyear.org/200x0/album/1842607-pop-is-cryin_102624.jpg)](http://www.albumoftheyear.org/album/1842607-bewhy-pop-is-cryin.php)
-
-[BewhY](http://www.albumoftheyear.org/artist/35188-bewhy/)[POP IS CRYIN’](http://www.albumoftheyear.org/album/1842607-bewhy-pop-is-cryin.php)
-
-May 29 • LP
-
-69
-
-user score
-
-(21)
-
-[![Image 61: reggie - UNDRA](https://cdn2.albumoftheyear.org/200x0/album/1558066-undra_040153.jpg)](http://www.albumoftheyear.org/album/1558066-reggie-undra.php)
-
-[reggie](http://www.albumoftheyear.org/artist/110126-reggie/)[UNDRA](http://www.albumoftheyear.org/album/1558066-reggie-undra.php)
+[Monolord](http://www.albumoftheyear.org/artist/13155-monolord/)[Neverending](http://www.albumoftheyear.org/album/1751689-monolord-neverending.php)
 
 May 29 • LP
 
 77
 
-user score
+critic score
 
-(20)
+(3)
 
-[![Image 62: Melting - A Pathetic Excuse For A Life](https://cdn2.albumoftheyear.org/200x0/album/1765909-a-pathetic-excuse-for-a-life_015626.jpg)](http://www.albumoftheyear.org/album/1765909-melting-a-pathetic-excuse-for-a-life.php)
-
-[Melting](http://www.albumoftheyear.org/artist/489452-melting/)[A Pathetic Excuse For A Life](http://www.albumoftheyear.org/album/1765909-melting-a-pathetic-excuse-for-a-life.php)
-
-May 29 • EP
-
-79
+72
 
 user score
 
-(19)
+(37)
 
-[![Image 63: '68 - They Are Survived](https://cdn2.albumoftheyear.org/200x0/album/1751725-they-are-survived_173844.jpg)](http://www.albumoftheyear.org/album/1751725-68-they-are-survived.php)
+[![Image 61: ID​K - IDCA$H](https://cdn2.albumoftheyear.org/200x0/album/1840392-idcah_212433.jpg)](http://www.albumoftheyear.org/album/1840392-idk-idcah.php)
 
-['68](http://www.albumoftheyear.org/artist/7537-68/)[They Are Survived](http://www.albumoftheyear.org/album/1751725-68-they-are-survived.php)
+[ID​K](http://www.albumoftheyear.org/artist/179672-idk/)[IDCA$H](http://www.albumoftheyear.org/album/1840392-idk-idcah.php)
 
 May 29 • LP
 
-73
+65
 
 user score
 
-(19)
+(33)
+
+[![Image 62: MadMan - MM Vol. 5](https://cdn2.albumoftheyear.org/200x0/album/1819294-mm-vol-5_213154.jpg)](http://www.albumoftheyear.org/album/1819294-madman-mm-vol-5.php)
+
+[MadMan](http://www.albumoftheyear.org/artist/38624-madman/)[MM Vol. 5](http://www.albumoftheyear.org/album/1819294-madman-mm-vol-5.php)
+
+May 29 • Mixtape
+
+69
+
+user score
+
+(32)
 
 [NEXT](http://www.albumoftheyear.org/releases/2/)
 
@@ -1037,4 +1023,4 @@ Random
 
 © 2026 Album of the Year 
 
-![Image 64](https://ids.ad.gt/api/v1/halo_match?id=AU1D-0100-001780367270-Y0ZNGLNT-BJJ2&halo_id=060ixfajsgld59d9c9e6666666666666666uooeweq0ky6k6i6m00000000000000)![Image 65](https://ids4.ad.gt/api/v1/ip_match?id=AU1D-0100-001780367270-Y0ZNGLNT-BJJ2)![Image 66](https://secure.adnxs.com/getuid?https://ids.ad.gt/api/v1/match?id=AU1D-0100-001780367270-Y0ZNGLNT-BJJ2&adnxs_id=$UID&gdpr=0)![Image 67](https://u.openx.net/w/1.0/cm?id=998eaf06-9905-4eae-9e26-9fac75960c53&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fopenx%3Fopenx_id%3D%7BOPENX_ID%7D%26id%3DAU1D-0100-001780367270-Y0ZNGLNT-BJJ2%26auid%3DAU1D-0100-001780367270-Y0ZNGLNT-BJJ2&gdpr=0)![Image 68](https://image2.pubmatic.com/AdServer/UCookieSetPug?rd=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fpbm_match%3Fpbm%3D%23PM_USER_ID%26id%3DAU1D-0100-001780367270-Y0ZNGLNT-BJJ2&gdpr=0)![Image 69](https://token.rubiconproject.com/token?pid=50242&puid=AU1D-0100-001780367270-Y0ZNGLNT-BJJ2&gdpr=0)![Image 70](https://match.adsrvr.org/track/cmf/generic?ttd_pid=8gkxb6n&ttd_tpi=1&ttd_puid=AU1D-0100-001780367270-Y0ZNGLNT-BJJ2&gdpr=0)![Image 71](https://pixel.tapad.com/idsync/ex/receive?partner_id=3185&partner_device_id=AU1D-0100-001780367270-Y0ZNGLNT-BJJ2&partner_url=https://ids.ad.gt%2Fapi%2Fv1%2Ftapad_match%3Fid%3DAU1D-0100-001780367270-Y0ZNGLNT-BJJ2%26tapad_id%3D%24%7BTA_DEVICE_ID%7D&gdpr=0)![Image 72](https://cm.g.doubleclick.net/pixel?google_cm&google_nid=audigent_dmp&google_hm=QVUxRC0wMTAwLTAwMTc4MDM2NzI3MC1ZMFpOR0xOVC1CSkoy&id=AU1D-0100-001780367270-Y0ZNGLNT-BJJ2&gdpr=0)![Image 73](https://d.turn.com/r/dd/id/L2NzaWQvMS9jaWQvMTc0ODI0MTY1OC90LzA/url/https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Famo_match%3Fturn_id%3D%24!%7BTURN_UUID%7D%26id%3DAU1D-0100-001780367270-Y0ZNGLNT-BJJ2)![Image 74](https://sync.go.sonobi.com/us?https://ids.ad.gt/api/v1/son_match?id=AU1D-0100-001780367270-Y0ZNGLNT-BJJ2&uid=[UID]&gdpr=0)![Image 75](https://ad.360yield.com/ux?&publisher_dmp_id=15&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fimpr_match%3Fid%3DAU1D-0100-001780367270-Y0ZNGLNT-BJJ2%26impr_uid%3D%7BPUB_USER_ID%7D&gdpr=0)
+![Image 63](https://ids4.ad.gt/api/v1/ip_match?id=AU1D-0100-001780523042-9DLHAMGI-N2BT)![Image 64](https://secure.adnxs.com/getuid?https://ids.ad.gt/api/v1/match?id=AU1D-0100-001780523042-9DLHAMGI-N2BT&adnxs_id=$UID&gdpr=0)![Image 65](https://u.openx.net/w/1.0/cm?id=998eaf06-9905-4eae-9e26-9fac75960c53&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fopenx%3Fopenx_id%3D%7BOPENX_ID%7D%26id%3DAU1D-0100-001780523042-9DLHAMGI-N2BT%26auid%3DAU1D-0100-001780523042-9DLHAMGI-N2BT&gdpr=0)![Image 66](https://image2.pubmatic.com/AdServer/UCookieSetPug?rd=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fpbm_match%3Fpbm%3D%23PM_USER_ID%26id%3DAU1D-0100-001780523042-9DLHAMGI-N2BT&gdpr=0)![Image 67](https://token.rubiconproject.com/token?pid=50242&puid=AU1D-0100-001780523042-9DLHAMGI-N2BT&gdpr=0)![Image 68](https://match.adsrvr.org/track/cmf/generic?ttd_pid=8gkxb6n&ttd_tpi=1&ttd_puid=AU1D-0100-001780523042-9DLHAMGI-N2BT&gdpr=0)![Image 69](https://pixel.tapad.com/idsync/ex/receive?partner_id=3185&partner_device_id=AU1D-0100-001780523042-9DLHAMGI-N2BT&partner_url=https://ids.ad.gt%2Fapi%2Fv1%2Ftapad_match%3Fid%3DAU1D-0100-001780523042-9DLHAMGI-N2BT%26tapad_id%3D%24%7BTA_DEVICE_ID%7D&gdpr=0)![Image 70](https://cm.g.doubleclick.net/pixel?google_cm&google_nid=audigent_dmp&google_hm=QVUxRC0wMTAwLTAwMTc4MDUyMzA0Mi05RExIQU1HSS1OMkJU&id=AU1D-0100-001780523042-9DLHAMGI-N2BT&gdpr=0)![Image 71](https://d.turn.com/r/dd/id/L2NzaWQvMS9jaWQvMTc0ODI0MTY1OC90LzA/url/https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Famo_match%3Fturn_id%3D%24!%7BTURN_UUID%7D%26id%3DAU1D-0100-001780523042-9DLHAMGI-N2BT)![Image 72](https://sync.go.sonobi.com/us?https://ids.ad.gt/api/v1/son_match?id=AU1D-0100-001780523042-9DLHAMGI-N2BT&uid=[UID]&gdpr=0)![Image 73](https://ad.360yield.com/ux?&publisher_dmp_id=15&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fimpr_match%3Fid%3DAU1D-0100-001780523042-9DLHAMGI-N2BT%26impr_uid%3D%7BPUB_USER_ID%7D&gdpr=0)
