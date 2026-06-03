@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "fetchedAt": "2026-06-03T21:48:43.182Z",
+=======
+  "fetchedAt": "2026-06-03T21:44:29.329Z",
+>>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
   "albums": [
     {
       "band": "Swallow, “Blown”",
@@ -60,56 +64,84 @@
     {
       "band": "kura",
       "album": "RIOTRIOTRIOT",
+<<<<<<< HEAD
       "image": "images/aoty_2.jpg",
+=======
+      "image": "",
+>>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
       "link": "http://www.albumoftheyear.org/album/1851728-kura-riotriotriot.php",
       "source": "AOTY"
     },
     {
       "band": "Urzah",
       "album": "A Tranquil Void",
+<<<<<<< HEAD
       "image": "images/aoty_3.jpg",
+=======
+      "image": "",
+>>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
       "link": "http://www.albumoftheyear.org/album/1807354-urzah-a-tranquil-void.php",
       "source": "AOTY"
     },
     {
       "band": "Imani Imani",
       "album": "Papercut",
+<<<<<<< HEAD
       "image": "images/aoty_4.jpg",
+=======
+      "image": "",
+>>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
       "link": "http://www.albumoftheyear.org/album/1850858-imani-imani-papercut.php",
       "source": "AOTY"
     },
     {
       "band": "boolymon",
       "album": "glove world",
+<<<<<<< HEAD
       "image": "images/aoty_5.jpg",
+=======
+      "image": "",
+>>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
       "link": "http://www.albumoftheyear.org/album/1850507-boolymon-glove-world.php",
       "source": "AOTY"
     },
     {
       "band": "Olga Myko",
       "album": "How dare you tryna love me?",
+<<<<<<< HEAD
       "image": "images/aoty_6.jpg",
+=======
+      "image": "",
+>>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
       "link": "http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php",
       "source": "AOTY"
     },
     {
       "band": "RealYungPhil",
       "album": "until something changes",
-      "image": "images/aoty_7.jpg",
+      "image": "",
       "link": "http://www.albumoftheyear.org/album/1827131-realyungphil-until-something-changes.php",
       "source": "AOTY"
     },
     {
       "band": "elaiyah",
       "album": "POR OTRA PUNTA",
+<<<<<<< HEAD
       "image": "images/aoty_8.jpg",
+=======
+      "image": "",
+>>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
       "link": "http://www.albumoftheyear.org/album/1852089-elaiyah-por-otra-punta.php",
       "source": "AOTY"
     },
     {
       "band": "tripleS",
       "album": "pt. 1",
+<<<<<<< HEAD
       "image": "images/aoty_9.jpg",
+=======
+      "image": "",
+>>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
       "link": "http://www.albumoftheyear.org/album/1681626-triples-lovepop-pt-1.php",
       "source": "AOTY"
     },
