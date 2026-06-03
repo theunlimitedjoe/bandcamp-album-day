@@ -1,9 +1,13 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "fetchedAt": "2026-06-03T21:48:43.182Z",
 =======
   "fetchedAt": "2026-06-03T21:44:29.329Z",
 >>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
+=======
+  "fetchedAt": "2026-06-03T21:52:19.991Z",
+>>>>>>> b322db2974a05acdaa631a185ee43f1550f837aa
   "albums": [
     {
       "band": "Swallow, “Blown”",
@@ -57,7 +61,7 @@
     {
       "band": "Hamza",
       "album": "PUBLIC ENEMY",
-      "image": "images/aoty_1.jpg",
+      "image": "",
       "link": "http://www.albumoftheyear.org/album/1851345-hamza-public-enemy.php",
       "source": "AOTY"
     },
@@ -109,17 +113,21 @@
       "band": "Olga Myko",
       "album": "How dare you tryna love me?",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "image": "images/aoty_6.jpg",
 =======
       "image": "",
 >>>>>>> aa8b813f80a8b749f894b451e14260d93ea52c57
+=======
+      "image": "images/aoty_6.jpg",
+>>>>>>> b322db2974a05acdaa631a185ee43f1550f837aa
       "link": "http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php",
       "source": "AOTY"
     },
     {
       "band": "RealYungPhil",
       "album": "until something changes",
-      "image": "",
+      "image": "images/aoty_7.jpg",
       "link": "http://www.albumoftheyear.org/album/1827131-realyungphil-until-something-changes.php",
       "source": "AOTY"
     },
@@ -148,7 +156,7 @@
     {
       "band": "MEOVV",
       "album": "BITE NOW",
-      "image": "images/aoty_10.jpg",
+      "image": "",
       "link": "http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php",
       "source": "AOTY"
     },
