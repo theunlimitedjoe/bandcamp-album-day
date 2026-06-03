@@ -1,60 +1,102 @@
 {
-  "fetchedAt": "2026-06-02T02:32:59.227Z",
+  "fetchedAt": "2026-06-03T16:21:57.976Z",
   "albums": [
+    {
+      "band": "Swallow, “Blown”",
+      "album": "",
+      "image": "images/bandcamp_1.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/swallow-blown-review",
+      "source": "Bandcamp"
+    },
+    {
+      "band": "The Barigozzi Group, “Woman’s Colours”",
+      "album": "",
+      "image": "images/bandcamp_2.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/the-barigozzi-group-womans-colours-review",
+      "source": "Bandcamp"
+    },
     {
       "band": "Nathan Evans Fox, “Heirloom”",
       "album": "",
-      "image": "images/bandcamp_1.jpg",
+      "image": "images/bandcamp_3.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/nathan-evans-fox-heirloom-review",
       "source": "Bandcamp"
     },
     {
       "band": "White Heaven, “Next to Nothing”",
       "album": "",
-      "image": "images/bandcamp_2.jpg",
+      "image": "images/bandcamp_4.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/white-heaven-next-to-nothing-review",
       "source": "Bandcamp"
     },
     {
       "band": "Monolord, “Neverending”",
       "album": "",
-      "image": "images/bandcamp_3.jpg",
+      "image": "images/bandcamp_5.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/monolord-neverending-review",
       "source": "Bandcamp"
     },
     {
       "band": "feeble little horse, “bitknot”",
       "album": "",
-      "image": "images/bandcamp_4.jpg",
+      "image": "images/bandcamp_6.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/feeble-little-horse-bitknot-review",
       "source": "Bandcamp"
     },
     {
       "band": "aja monet, “the color of rain”",
       "album": "",
-      "image": "images/bandcamp_5.jpg",
+      "image": "images/bandcamp_7.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/aja-monet-the-color-of-rain-review",
       "source": "Bandcamp"
     },
     {
-      "band": "Ital Tek, “Mind Abandon”",
-      "album": "",
-      "image": "images/bandcamp_6.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/ital-tek-mind-abandon-review",
-      "source": "Bandcamp"
+      "band": "Hamza",
+      "album": "PUBLIC ENEMY",
+      "image": "images/aoty_1.jpg",
+      "link": "http://www.albumoftheyear.org/album/1851345-hamza-public-enemy.php",
+      "source": "AOTY"
     },
     {
-      "band": "Takkak Takkak, “Abu”",
-      "album": "",
-      "image": "images/bandcamp_7.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/takkak-takkak-abu-review",
-      "source": "Bandcamp"
+      "band": "Urzah",
+      "album": "A Tranquil Void",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1807354-a-tranquil-void_083652.jpg",
+      "link": "http://www.albumoftheyear.org/album/1807354-urzah-a-tranquil-void.php",
+      "source": "AOTY"
     },
     {
-      "band": "MEOVV",
-      "album": "BITE NOW",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1814344-bite-now_142039.jpg",
-      "link": "http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php",
+      "band": "Imani Imani",
+      "album": "Papercut",
+      "image": "images/aoty_3.jpg",
+      "link": "http://www.albumoftheyear.org/album/1850858-imani-imani-papercut.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "slayr",
+      "album": "1AM FREESTYLE | THE BOOTH",
+      "image": "images/aoty_4.jpg",
+      "link": "http://www.albumoftheyear.org/album/1851171-slayr-1am-freestyle-the-booth.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "boolymon",
+      "album": "glove world",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1850507-glove-world_131839.jpg",
+      "link": "http://www.albumoftheyear.org/album/1850507-boolymon-glove-world.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "Olga Myko",
+      "album": "How dare you tryna love me?",
+      "image": "https://cdn2.albumoftheyear.org/200x0/album/1803014-how-dare-you-tryna-love-me_094630.jpg",
+      "link": "http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "RealYungPhil",
+      "album": "until something changes",
+      "image": "images/aoty_7.jpg",
+      "link": "http://www.albumoftheyear.org/album/1827131-realyungphil-until-something-changes.php",
       "source": "AOTY"
     },
     {
@@ -65,59 +107,17 @@
       "source": "AOTY"
     },
     {
+      "band": "MEOVV",
+      "album": "BITE NOW",
+      "image": "images/aoty_9.jpg",
+      "link": "http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php",
+      "source": "AOTY"
+    },
+    {
       "band": "SHINee",
       "album": "Atmos",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1814352-atmos_095238.jpg",
+      "image": "images/aoty_10.jpg",
       "link": "http://www.albumoftheyear.org/album/1814352-shinee-atmos.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Ada Rook",
-      "album": "c𝖀m songs",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1510147-cum-songs_203743.jpg",
-      "link": "http://www.albumoftheyear.org/album/1510147-ada-rook-cum-songs.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "miseryswin",
-      "album": "O MAGO",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1835528-o-mago_163414.jpg",
-      "link": "http://www.albumoftheyear.org/album/1835528-miseryswin-o-mago.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "FIFTY FIFTY",
-      "album": "Imperfect-I'mperfect",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1814369-imperfect-imperfect_133003.jpg",
-      "link": "http://www.albumoftheyear.org/album/1814369-fifty-fifty-imperfect-imperfect.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "B0AH",
-      "album": "In Between the Sky and the Stars.",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1795458-in-between-the-sky-and-the-stars_140822.jpg",
-      "link": "http://www.albumoftheyear.org/album/1795458-b0ah-in-between-the-sky-and-the-stars.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "TREASURE",
-      "album": "NEW WAV",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1807986-new-wav_144456.jpg",
-      "link": "http://www.albumoftheyear.org/album/1807986-treasure-new-wav.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Leah Callahan",
-      "album": "Our Lady of the Sad Adventure",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1842158-our-lady-of-the-sad-adventure_122034.jpg",
-      "link": "http://www.albumoftheyear.org/album/1842158-leah-callahan-our-lady-of-the-sad-adventure.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Mach-Hommy",
-      "album": "5786 AM: Easy Listen",
-      "image": "https://cdn2.albumoftheyear.org/200x0/album/1688306-5786-am-easy-listen_234935.jpg",
-      "link": "http://www.albumoftheyear.org/album/1688306-mach-hommy-5786-am-easy-listen.php",
       "source": "AOTY"
     },
     {
