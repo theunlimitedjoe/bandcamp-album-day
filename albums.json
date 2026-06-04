@@ -1,95 +1,95 @@
 {
-  "fetchedAt": "2026-06-04T02:52:12.832Z",
+  "fetchedAt": "2026-06-04T14:40:22.224Z",
   "albums": [
+    {
+      "band": "The Visitors, “Motherland (Remastered 2026)”",
+      "album": "",
+      "image": "images/bandcamp_1.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/the-visitors-motherland-remastered-2026-review",
+      "source": "Bandcamp"
+    },
     {
       "band": "Swallow, “Blown”",
       "album": "",
-      "image": "images/bandcamp_1.jpg",
+      "image": "images/bandcamp_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/swallow-blown-review",
       "source": "Bandcamp"
     },
     {
       "band": "The Barigozzi Group, “Woman’s Colours”",
       "album": "",
-      "image": "images/bandcamp_2.jpg",
+      "image": "images/bandcamp_3.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/the-barigozzi-group-womans-colours-review",
       "source": "Bandcamp"
     },
     {
       "band": "Nathan Evans Fox, “Heirloom”",
       "album": "",
-      "image": "images/bandcamp_3.jpg",
+      "image": "images/bandcamp_4.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/nathan-evans-fox-heirloom-review",
       "source": "Bandcamp"
     },
     {
       "band": "White Heaven, “Next to Nothing”",
       "album": "",
-      "image": "images/bandcamp_4.jpg",
+      "image": "images/bandcamp_5.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/white-heaven-next-to-nothing-review",
       "source": "Bandcamp"
     },
     {
       "band": "Monolord, “Neverending”",
       "album": "",
-      "image": "images/bandcamp_5.jpg",
+      "image": "images/bandcamp_6.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/monolord-neverending-review",
       "source": "Bandcamp"
     },
     {
       "band": "feeble little horse, “bitknot”",
       "album": "",
-      "image": "images/bandcamp_6.jpg",
+      "image": "images/bandcamp_7.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/feeble-little-horse-bitknot-review",
       "source": "Bandcamp"
     },
     {
-      "band": "aja monet, “the color of rain”",
-      "album": "",
-      "image": "images/bandcamp_7.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/aja-monet-the-color-of-rain-review",
-      "source": "Bandcamp"
+      "band": "Joji",
+      "album": "Piss In The Wind (Deluxe)",
+      "image": "images/aoty_1.jpg",
+      "link": "http://www.albumoftheyear.org/album/1827199-joji-piss-in-the-wind-deluxe.php",
+      "source": "AOTY"
     },
     {
       "band": "Hamza",
       "album": "PUBLIC ENEMY",
-      "image": "images/aoty_1.jpg",
+      "image": "images/aoty_2.jpg",
       "link": "http://www.albumoftheyear.org/album/1851345-hamza-public-enemy.php",
       "source": "AOTY"
     },
     {
       "band": "kura",
       "album": "RIOTRIOTRIOT",
-      "image": "images/aoty_2.jpg",
+      "image": "images/aoty_3.jpg",
       "link": "http://www.albumoftheyear.org/album/1851728-kura-riotriotriot.php",
       "source": "AOTY"
     },
     {
       "band": "Urzah",
       "album": "A Tranquil Void",
-      "image": "images/aoty_3.jpg",
+      "image": "images/aoty_4.jpg",
       "link": "http://www.albumoftheyear.org/album/1807354-urzah-a-tranquil-void.php",
       "source": "AOTY"
     },
     {
       "band": "Imani Imani",
       "album": "Papercut",
-      "image": "images/aoty_4.jpg",
+      "image": "images/aoty_5.jpg",
       "link": "http://www.albumoftheyear.org/album/1850858-imani-imani-papercut.php",
       "source": "AOTY"
     },
     {
       "band": "boolymon",
       "album": "glove world",
-      "image": "images/aoty_5.jpg",
-      "link": "http://www.albumoftheyear.org/album/1850507-boolymon-glove-world.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Olga Myko",
-      "album": "How dare you tryna love me?",
       "image": "images/aoty_6.jpg",
-      "link": "http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php",
+      "link": "http://www.albumoftheyear.org/album/1850507-boolymon-glove-world.php",
       "source": "AOTY"
     },
     {
@@ -100,24 +100,24 @@
       "source": "AOTY"
     },
     {
+      "band": "Olga Myko",
+      "album": "How dare you tryna love me?",
+      "image": "images/aoty_8.jpg",
+      "link": "http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php",
+      "source": "AOTY"
+    },
+    {
       "band": "elaiyah",
       "album": "POR OTRA PUNTA",
-      "image": "images/aoty_8.jpg",
+      "image": "images/aoty_9.jpg",
       "link": "http://www.albumoftheyear.org/album/1852089-elaiyah-por-otra-punta.php",
       "source": "AOTY"
     },
     {
       "band": "tripleS",
       "album": "pt. 1",
-      "image": "images/aoty_9.jpg",
-      "link": "http://www.albumoftheyear.org/album/1681626-triples-lovepop-pt-1.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "MEOVV",
-      "album": "BITE NOW",
       "image": "images/aoty_10.jpg",
-      "link": "http://www.albumoftheyear.org/album/1814344-meovv-bite-now.php",
+      "link": "http://www.albumoftheyear.org/album/1681626-triples-lovepop-pt-1.php",
       "source": "AOTY"
     },
     {
