@@ -31,7 +31,9 @@ async function loadAlbums() {
 
       return `
       <div class="album">
-        <img src="${album.image}" alt="${title} cover">
+        <a href="${tidalSearchUrl}" target="_blank" rel="noopener noreferrer">
+          <img src="${album.image}" alt="${title} cover">
+        </a>
         <div class="album-details">
           <h2><a href="${tidalSearchUrl}" target="_blank" rel="noopener noreferrer"><span class="album-name">${albumName}</span>${artistName ? ` by <span class="artist-name">${artistName}</span>` : ""}</a></h2>
           ${sourceText}
