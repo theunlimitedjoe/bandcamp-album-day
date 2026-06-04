@@ -3,6 +3,7 @@ const fs = require("fs");
 const BANDCAMP_URL = "https://daily.bandcamp.com/album-of-the-day";
 const AOTY_URL = "https://www.albumoftheyear.org/releases/";
 const AOTY_PROXY_URL = "https://r.jina.ai/http://www.albumoftheyear.org/releases/";
+const RYM_URL = "https://rateyourmusic.com/new-music/";
 const DRUNKARD_URL = "https://aquariumdrunkard.com/";
 const FORCE = process.argv.includes("--force") || process.argv.includes("-f");
 const DAILY = process.argv.includes("--daily");
@@ -26,16 +27,17 @@ async function main() {
       return;
     }
 
-    logMessage("Fetching albums from Bandcamp, AOTY, and Drunkard...");
-    const [bandcampAlbums, aotyAlbums, drunkardAlbums] = await Promise.all([
+    logMessage("Fetching albums from Bandcamp, AOTY, RYM, and Drunkard...");
+    const [bandcampAlbums, aotyAlbums, rymAlbums, drunkardAlbums] = await Promise.all([
       fetchBandcampAlbums(),
       fetchAotyAlbums(),
+      fetchRymAlbums(),
       fetchDrunkardAlbums()
     ]);
 
-    logMessage(`Fetched: ${bandcampAlbums.length} Bandcamp, ${aotyAlbums.length} AOTY, ${drunkardAlbums.length} Drunkard`);
+    logMessage(`Fetched: ${bandcampAlbums.length} Bandcamp, ${aotyAlbums.length} AOTY, ${rymAlbums.length} RYM, ${drunkardAlbums.length} Drunkard`);
 
-    const albumsToSave = [...bandcampAlbums.slice(0, 7), ...aotyAlbums.slice(0, 10), ...drunkardAlbums.slice(0, 8)];
+    const albumsToSave = [...bandcampAlbums.slice(0, 7), ...aotyAlbums.slice(0, 10), ...rymAlbums.slice(0, 10), ...drunkardAlbums.slice(0, 8)];
     logMessage(`Downloading images for ${albumsToSave.length} albums...`);
     const albums = await saveRemoteImages(albumsToSave);
 
@@ -45,7 +47,7 @@ async function main() {
     }, null, 2));
 
     const successCount = albums.filter(a => a.image && a.image !== '').length;
-    const finalMsg = `✓ Saved ${albums.length} albums (${successCount} with images). Bandcamp: ${bandcampAlbums.length}, AOTY: ${aotyAlbums.length}, Drunkard: ${drunkardAlbums.length}`;
+    const finalMsg = `✓ Saved ${albums.length} albums (${successCount} with images). Bandcamp: ${bandcampAlbums.length}, AOTY: ${aotyAlbums.length}, RYM: ${rymAlbums.length}, Drunkard: ${drunkardAlbums.length}`;
     logMessage(finalMsg);
     logMessage(`========== Fetch completed: ${new Date().toISOString()} ==========\n`);
   } catch (error) {
@@ -109,6 +111,58 @@ async function fetchAotyAlbumsFromProxy() {
   }
 }
 
+async function fetchRymAlbums() {
+  try {
+    const res = await fetch(RYM_URL, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.google.com/",
+        "Connection": "keep-alive"
+      },
+      signal: AbortSignal.timeout(20000)
+    });
+
+    const html = await res.text();
+    fs.writeFileSync("debug-rym.html", html);
+    const albums = parseRymAlbums(html);
+    console.log(`[RYM] Fetch successful: ${albums.length} albums`);
+    return albums;
+  } catch (error) {
+    console.error(`[RYM] Fetch failed: ${error.message}`);
+    return [];
+  }
+}
+
+function parseRymAlbums(html) {
+  const albums = [];
+  const segments = html.split(/class="newreleases_item_artbox"/i).slice(1);
+
+  for (const segment of segments) {
+    if (albums.length >= 10) break;
+
+    const titleMatch = segment.match(/title="([^"]+)"/i);
+    const artistMatch = segment.match(/class="artist"[^>]*>([^<]+)</i);
+    const imageMatch = segment.match(/<img[^>]+src="([^"]+)"/i);
+    const linkMatch = segment.match(/<a[^>]+href="([^"]+)"/i);
+
+    if (!titleMatch || !artistMatch || !imageMatch) {
+      continue;
+    }
+
+    albums.push({
+      band: clean(artistMatch[1]),
+      album: clean(titleMatch[1]),
+      image: makeFullUrl(imageMatch[1], "https://rateyourmusic.com"),
+      link: makeFullUrl(linkMatch ? linkMatch[1] : "", "https://rateyourmusic.com"),
+      source: "RYM"
+    });
+  }
+
+  return albums;
+}
+
 function parseAotyProxyMarkdown(markdown) {
   const albums = [];
   const entryRegex = /\[!\[Image \d+: ([^\]]+)\]\(([^)]+)\)\]\(([^)]+)\)[\s\S]*?\[([^\]]+)\]\(([^)]+)\)\[([^\]]+)\]\(([^)]+)\)/g;
@@ -169,8 +223,8 @@ async function fetchImageWithFallback(url, source) {
   } else if (source === 'Bandcamp') {
     headers.Referer = 'https://daily.bandcamp.com/';
   } else if (source === 'Drunkard') {
-    headers.Referer = 'https://aquariumdrunkard.com/';
-  }
+    headers.Referer = 'https://aquariumdrunkard.com/';  } else if (source === 'RYM') {
+    headers.Referer = 'https://rateyourmusic.com/';  }
 
   const tryFetch = async (fetchUrl, timeout = 20000) => {
     const res = await fetch(fetchUrl, {
@@ -243,7 +297,7 @@ async function fetchImageWithFallback(url, source) {
 }
 
 async function saveRemoteImages(albums) {
-  const counts = { Bandcamp: 0, AOTY: 0, Drunkard: 0, other: 0 };
+  const counts = { Bandcamp: 0, AOTY: 0, RYM: 0, Drunkard: 0, other: 0 };
   const errorLog = [];
   fs.mkdirSync('images', { recursive: true });
 
@@ -251,7 +305,7 @@ async function saveRemoteImages(albums) {
     if (!album.image || !album.image.startsWith('http')) return album;
 
     const source = album.source || 'other';
-    const key = ['Bandcamp', 'AOTY', 'Drunkard'].includes(source) ? source : 'other';
+    const key = ['Bandcamp', 'AOTY', 'RYM', 'Drunkard'].includes(source) ? source : 'other';
     counts[key] += 1;
     const ext = album.image.split('.').pop().split('?')[0].replace(/[^a-zA-Z0-9]/g, '') || 'jpg';
     const filename = `${key.toLowerCase()}_${counts[key]}.${ext}`;
