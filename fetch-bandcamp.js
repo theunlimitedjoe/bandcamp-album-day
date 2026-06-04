@@ -137,23 +137,39 @@ async function fetchRymAlbums() {
 
 function parseRymAlbums(html) {
   const albums = [];
-  const segments = html.split(/class="newreleases_item_artbox"/i).slice(1);
+  // Split by the full itembox container to capture all data including artist
+  const segments = html.split(/class="newreleases_itembox/).slice(1);
 
   for (const segment of segments) {
     if (albums.length >= 10) break;
 
-    const titleMatch = segment.match(/title="([^"]+)"/i);
-    const artistMatch = segment.match(/class="artist"[^>]*>([^<]+)</i);
-    const imageMatch = segment.match(/<img[^>]+src="([^"]+)"/i);
-    const linkMatch = segment.match(/<a[^>]+href="([^"]+)"/i);
+    // Extract album title - look for the album link with class="album newreleases_item_title"
+    const titleMatch = segment.match(/class="album newreleases_item_title"[^>]*title="([^"]*)"[^>]*>([^<]+)<\/a>/i);
+    const titleText = titleMatch ? titleMatch[2] : null;
+    
+    // Extract artist - look for any link with class="artist"
+    const artistMatch = segment.match(/class="artist"[^>]*>([^<]+)<\/a>/i);
+    
+    // Extract image src - look for img with class="newreleases_item_art" and src or data-src
+    let imageMatch = segment.match(/<img[^>]*class="newreleases_item_art"[^>]*src="([^"]+)"/i);
+    if (!imageMatch) {
+      imageMatch = segment.match(/<img[^>]*class="newreleases_item_art"[^>]*data-src="([^"]+)"/i);
+    }
+    if (!imageMatch) {
+      // Try with src before class attribute
+      imageMatch = segment.match(/<img[^>]*src="([^"]+)"[^>]*class="newreleases_item_art"/i);
+    }
+    
+    // Extract link from album title link
+    const linkMatch = segment.match(/class="album newreleases_item_title"[^>]*href="([^"]+)"/i);
 
-    if (!titleMatch || !artistMatch || !imageMatch) {
+    if (!titleText || !artistMatch || !imageMatch) {
       continue;
     }
 
     albums.push({
       band: clean(artistMatch[1]),
-      album: clean(titleMatch[1]),
+      album: clean(titleText),
       image: makeFullUrl(imageMatch[1], "https://rateyourmusic.com"),
       link: makeFullUrl(linkMatch ? linkMatch[1] : "", "https://rateyourmusic.com"),
       source: "RYM"
