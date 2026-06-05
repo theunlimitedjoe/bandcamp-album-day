@@ -1,178 +1,178 @@
 {
-  "fetchedAt": "2026-06-04T14:40:22.224Z",
+  "fetchedAt": "2026-06-05T14:29:55.675Z",
   "albums": [
+    {
+      "band": "Vince Staples, “Cry Baby”",
+      "album": "",
+      "image": "images/bandcamp_1.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/vince-staples-cry-baby-review",
+      "source": "Bandcamp"
+    },
     {
       "band": "The Visitors, “Motherland (Remastered 2026)”",
       "album": "",
-      "image": "images/bandcamp_1.jpg",
+      "image": "images/bandcamp_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/the-visitors-motherland-remastered-2026-review",
       "source": "Bandcamp"
     },
     {
       "band": "Swallow, “Blown”",
       "album": "",
-      "image": "images/bandcamp_2.jpg",
+      "image": "images/bandcamp_3.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/swallow-blown-review",
       "source": "Bandcamp"
     },
     {
       "band": "The Barigozzi Group, “Woman’s Colours”",
       "album": "",
-      "image": "images/bandcamp_3.jpg",
+      "image": "images/bandcamp_4.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/the-barigozzi-group-womans-colours-review",
       "source": "Bandcamp"
     },
     {
       "band": "Nathan Evans Fox, “Heirloom”",
       "album": "",
-      "image": "images/bandcamp_4.jpg",
+      "image": "images/bandcamp_5.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/nathan-evans-fox-heirloom-review",
       "source": "Bandcamp"
     },
     {
       "band": "White Heaven, “Next to Nothing”",
       "album": "",
-      "image": "images/bandcamp_5.jpg",
+      "image": "images/bandcamp_6.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/white-heaven-next-to-nothing-review",
       "source": "Bandcamp"
     },
     {
       "band": "Monolord, “Neverending”",
       "album": "",
-      "image": "images/bandcamp_6.jpg",
+      "image": "images/bandcamp_7.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/monolord-neverending-review",
       "source": "Bandcamp"
     },
     {
-      "band": "feeble little horse, “bitknot”",
-      "album": "",
-      "image": "images/bandcamp_7.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/feeble-little-horse-bitknot-review",
-      "source": "Bandcamp"
-    },
-    {
-      "band": "Joji",
-      "album": "Piss In The Wind (Deluxe)",
+      "band": "Vince Staples",
+      "album": "Cry Baby",
       "image": "images/aoty_1.jpg",
-      "link": "http://www.albumoftheyear.org/album/1827199-joji-piss-in-the-wind-deluxe.php",
+      "link": "http://www.albumoftheyear.org/album/1792171-vince-staples-cry-baby.php",
       "source": "AOTY"
     },
     {
-      "band": "Hamza",
-      "album": "PUBLIC ENEMY",
+      "band": "Malcolm Todd",
+      "album": "Do That Again",
       "image": "images/aoty_2.jpg",
-      "link": "http://www.albumoftheyear.org/album/1851345-hamza-public-enemy.php",
+      "link": "http://www.albumoftheyear.org/album/1689371-malcolm-todd-do-that-again.php",
       "source": "AOTY"
     },
     {
-      "band": "kura",
-      "album": "RIOTRIOTRIOT",
+      "band": "Converge",
+      "album": "Hum of Hurt",
       "image": "images/aoty_3.jpg",
-      "link": "http://www.albumoftheyear.org/album/1851728-kura-riotriotriot.php",
+      "link": "http://www.albumoftheyear.org/album/1751242-converge-hum-of-hurt.php",
       "source": "AOTY"
     },
     {
-      "band": "Urzah",
-      "album": "A Tranquil Void",
+      "band": "Navy Blue",
+      "album": "Sir Render",
       "image": "images/aoty_4.jpg",
-      "link": "http://www.albumoftheyear.org/album/1807354-urzah-a-tranquil-void.php",
+      "link": "http://www.albumoftheyear.org/album/1786233-navy-blue-sir-render.php",
       "source": "AOTY"
     },
     {
-      "band": "Imani Imani",
-      "album": "Papercut",
+      "band": "Evanescence",
+      "album": "Sanctuary",
       "image": "images/aoty_5.jpg",
-      "link": "http://www.albumoftheyear.org/album/1850858-imani-imani-papercut.php",
+      "link": "http://www.albumoftheyear.org/album/1766489-evanescence-sanctuary.php",
       "source": "AOTY"
     },
     {
-      "band": "boolymon",
-      "album": "glove world",
+      "band": "Death Cab for Cutie",
+      "album": "I Built You A Tower",
       "image": "images/aoty_6.jpg",
-      "link": "http://www.albumoftheyear.org/album/1850507-boolymon-glove-world.php",
+      "link": "http://www.albumoftheyear.org/album/1728734-death-cab-for-cutie-i-built-you-a-tower.php",
       "source": "AOTY"
     },
     {
-      "band": "RealYungPhil",
-      "album": "until something changes",
+      "band": "Skrillex",
+      "album": "SOMA",
       "image": "images/aoty_7.jpg",
-      "link": "http://www.albumoftheyear.org/album/1827131-realyungphil-until-something-changes.php",
+      "link": "http://www.albumoftheyear.org/album/1850213-skrillex-soma.php",
       "source": "AOTY"
     },
     {
-      "band": "Olga Myko",
-      "album": "How dare you tryna love me?",
+      "band": "Freddie Gibbs",
+      "album": "You Only Die 1nce (Deluxe)",
       "image": "images/aoty_8.jpg",
-      "link": "http://www.albumoftheyear.org/album/1803014-olga-myko-how-dare-you-tryna-love-me.php",
+      "link": "http://www.albumoftheyear.org/album/1655389-freddie-gibbs-you-only-die-1nce-deluxe.php",
       "source": "AOTY"
     },
     {
-      "band": "elaiyah",
-      "album": "POR OTRA PUNTA",
+      "band": "Lizzo",
+      "album": "BITCH",
       "image": "images/aoty_9.jpg",
-      "link": "http://www.albumoftheyear.org/album/1852089-elaiyah-por-otra-punta.php",
+      "link": "http://www.albumoftheyear.org/album/1794712-lizzo-bitch.php",
       "source": "AOTY"
     },
     {
-      "band": "tripleS",
-      "album": "pt. 1",
+      "band": "Modest Mouse",
+      "album": "An Eraser and A Maze",
       "image": "images/aoty_10.jpg",
-      "link": "http://www.albumoftheyear.org/album/1681626-triples-lovepop-pt-1.php",
+      "link": "http://www.albumoftheyear.org/album/1785321-modest-mouse-an-eraser-and-a-maze.php",
       "source": "AOTY"
     },
     {
       "band": "Wax Machine",
       "album": "The Sky Unfurls, The Dance Goes On",
-      "image": "images/drunkard_1.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Masayoshi Takanaka",
       "album": "All of Me",
-      "image": "images/drunkard_2.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Lifetones",
       "album": "For A Reason",
-      "image": "images/drunkard_3.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Cedric IM Brooks & The Light of Saba",
       "album": "",
-      "image": "images/drunkard_4.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "This Heat",
       "album": "Made Available: John Peel Sessions",
-      "image": "images/drunkard_5.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "White Fence",
       "album": "Orange",
-      "image": "images/drunkard_6.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Jeff Parker ETA IVtet",
       "album": "Happy Today",
-      "image": "images/drunkard_7.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Setting",
       "album": "S/T",
-      "image": "images/drunkard_8.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     }
