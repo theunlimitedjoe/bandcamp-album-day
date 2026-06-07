@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-06T13:13:12.303Z",
+  "fetchedAt": "2026-06-07T13:25:10.619Z",
   "albums": [
     {
       "band": "Vince Staples, “Cry Baby”",
@@ -51,73 +51,73 @@
       "source": "Bandcamp"
     },
     {
+      "band": "Six Sex",
+      "album": "ULTRA",
+      "image": "images/aoty_1.jpg",
+      "link": "https://www.albumoftheyear.org/album/1827038-six-sex-ultra.php",
+      "source": "AOTY"
+    },
+    {
       "band": "Vince Staples",
       "album": "Cry Baby",
-      "image": "images/aoty_1.jpg",
-      "link": "http://www.albumoftheyear.org/album/1792171-vince-staples-cry-baby.php",
+      "image": "images/aoty_2.jpg",
+      "link": "https://www.albumoftheyear.org/album/1792171-vince-staples-cry-baby.php",
       "source": "AOTY"
     },
     {
       "band": "Malcolm Todd",
       "album": "Do That Again",
-      "image": "images/aoty_2.jpg",
-      "link": "http://www.albumoftheyear.org/album/1689371-malcolm-todd-do-that-again.php",
+      "image": "images/aoty_3.jpg",
+      "link": "https://www.albumoftheyear.org/album/1689371-malcolm-todd-do-that-again.php",
       "source": "AOTY"
     },
     {
       "band": "Converge",
       "album": "Hum of Hurt",
-      "image": "images/aoty_3.jpg",
-      "link": "http://www.albumoftheyear.org/album/1751242-converge-hum-of-hurt.php",
+      "image": "images/aoty_4.jpg",
+      "link": "https://www.albumoftheyear.org/album/1751242-converge-hum-of-hurt.php",
       "source": "AOTY"
     },
     {
       "band": "Navy Blue",
       "album": "Sir Render",
-      "image": "images/aoty_4.jpg",
-      "link": "http://www.albumoftheyear.org/album/1786233-navy-blue-sir-render.php",
+      "image": "images/aoty_5.jpg",
+      "link": "https://www.albumoftheyear.org/album/1786233-navy-blue-sir-render.php",
       "source": "AOTY"
     },
     {
       "band": "Evanescence",
       "album": "Sanctuary",
-      "image": "images/aoty_5.jpg",
-      "link": "http://www.albumoftheyear.org/album/1766489-evanescence-sanctuary.php",
+      "image": "images/aoty_6.jpg",
+      "link": "https://www.albumoftheyear.org/album/1766489-evanescence-sanctuary.php",
       "source": "AOTY"
     },
     {
       "band": "Death Cab for Cutie",
       "album": "I Built You A Tower",
-      "image": "images/aoty_6.jpg",
-      "link": "http://www.albumoftheyear.org/album/1728734-death-cab-for-cutie-i-built-you-a-tower.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Skrillex",
-      "album": "SOMA",
       "image": "images/aoty_7.jpg",
-      "link": "http://www.albumoftheyear.org/album/1850213-skrillex-soma.php",
+      "link": "https://www.albumoftheyear.org/album/1728734-death-cab-for-cutie-i-built-you-a-tower.php",
       "source": "AOTY"
     },
     {
       "band": "horsegiirL",
       "album": "NATURE IS HEALING",
       "image": "images/aoty_8.jpg",
-      "link": "http://www.albumoftheyear.org/album/1787129-horsegiirl-nature-is-healing.php",
+      "link": "https://www.albumoftheyear.org/album/1787129-horsegiirl-nature-is-healing.php",
       "source": "AOTY"
     },
     {
-      "band": "Freddie Gibbs",
-      "album": "You Only Die 1nce (Deluxe)",
+      "band": "Skrillex",
+      "album": "SOMA",
       "image": "images/aoty_9.jpg",
-      "link": "http://www.albumoftheyear.org/album/1655389-freddie-gibbs-you-only-die-1nce-deluxe.php",
+      "link": "https://www.albumoftheyear.org/album/1850213-skrillex-soma.php",
       "source": "AOTY"
     },
     {
       "band": "Modest Mouse",
       "album": "An Eraser and A Maze",
       "image": "images/aoty_10.jpg",
-      "link": "http://www.albumoftheyear.org/album/1785321-modest-mouse-an-eraser-and-a-maze.php",
+      "link": "https://www.albumoftheyear.org/album/1785321-modest-mouse-an-eraser-and-a-maze.php",
       "source": "AOTY"
     },
     {
@@ -156,8 +156,8 @@
       "source": "Drunkard"
     },
     {
-      "band": "White Fence",
-      "album": "Orange",
+      "band": "Boards of Canada",
+      "album": "Inferno",
       "image": "images/drunkard_6.jpg",
       "link": "",
       "source": "Drunkard"
