@@ -1,150 +1,150 @@
 {
-  "fetchedAt": "2026-06-07T13:25:10.619Z",
+  "fetchedAt": "2026-06-08T15:34:11.954Z",
   "albums": [
+    {
+      "band": "Neptune, “Play Some Music”",
+      "album": "",
+      "image": "images/bandcamp_1.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/neptune-play-some-music-review",
+      "source": "Bandcamp"
+    },
     {
       "band": "Vince Staples, “Cry Baby”",
       "album": "",
-      "image": "images/bandcamp_1.jpg",
+      "image": "images/bandcamp_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/vince-staples-cry-baby-review",
       "source": "Bandcamp"
     },
     {
       "band": "The Visitors, “Motherland (Remastered 2026)”",
       "album": "",
-      "image": "images/bandcamp_2.jpg",
+      "image": "images/bandcamp_3.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/the-visitors-motherland-remastered-2026-review",
       "source": "Bandcamp"
     },
     {
       "band": "Swallow, “Blown”",
       "album": "",
-      "image": "images/bandcamp_3.jpg",
+      "image": "images/bandcamp_4.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/swallow-blown-review",
       "source": "Bandcamp"
     },
     {
       "band": "The Barigozzi Group, “Woman’s Colours”",
       "album": "",
-      "image": "images/bandcamp_4.jpg",
+      "image": "images/bandcamp_5.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/the-barigozzi-group-womans-colours-review",
       "source": "Bandcamp"
     },
     {
       "band": "Nathan Evans Fox, “Heirloom”",
       "album": "",
-      "image": "images/bandcamp_5.jpg",
+      "image": "images/bandcamp_6.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/nathan-evans-fox-heirloom-review",
       "source": "Bandcamp"
     },
     {
       "band": "White Heaven, “Next to Nothing”",
       "album": "",
-      "image": "images/bandcamp_6.jpg",
+      "image": "images/bandcamp_7.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/white-heaven-next-to-nothing-review",
       "source": "Bandcamp"
     },
     {
-      "band": "Monolord, “Neverending”",
-      "album": "",
-      "image": "images/bandcamp_7.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/monolord-neverending-review",
-      "source": "Bandcamp"
+      "band": "Tezzus",
+      "album": "THE RESURRECTI&Oslash;N",
+      "image": "images/aoty_1.jpg",
+      "link": "https://www.albumoftheyear.org/album/1832951-tezzus-the-resurrection.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "izna",
+      "album": "SET THE TEMPO",
+      "image": "images/aoty_2.jpg",
+      "link": "https://www.albumoftheyear.org/album/1824949-izna-set-the-tempo.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "BOYNEXTDOOR",
+      "album": "HOME",
+      "image": "images/aoty_3.jpg",
+      "link": "https://www.albumoftheyear.org/album/1810618-boynextdoor-home.php",
+      "source": "AOTY"
     },
     {
       "band": "Six Sex",
       "album": "ULTRA",
-      "image": "images/aoty_1.jpg",
+      "image": "images/aoty_4.jpg",
       "link": "https://www.albumoftheyear.org/album/1827038-six-sex-ultra.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "wyatt",
+      "album": "explicit genres",
+      "image": "images/aoty_5.jpg",
+      "link": "https://www.albumoftheyear.org/album/1858415-wyatt-explicit-genres.php",
       "source": "AOTY"
     },
     {
       "band": "Vince Staples",
       "album": "Cry Baby",
-      "image": "images/aoty_2.jpg",
+      "image": "images/aoty_6.jpg",
       "link": "https://www.albumoftheyear.org/album/1792171-vince-staples-cry-baby.php",
       "source": "AOTY"
     },
     {
       "band": "Malcolm Todd",
       "album": "Do That Again",
-      "image": "images/aoty_3.jpg",
+      "image": "images/aoty_7.jpg",
       "link": "https://www.albumoftheyear.org/album/1689371-malcolm-todd-do-that-again.php",
       "source": "AOTY"
     },
     {
       "band": "Converge",
       "album": "Hum of Hurt",
-      "image": "images/aoty_4.jpg",
+      "image": "images/aoty_8.jpg",
       "link": "https://www.albumoftheyear.org/album/1751242-converge-hum-of-hurt.php",
       "source": "AOTY"
     },
     {
       "band": "Navy Blue",
       "album": "Sir Render",
-      "image": "images/aoty_5.jpg",
+      "image": "images/aoty_9.jpg",
       "link": "https://www.albumoftheyear.org/album/1786233-navy-blue-sir-render.php",
       "source": "AOTY"
     },
     {
       "band": "Evanescence",
       "album": "Sanctuary",
-      "image": "images/aoty_6.jpg",
-      "link": "https://www.albumoftheyear.org/album/1766489-evanescence-sanctuary.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Death Cab for Cutie",
-      "album": "I Built You A Tower",
-      "image": "images/aoty_7.jpg",
-      "link": "https://www.albumoftheyear.org/album/1728734-death-cab-for-cutie-i-built-you-a-tower.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "horsegiirL",
-      "album": "NATURE IS HEALING",
-      "image": "images/aoty_8.jpg",
-      "link": "https://www.albumoftheyear.org/album/1787129-horsegiirl-nature-is-healing.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Skrillex",
-      "album": "SOMA",
-      "image": "images/aoty_9.jpg",
-      "link": "https://www.albumoftheyear.org/album/1850213-skrillex-soma.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Modest Mouse",
-      "album": "An Eraser and A Maze",
       "image": "images/aoty_10.jpg",
-      "link": "https://www.albumoftheyear.org/album/1785321-modest-mouse-an-eraser-and-a-maze.php",
+      "link": "https://www.albumoftheyear.org/album/1766489-evanescence-sanctuary.php",
       "source": "AOTY"
     },
     {
       "band": "Wax Machine",
       "album": "The Sky Unfurls, The Dance Goes On",
-      "image": "images/drunkard_1.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Masayoshi Takanaka",
       "album": "All of Me",
-      "image": "images/drunkard_2.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Lifetones",
       "album": "For A Reason",
-      "image": "images/drunkard_3.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Cedric IM Brooks & The Light of Saba",
       "album": "",
-      "image": "images/drunkard_4.jpg",
+      "image": "",
       "link": "",
       "source": "Drunkard"
     },
