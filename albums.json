@@ -1,123 +1,123 @@
 {
-  "fetchedAt": "2026-06-10T14:57:50.736Z",
+  "fetchedAt": "2026-06-11T15:39:56.154Z",
   "albums": [
+    {
+      "band": "Ruth Garbus, “Profound”",
+      "album": "",
+      "image": "images/bandcamp_1.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/ruth-garbus-profound-review",
+      "source": "Bandcamp"
+    },
     {
       "band": "Various Artists, “Mzansi Bass curated by Shannen SP”",
       "album": "",
-      "image": "images/bandcamp_1.jpg",
+      "image": "images/bandcamp_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/various-artists-mzansi-bass-curated-by-shannen-sp-review",
       "source": "Bandcamp"
     },
     {
       "band": "Diles Que No Me Maten, “Escrito en Agua”",
       "album": "",
-      "image": "images/bandcamp_2.jpg",
+      "image": "images/bandcamp_3.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/diles-que-no-me-maten-escrito-en-agua-review",
       "source": "Bandcamp"
     },
     {
       "band": "Neptune, “Play Some Music”",
       "album": "",
-      "image": "images/bandcamp_3.jpg",
+      "image": "images/bandcamp_4.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/neptune-play-some-music-review",
       "source": "Bandcamp"
     },
     {
       "band": "Vince Staples, “Cry Baby”",
       "album": "",
-      "image": "images/bandcamp_4.jpg",
+      "image": "images/bandcamp_5.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/vince-staples-cry-baby-review",
       "source": "Bandcamp"
     },
     {
       "band": "The Visitors, “Motherland (Remastered 2026)”",
       "album": "",
-      "image": "images/bandcamp_5.jpg",
+      "image": "images/bandcamp_6.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/the-visitors-motherland-remastered-2026-review",
       "source": "Bandcamp"
     },
     {
       "band": "Swallow, “Blown”",
       "album": "",
-      "image": "images/bandcamp_6.jpg",
+      "image": "images/bandcamp_7.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/swallow-blown-review",
       "source": "Bandcamp"
     },
     {
-      "band": "The Barigozzi Group, “Woman’s Colours”",
-      "album": "",
-      "image": "images/bandcamp_7.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/the-barigozzi-group-womans-colours-review",
-      "source": "Bandcamp"
+      "band": "YHWH Nailgun",
+      "album": "Magazine",
+      "image": "images/aoty_1.jpg",
+      "link": "https://www.albumoftheyear.org/album/1805005-yhwh-nailgun-magazine.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "Katy da Voz e as abusadas",
+      "album": "SANDRA ELETR&Ocirc;NICA",
+      "image": "images/aoty_2.jpg",
+      "link": "https://www.albumoftheyear.org/album/1861096-katy-da-voz-e-as-abusadas-sandra-eletronica.php",
+      "source": "AOTY"
     },
     {
       "band": "R8",
       "album": "Dawn Chorus",
-      "image": "images/aoty_1.jpg",
+      "image": "images/aoty_3.jpg",
       "link": "https://www.albumoftheyear.org/album/1862648-r8-dawn-chorus.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "Green Montana",
+      "album": "MELANCHOLIA 4099",
+      "image": "images/aoty_4.jpg",
+      "link": "https://www.albumoftheyear.org/album/1850734-green-montana-melancholia-4099.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "KatzPascale",
+      "album": "ELEGY",
+      "image": "images/aoty_5.jpg",
+      "link": "https://www.albumoftheyear.org/album/1818001-katzpascale-elegy.php",
       "source": "AOTY"
     },
     {
       "band": "Mitski",
       "album": "Puberty 2 (10th Anniversary Deluxe Edition)",
-      "image": "images/aoty_2.jpg",
+      "image": "images/aoty_6.jpg",
       "link": "https://www.albumoftheyear.org/album/1861915-mitski-puberty-2-10th-anniversary-deluxe-edition.php",
       "source": "AOTY"
     },
     {
       "band": "Tezzus",
       "album": "THE RESURRECTI&Oslash;N",
-      "image": "images/aoty_3.jpg",
+      "image": "images/aoty_7.jpg",
       "link": "https://www.albumoftheyear.org/album/1832951-tezzus-the-resurrection.php",
       "source": "AOTY"
     },
     {
       "band": "izna",
       "album": "SET THE TEMPO",
-      "image": "images/aoty_4.jpg",
+      "image": "images/aoty_8.jpg",
       "link": "https://www.albumoftheyear.org/album/1824949-izna-set-the-tempo.php",
       "source": "AOTY"
     },
     {
       "band": "BOYNEXTDOOR",
       "album": "HOME",
-      "image": "images/aoty_5.jpg",
+      "image": "images/aoty_9.jpg",
       "link": "https://www.albumoftheyear.org/album/1810618-boynextdoor-home.php",
       "source": "AOTY"
     },
     {
       "band": "Sembii",
       "album": "BRUTUS",
-      "image": "images/aoty_6.jpg",
-      "link": "https://www.albumoftheyear.org/album/1853877-sembii-brutus.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "acesquadneo",
-      "album": "stay based",
-      "image": "images/aoty_7.jpg",
-      "link": "https://www.albumoftheyear.org/album/1857219-acesquadneo-stay-based.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Conway the Machine & DJ Whoo Kid",
-      "album": "I HEARD YOU PAINT HOUSES",
-      "image": "images/aoty_8.jpg",
-      "link": "https://www.albumoftheyear.org/album/1812682-conway-the-machine-i-heard-you-paint-houses.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Iridal",
-      "album": "The Underground Hell Road",
-      "image": "images/aoty_9.jpg",
-      "link": "https://www.albumoftheyear.org/album/1655468-iridal-the-underground-hell-road.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Marcelinho MeteBala",
-      "album": "MARCELINHO CYBERJAMS",
       "image": "images/aoty_10.jpg",
-      "link": "https://www.albumoftheyear.org/album/1859160-marcelinho-metebala-marcelinho-cyberjams.php",
+      "link": "https://www.albumoftheyear.org/album/1853877-sembii-brutus.php",
       "source": "AOTY"
     },
     {
