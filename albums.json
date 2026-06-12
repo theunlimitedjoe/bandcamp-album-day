@@ -1,150 +1,150 @@
 {
-  "fetchedAt": "2026-06-11T15:39:56.154Z",
+  "fetchedAt": "2026-06-12T14:39:24.590Z",
   "albums": [
+    {
+      "band": "Horse Lords, “Demand to Be Taken to Heaven Alive!”",
+      "album": "",
+      "image": "images/bandcamp_1.jpg",
+      "link": "https://daily.bandcamp.com/album-of-the-day/horse-lords-demand-to-be-taken-to-heaven-alive",
+      "source": "Bandcamp"
+    },
     {
       "band": "Ruth Garbus, “Profound”",
       "album": "",
-      "image": "images/bandcamp_1.jpg",
+      "image": "images/bandcamp_2.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/ruth-garbus-profound-review",
       "source": "Bandcamp"
     },
     {
       "band": "Various Artists, “Mzansi Bass curated by Shannen SP”",
       "album": "",
-      "image": "images/bandcamp_2.jpg",
+      "image": "images/bandcamp_3.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/various-artists-mzansi-bass-curated-by-shannen-sp-review",
       "source": "Bandcamp"
     },
     {
       "band": "Diles Que No Me Maten, “Escrito en Agua”",
       "album": "",
-      "image": "images/bandcamp_3.jpg",
+      "image": "images/bandcamp_4.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/diles-que-no-me-maten-escrito-en-agua-review",
       "source": "Bandcamp"
     },
     {
       "band": "Neptune, “Play Some Music”",
       "album": "",
-      "image": "images/bandcamp_4.jpg",
+      "image": "images/bandcamp_5.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/neptune-play-some-music-review",
       "source": "Bandcamp"
     },
     {
       "band": "Vince Staples, “Cry Baby”",
       "album": "",
-      "image": "images/bandcamp_5.jpg",
+      "image": "images/bandcamp_6.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/vince-staples-cry-baby-review",
       "source": "Bandcamp"
     },
     {
       "band": "The Visitors, “Motherland (Remastered 2026)”",
       "album": "",
-      "image": "images/bandcamp_6.jpg",
+      "image": "images/bandcamp_7.jpg",
       "link": "https://daily.bandcamp.com/album-of-the-day/the-visitors-motherland-remastered-2026-review",
       "source": "Bandcamp"
     },
     {
-      "band": "Swallow, “Blown”",
-      "album": "",
-      "image": "images/bandcamp_7.jpg",
-      "link": "https://daily.bandcamp.com/album-of-the-day/swallow-blown-review",
-      "source": "Bandcamp"
-    },
-    {
-      "band": "YHWH Nailgun",
-      "album": "Magazine",
+      "band": "Olivia Rodrigo",
+      "album": "you seem pretty sad for a girl so in love",
       "image": "images/aoty_1.jpg",
-      "link": "https://www.albumoftheyear.org/album/1805005-yhwh-nailgun-magazine.php",
+      "link": "https://www.albumoftheyear.org/album/1754822-olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love.php",
       "source": "AOTY"
     },
     {
-      "band": "Katy da Voz e as abusadas",
-      "album": "SANDRA ELETR&Ocirc;NICA",
+      "band": "Bebe Rexha",
+      "album": "DIRTY BLONDE",
       "image": "images/aoty_2.jpg",
-      "link": "https://www.albumoftheyear.org/album/1861096-katy-da-voz-e-as-abusadas-sandra-eletronica.php",
+      "link": "https://www.albumoftheyear.org/album/1677490-bebe-rexha-dirty-blonde.php",
       "source": "AOTY"
     },
     {
-      "band": "R8",
-      "album": "Dawn Chorus",
+      "band": "Kelsey Lu",
+      "album": "So Help Me God",
       "image": "images/aoty_3.jpg",
-      "link": "https://www.albumoftheyear.org/album/1862648-r8-dawn-chorus.php",
+      "link": "https://www.albumoftheyear.org/album/1731715-kelsey-lu-so-help-me-god.php",
       "source": "AOTY"
     },
     {
-      "band": "Green Montana",
-      "album": "MELANCHOLIA 4099",
+      "band": "Sleeping with Sirens",
+      "album": "An Ending In Itself",
       "image": "images/aoty_4.jpg",
-      "link": "https://www.albumoftheyear.org/album/1850734-green-montana-melancholia-4099.php",
+      "link": "https://www.albumoftheyear.org/album/1789113-sleeping-with-sirens-an-ending-in-itself.php",
       "source": "AOTY"
     },
     {
-      "band": "KatzPascale",
-      "album": "ELEGY",
+      "band": "Sublime",
+      "album": "Until the Sun Explodes",
       "image": "images/aoty_5.jpg",
-      "link": "https://www.albumoftheyear.org/album/1818001-katzpascale-elegy.php",
+      "link": "https://www.albumoftheyear.org/album/1479312-sublime-until-the-sun-explodes.php",
       "source": "AOTY"
     },
     {
-      "band": "Mitski",
-      "album": "Puberty 2 (10th Anniversary Deluxe Edition)",
+      "band": "Mon Laferte",
+      "album": "FEMME FATALE VOL. 2",
       "image": "images/aoty_6.jpg",
-      "link": "https://www.albumoftheyear.org/album/1861915-mitski-puberty-2-10th-anniversary-deluxe-edition.php",
+      "link": "https://www.albumoftheyear.org/album/1839898-mon-laferte-femme-fatale-vol-2.php",
       "source": "AOTY"
     },
     {
-      "band": "Tezzus",
-      "album": "THE RESURRECTI&Oslash;N",
+      "band": "Wiki",
+      "album": "Ancient History",
       "image": "images/aoty_7.jpg",
-      "link": "https://www.albumoftheyear.org/album/1832951-tezzus-the-resurrection.php",
+      "link": "https://www.albumoftheyear.org/album/1830661-wiki-ancient-history.php",
       "source": "AOTY"
     },
     {
-      "band": "izna",
-      "album": "SET THE TEMPO",
+      "band": "Yes",
+      "album": "Aurora",
       "image": "images/aoty_8.jpg",
-      "link": "https://www.albumoftheyear.org/album/1824949-izna-set-the-tempo.php",
+      "link": "https://www.albumoftheyear.org/album/1755625-yes-aurora.php",
       "source": "AOTY"
     },
     {
-      "band": "BOYNEXTDOOR",
-      "album": "HOME",
+      "band": "Bb trickz",
+      "album": "sugarhiii",
       "image": "images/aoty_9.jpg",
-      "link": "https://www.albumoftheyear.org/album/1810618-boynextdoor-home.php",
+      "link": "https://www.albumoftheyear.org/album/1865736-bb-trickz-sugarhiii.php",
       "source": "AOTY"
     },
     {
-      "band": "Sembii",
-      "album": "BRUTUS",
+      "band": "Kodak Black",
+      "album": "Kodak the Blessing",
       "image": "images/aoty_10.jpg",
-      "link": "https://www.albumoftheyear.org/album/1853877-sembii-brutus.php",
+      "link": "https://www.albumoftheyear.org/album/1858318-kodak-black-kodak-the-blessing.php",
       "source": "AOTY"
     },
     {
       "band": "Wax Machine",
       "album": "The Sky Unfurls, The Dance Goes On",
-      "image": "",
+      "image": "images/drunkard_1.jpg",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Masayoshi Takanaka",
       "album": "All of Me",
-      "image": "",
+      "image": "images/drunkard_2.jpg",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Lifetones",
       "album": "For A Reason",
-      "image": "",
+      "image": "images/drunkard_3.jpg",
       "link": "",
       "source": "Drunkard"
     },
     {
       "band": "Cedric IM Brooks & The Light of Saba",
       "album": "",
-      "image": "",
+      "image": "images/drunkard_4.jpg",
       "link": "",
       "source": "Drunkard"
     },
