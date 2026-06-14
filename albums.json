@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-13T13:29:58.125Z",
+  "fetchedAt": "2026-06-14T13:44:01.231Z",
   "albums": [
     {
       "band": "Horse Lords, “Demand to Be Taken to Heaven Alive!”",
@@ -51,73 +51,73 @@
       "source": "Bandcamp"
     },
     {
+      "band": "ovine hall",
+      "album": "3",
+      "image": "images/aoty_1.jpg",
+      "link": "https://www.albumoftheyear.org/album/1866759-ovine-hall-3.php",
+      "source": "AOTY"
+    },
+    {
+      "band": "darts",
+      "album": "Ascension To Heaven",
+      "image": "images/aoty_2.jpg",
+      "link": "https://www.albumoftheyear.org/album/1868518-darts-ascension-to-heaven.php",
+      "source": "AOTY"
+    },
+    {
       "band": "Olivia Rodrigo",
       "album": "you seem pretty sad for a girl so in love",
-      "image": "images/aoty_1.jpg",
+      "image": "images/aoty_3.jpg",
       "link": "https://www.albumoftheyear.org/album/1754822-olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love.php",
       "source": "AOTY"
     },
     {
       "band": "Bebe Rexha",
       "album": "DIRTY BLONDE",
-      "image": "images/aoty_2.jpg",
+      "image": "images/aoty_4.jpg",
       "link": "https://www.albumoftheyear.org/album/1677490-bebe-rexha-dirty-blonde.php",
       "source": "AOTY"
     },
     {
       "band": "Kelsey Lu",
       "album": "So Help Me God",
-      "image": "images/aoty_3.jpg",
+      "image": "images/aoty_5.jpg",
       "link": "https://www.albumoftheyear.org/album/1731715-kelsey-lu-so-help-me-god.php",
       "source": "AOTY"
     },
     {
       "band": "Sublime",
       "album": "Until the Sun Explodes",
-      "image": "images/aoty_4.jpg",
+      "image": "images/aoty_6.jpg",
       "link": "https://www.albumoftheyear.org/album/1479312-sublime-until-the-sun-explodes.php",
       "source": "AOTY"
     },
     {
       "band": "Sleeping with Sirens",
       "album": "An Ending In Itself",
-      "image": "images/aoty_5.jpg",
+      "image": "images/aoty_7.jpg",
       "link": "https://www.albumoftheyear.org/album/1789113-sleeping-with-sirens-an-ending-in-itself.php",
       "source": "AOTY"
     },
     {
       "band": "Mon Laferte",
       "album": "FEMME FATALE VOL. 2",
-      "image": "images/aoty_6.jpg",
+      "image": "images/aoty_8.jpg",
       "link": "https://www.albumoftheyear.org/album/1839898-mon-laferte-femme-fatale-vol-2.php",
       "source": "AOTY"
     },
     {
       "band": "Wiki",
       "album": "Ancient History",
-      "image": "images/aoty_7.jpg",
+      "image": "images/aoty_9.jpg",
       "link": "https://www.albumoftheyear.org/album/1830661-wiki-ancient-history.php",
       "source": "AOTY"
     },
     {
       "band": "Yes",
       "album": "Aurora",
-      "image": "images/aoty_8.jpg",
-      "link": "https://www.albumoftheyear.org/album/1755625-yes-aurora.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Fires in the Distance",
-      "album": "Circadian Promise",
-      "image": "images/aoty_9.jpg",
-      "link": "https://www.albumoftheyear.org/album/1774435-fires-in-the-distance-circadian-promise.php",
-      "source": "AOTY"
-    },
-    {
-      "band": "Kodak Black",
-      "album": "Kodak The Blessing",
       "image": "images/aoty_10.jpg",
-      "link": "https://www.albumoftheyear.org/album/1858318-kodak-black-kodak-the-blessing.php",
+      "link": "https://www.albumoftheyear.org/album/1755625-yes-aurora.php",
       "source": "AOTY"
     },
     {
